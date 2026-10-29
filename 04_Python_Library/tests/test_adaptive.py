@@ -126,3 +126,16 @@ def test_posterior_models_unchanged_without_underflow(base):
     w = b.weights; masses = m.prior.sum(axis=1)
     expected = w[:, None] * m.prior / masses[:, None]; expected /= expected.sum()
     np.testing.assert_array_equal(b.posterior_models().prior, expected)
+
+
+def test_posterior_models_drops_zero_likelihood_models(base):
+    m = base['models']; k = m.kernels.copy()
+    k[3, :, Action.CONTINUE, 2] += k[3, :, Action.CONTINUE, 3]; k[3, :, Action.CONTINUE, 3] = 0.   # hard failure impossible under model 3
+    ms = type(m)(k, m.prior, m.names, m.evidence_status, m.center)
+    b = EpisodeBelief(ms); b.update([(Action.CONTINUE, 3)])
+    assert b.log_weights[3] == -np.inf and b.weights[3] == 0.0
+    post = b.posterior_models()
+    assert len(post.names) == len(m.names) - 1 and m.names[3] not in post.names
+    np.testing.assert_allclose(post.prior.sum(), 1.0, rtol=0, atol=1e-15)
+    keep = np.arange(len(m.names)) != 3
+    np.testing.assert_allclose(post.prior.sum(axis=1), b.weights[keep], rtol=1e-12)

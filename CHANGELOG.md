@@ -5,7 +5,7 @@ All notable changes to this project are documented here. The format follows [Kee
 ## [0.2.1] - unreleased (first PyPI release)
 
 ### Fixed
-- `EpisodeBelief.posterior_models()` no longer raises `ModelError` when a model's posterior weight underflows to exactly zero after decisive evidence; such weights are floored at the smallest normal double (perturbation below 1e-307 per model). Weights that do not underflow are bit-for-bit unchanged. Regression tests added (86 tests).
+- `EpisodeBelief.posterior_models()` no longer raises `ModelError` when a model's posterior weight underflows to exactly zero after decisive evidence; finite weights that underflow are floored at the smallest normal double (perturbation below 1e-307 per model), and models with exactly zero likelihood are ruled out and omitted from the returned model set. Otherwise the result is bit-for-bit unchanged. Regression tests added (87 tests).
 
 ### Added (documentation and research; not part of the installable package)
 - Final consolidated research paper (`publication_final/`: Markdown, DOCX, PDF, BibTeX) integrating Studies I-V.
