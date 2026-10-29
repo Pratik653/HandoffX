@@ -1,0 +1,22 @@
+{
+  "split": "pilot",
+  "git_revision_at_run": "4362d02f96dfcd14b343dec86094d6d401259b31",
+  "environments": 72,
+  "policies": [
+    "nominal",
+    "handoffx_v2",
+    "bayes_recal",
+    "ts_recal",
+    "oracle",
+    "A_prev",
+    "B_humants",
+    "C_bfguard"
+  ],
+  "episodes_per_stream": 100,
+  "cadence": 5,
+  "wall_seconds": 37.17006429999992,
+  "workers": 16,
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "numpy": "2.3.5"
+}

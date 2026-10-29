@@ -13,7 +13,9 @@ from poc_lib import ROOT, KINDS, poc_environment, run_stream  # noqa: E402
 
 CANDIDATES = {'A_prev': dict(prev=True), 'B_humants': dict(humants=True), 'C_bfguard': dict(guard=True),
               'AB': dict(prev=True, humants=True), 'AC': dict(prev=True, guard=True), 'BC': dict(humants=True, guard=True),
-              'ABC': dict(prev=True, humants=True, guard=True)}
+              'ABC': dict(prev=True, humants=True, guard=True),
+              # post-pilot mechanism diagnostic (not eligible for GO): A's augmented prior without cross-episode learning
+              'A_static_diag': dict(prev=True, learn=False)}
 BASELINES = ('nominal', 'handoffx_v2', 'bayes_recal', 'ts_recal', 'oracle')
 SPLITS = {'pilot': (500000, 12), 'confirm': (600000, 50)}
 

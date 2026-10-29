@@ -74,7 +74,7 @@ def human_index(idx: int, augmented: bool) -> int:
 
 # ------------------------------------------------------------------ stream
 def run_stream(env: dict, policy: str, T: int = 100, cadence: int = 5, seed: int = 0,
-               prev: bool = False, humants: bool = False, guard: bool = False):
+               prev: bool = False, humants: bool = False, guard: bool = False, learn: bool = True):
     """policy in {'nominal','oracle','bayes_recal','ts_recal','handoffx_v2','candidate'};
     'candidate' combines the A/B/C flags on top of ungated posterior planning."""
     spec, base, truth = env['spec'], env['models'], env['truth']
@@ -131,7 +131,7 @@ def run_stream(env: dict, policy: str, T: int = 100, cadence: int = 5, seed: int
             exact_cache[key] = (current, ExactEvaluator(spec, truth, current).as_dict())
         ex = exact_cache[key][1]
         traj, loss, info = run_episode(spec, truth, current, latent[t], outcomes[t])
-        if policy in ('bayes_recal', 'ts_recal', 'handoffx_v2', 'candidate'):
+        if policy in ('bayes_recal', 'ts_recal', 'handoffx_v2') or (policy == 'candidate' and learn):
             belief.update(traj)
             cum_ll += episode_log_likelihood(models, traj)
         rows.append({'exact_loss': ex['loss'], 'exact_severe': ex['severe'], 'exact_success': ex['success'],
