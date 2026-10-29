@@ -57,7 +57,7 @@ python demo/runnable_examples/order_agent_demo.py --tasks 10
 python demo/runnable_examples/order_agent_demo.py --tasks 200 --compare
 ```
 
-A small rule-based agent investigates delayed orders with SQLite and a carrier tool that suffers injected timeouts, outages and permission errors; HandoffX decides each step and learns across tasks. Tools and the "human" are simulated and labelled as such. See [demo/README.md](demo/README.md).
+A small rule-based agent investigates delayed orders with SQLite and a carrier tool that suffers injected timeouts, outages and permission errors; HandoffX decides each step and learns across tasks. Tools and the "human" are simulated and labelled as such. See [demo/README.md](https://github.com/Pratik653/HandoffX/blob/main/demo/README.md).
 
 ## How it works
 
@@ -77,7 +77,7 @@ logged episodes ──► cross-episode posterior (exact Bayes; ignorable adapti
 ```
 
 - `handoffx.Advisor` — simple API above. `handoffx.Planner`, `ModelSet`, `TaskSpec`, `ActionGuard` — the exact finite-horizon core (v0.1). `handoffx.AdaptiveController`, `EpisodeBelief` — the v0.2 cross-episode layer for researchers.
-- Mathematics: [research_v2/ADAPTIVE_POLICY_MATHEMATICS.md](research_v2/ADAPTIVE_POLICY_MATHEMATICS.md) (v0.2) and [02_Mathematics/](02_Mathematics/) (v0.1 model, nine propositions, eight counterexamples).
+- Mathematics: [research_v2/ADAPTIVE_POLICY_MATHEMATICS.md](https://github.com/Pratik653/HandoffX/blob/main/research_v2/ADAPTIVE_POLICY_MATHEMATICS.md) (v0.2) and [02_Mathematics/](https://github.com/Pratik653/HandoffX/blob/main/02_Mathematics/) (v0.1 model, nine propositions, eight counterexamples).
 
 ## Results (synthetic, held-out)
 
@@ -93,7 +93,7 @@ Pre-registered deployment-stream benchmark: 100 episodes per environment, enviro
 | Robust (worst-case) planning | +7.26% | +3.44% | lowest severe-failure rate and CVaR |
 | Oracle (knows the truth) | −1.94% | −7.87% | headroom |
 
-**When it helps:** biased estimates (−1.03% on 142 biased test environments; −2.25% when human effectiveness was over-estimated). **When it does not:** already-calibrated estimates (+0.92%), and model misspecification, where the posterior can become confidently wrong. Full results: [research_v2/EXPERIMENTAL_RESULTS.md](research_v2/EXPERIMENTAL_RESULTS.md); root cause of the v0.1 6/23/9 result: [research_v2/ROOT_CAUSE_ANALYSIS.md](research_v2/ROOT_CAUSE_ANALYSIS.md).
+**When it helps:** biased estimates (−1.03% on 142 biased test environments; −2.25% when human effectiveness was over-estimated). **When it does not:** already-calibrated estimates (+0.92%), and model misspecification, where the posterior can become confidently wrong. Full results: [research_v2/EXPERIMENTAL_RESULTS.md](https://github.com/Pratik653/HandoffX/blob/main/research_v2/EXPERIMENTAL_RESULTS.md); root cause of the v0.1 6/23/9 result: [research_v2/ROOT_CAUSE_ANALYSIS.md](https://github.com/Pratik653/HandoffX/blob/main/research_v2/ROOT_CAUSE_ANALYSIS.md).
 
 ![Learning curves on the held-out test split](https://raw.githubusercontent.com/Pratik653/HandoffX/main/benchmarks_v2/figures/v2_learning_curves_test.png)
 
@@ -108,7 +108,7 @@ python benchmarks_v2/scripts/run_v2.py test         # v0.2 held-out test split (
 python benchmarks_v2/scripts/analyze_v2.py validation test shift original
 ```
 
-See [benchmarks_v2/reproducibility/README.md](benchmarks_v2/reproducibility/README.md) for the full order (dev → freeze → validation → test → shift), hashes and environment.
+See [benchmarks_v2/reproducibility/README.md](https://github.com/Pratik653/HandoffX/blob/main/benchmarks_v2/reproducibility/README.md) for the full order (dev → freeze → validation → test → shift), hashes and environment.
 
 ## Repository layout
 
@@ -124,8 +124,8 @@ See [benchmarks_v2/reproducibility/README.md](benchmarks_v2/reproducibility/READ
 
 ## Limitations
 
-Synthetic simulations only; no real operators, LLM agents or production data. Effects are small on the tested distribution. The model set varies success probabilities but not failure-mode prevalence, which caused the worst degradations. Human effectiveness is learned only from actual escalations. Expected-loss policies did not reduce tail risk. See [research_v2/LIMITATIONS.md](research_v2/LIMITATIONS.md).
+Synthetic simulations only; no real operators, LLM agents or production data. Effects are small on the tested distribution. The model set varies success probabilities but not failure-mode prevalence, which caused the worst degradations. Human effectiveness is learned only from actual escalations. Expected-loss policies did not reduce tail risk. See [research_v2/LIMITATIONS.md](https://github.com/Pratik653/HandoffX/blob/main/research_v2/LIMITATIONS.md).
 
 ## Citation
 
-See [CITATION.cff](CITATION.cff). Code: MIT. Research documents, figures and data: CC BY 4.0 ([LICENSE-docs.md](LICENSE-docs.md)).
+See [CITATION.cff](https://github.com/Pratik653/HandoffX/blob/main/CITATION.cff). Code: MIT. Research documents, figures and data: CC BY 4.0 ([LICENSE-docs.md](https://github.com/Pratik653/HandoffX/blob/main/LICENSE-docs.md)).
