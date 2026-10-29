@@ -1,0 +1,164 @@
+{
+  "gate": {
+    "alpha": 0.35,
+    "tolerance": 0.03,
+    "margin": 0.0,
+    "relative": true
+  },
+  "selection_rule_branch": "primary",
+  "selected_row": {
+    "alpha": 0.35,
+    "tolerance": 0.03,
+    "n": 60,
+    "mean_relative_difference": -0.015477018764311372,
+    "share_degraded_gt_1pct": 0.03333333333333333,
+    "worst_relative": 0.014457445686802345
+  },
+  "grid": [
+    {
+      "alpha": 0.05,
+      "tolerance": 0.0,
+      "n": 60,
+      "mean_relative_difference": -0.007230558090317227,
+      "share_degraded_gt_1pct": 0.0,
+      "worst_relative": 0.0002572660853477944
+    },
+    {
+      "alpha": 0.05,
+      "tolerance": 0.01,
+      "n": 60,
+      "mean_relative_difference": -0.009164742918048724,
+      "share_degraded_gt_1pct": 0.0,
+      "worst_relative": 0.0036545315179994874
+    },
+    {
+      "alpha": 0.05,
+      "tolerance": 0.03,
+      "n": 60,
+      "mean_relative_difference": -0.011484472251019263,
+      "share_degraded_gt_1pct": 0.03333333333333333,
+      "worst_relative": 0.014457445686802345
+    },
+    {
+      "alpha": 0.1,
+      "tolerance": 0.0,
+      "n": 60,
+      "mean_relative_difference": -0.009379389279735478,
+      "share_degraded_gt_1pct": 0.0,
+      "worst_relative": 0.0005073892588425043
+    },
+    {
+      "alpha": 0.1,
+      "tolerance": 0.01,
+      "n": 60,
+      "mean_relative_difference": -0.010696525811161196,
+      "share_degraded_gt_1pct": 0.0,
+      "worst_relative": 0.0036545315179994874
+    },
+    {
+      "alpha": 0.1,
+      "tolerance": 0.03,
+      "n": 60,
+      "mean_relative_difference": -0.013202772037054578,
+      "share_degraded_gt_1pct": 0.03333333333333333,
+      "worst_relative": 0.014457445686802345
+    },
+    {
+      "alpha": 0.2,
+      "tolerance": 0.0,
+      "n": 60,
+      "mean_relative_difference": -0.011966636049312569,
+      "share_degraded_gt_1pct": 0.0,
+      "worst_relative": 0.006587399529035418
+    },
+    {
+      "alpha": 0.2,
+      "tolerance": 0.01,
+      "n": 60,
+      "mean_relative_difference": -0.013030099328459667,
+      "share_degraded_gt_1pct": 0.016666666666666666,
+      "worst_relative": 0.014457445686802345
+    },
+    {
+      "alpha": 0.2,
+      "tolerance": 0.03,
+      "n": 60,
+      "mean_relative_difference": -0.014860008834359692,
+      "share_degraded_gt_1pct": 0.03333333333333333,
+      "worst_relative": 0.014457445686802345
+    },
+    {
+      "alpha": 0.35,
+      "tolerance": 0.0,
+      "n": 60,
+      "mean_relative_difference": -0.01443661548604428,
+      "share_degraded_gt_1pct": 0.016666666666666666,
+      "worst_relative": 0.011327326669454003
+    },
+    {
+      "alpha": 0.35,
+      "tolerance": 0.01,
+      "n": 60,
+      "mean_relative_difference": -0.01471839293944272,
+      "share_degraded_gt_1pct": 0.03333333333333333,
+      "worst_relative": 0.014457445686802345
+    },
+    {
+      "alpha": 0.35,
+      "tolerance": 0.03,
+      "n": 60,
+      "mean_relative_difference": -0.015477018764311372,
+      "share_degraded_gt_1pct": 0.03333333333333333,
+      "worst_relative": 0.014457445686802345
+    },
+    {
+      "alpha": 0.5,
+      "tolerance": 0.0,
+      "n": 60,
+      "mean_relative_difference": -0.01461333609130645,
+      "share_degraded_gt_1pct": 0.05,
+      "worst_relative": 0.04214542146821183
+    },
+    {
+      "alpha": 0.5,
+      "tolerance": 0.01,
+      "n": 60,
+      "mean_relative_difference": -0.01436944288821272,
+      "share_degraded_gt_1pct": 0.06666666666666667,
+      "worst_relative": 0.04214542146821183
+    },
+    {
+      "alpha": 0.5,
+      "tolerance": 0.03,
+      "n": 60,
+      "mean_relative_difference": -0.014614111047602229,
+      "share_degraded_gt_1pct": 0.06666666666666667,
+      "worst_relative": 0.04214542146821183
+    },
+    {
+      "alpha": 1.0,
+      "tolerance": 0.0,
+      "n": 60,
+      "mean_relative_difference": -0.0145554530167244,
+      "share_degraded_gt_1pct": 0.06666666666666667,
+      "worst_relative": 0.045664903320881405
+    },
+    {
+      "alpha": 1.0,
+      "tolerance": 0.01,
+      "n": 60,
+      "mean_relative_difference": -0.0145554530167244,
+      "share_degraded_gt_1pct": 0.06666666666666667,
+      "worst_relative": 0.045664903320881405
+    },
+    {
+      "alpha": 1.0,
+      "tolerance": 0.03,
+      "n": 60,
+      "mean_relative_difference": -0.0145554530167244,
+      "share_degraded_gt_1pct": 0.06666666666666667,
+      "worst_relative": 0.045664903320881405
+    }
+  ],
+  "source": "benchmarks_v2/results/dev/summary.csv"
+}
