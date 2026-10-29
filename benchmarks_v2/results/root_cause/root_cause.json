@@ -1,0 +1,1537 @@
+[
+  {
+    "scenario": "ai_under__human_under",
+    "category": "bias_factorial",
+    "loss_bayes": 7.5148,
+    "loss_nominal": 9.308331419092587,
+    "loss_oracle": 7.5148,
+    "difference": -1.793531419092587,
+    "relative_difference": -0.19268022788851533,
+    "nominal_gap_to_oracle": 1.793531419092587,
+    "nominal_is_oracle_equivalent": false,
+    "truth_in_model_support": true,
+    "n_divergent_states": 1,
+    "p_ai_success_root": {
+      "truth": 0.574,
+      "nominal": 0.418,
+      "bayes": 0.42130000000000006
+    },
+    "p_human_success_root": {
+      "truth": 0.8349999999999999,
+      "nominal": 0.655,
+      "bayes": 0.655
+    },
+    "divergences": [
+      {
+        "state": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "visit_prob": 1.0,
+        "bayes_action": "human",
+        "nominal_action": "continue",
+        "true_q_gap": -1.793531419092587,
+        "contribution": -1.793531419092587
+      }
+    ]
+  },
+  {
+    "scenario": "ai_under__human_calibrated",
+    "category": "bias_factorial",
+    "loss_bayes": 7.5148,
+    "loss_nominal": 7.5148,
+    "loss_oracle": 7.5148,
+    "difference": 0.0,
+    "relative_difference": 0.0,
+    "nominal_gap_to_oracle": 0.0,
+    "nominal_is_oracle_equivalent": true,
+    "truth_in_model_support": true,
+    "n_divergent_states": 0,
+    "p_ai_success_root": {
+      "truth": 0.574,
+      "nominal": 0.418,
+      "bayes": 0.42130000000000006
+    },
+    "p_human_success_root": {
+      "truth": 0.8349999999999999,
+      "nominal": 0.8349999999999999,
+      "bayes": 0.8134400000000003
+    },
+    "divergences": []
+  },
+  {
+    "scenario": "ai_under__human_over",
+    "category": "bias_factorial",
+    "loss_bayes": 7.5148,
+    "loss_nominal": 7.5148,
+    "loss_oracle": 7.5148,
+    "difference": 0.0,
+    "relative_difference": 0.0,
+    "nominal_gap_to_oracle": 0.0,
+    "nominal_is_oracle_equivalent": true,
+    "truth_in_model_support": true,
+    "n_divergent_states": 0,
+    "p_ai_success_root": {
+      "truth": 0.574,
+      "nominal": 0.418,
+      "bayes": 0.42130000000000006
+    },
+    "p_human_success_root": {
+      "truth": 0.8349999999999999,
+      "nominal": 0.9366,
+      "bayes": 0.91856
+    },
+    "divergences": []
+  },
+  {
+    "scenario": "ai_calibrated__human_under",
+    "category": "bias_factorial",
+    "loss_bayes": 9.373126064598969,
+    "loss_nominal": 9.307832931858796,
+    "loss_oracle": 7.5148,
+    "difference": 0.06529313274017312,
+    "relative_difference": 0.007014858691402611,
+    "nominal_gap_to_oracle": 1.7930329318587956,
+    "nominal_is_oracle_equivalent": false,
+    "truth_in_model_support": true,
+    "n_divergent_states": 4,
+    "p_ai_success_root": {
+      "truth": 0.574,
+      "nominal": 0.574,
+      "bayes": 0.5702875000000001
+    },
+    "p_human_success_root": {
+      "truth": 0.8349999999999999,
+      "nominal": 0.655,
+      "bayes": 0.655
+    },
+    "divergences": [
+      {
+        "state": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "visit_prob": 0.018724004999999995,
+        "bayes_action": "retry",
+        "nominal_action": "human",
+        "true_q_gap": 3.251104167704506,
+        "contribution": 0.06087369069161999
+      },
+      {
+        "state": [
+          0,
+          1,
+          0,
+          0,
+          2,
+          0,
+          1
+        ],
+        "visit_prob": 0.0020907948442499998,
+        "bayes_action": "continue",
+        "nominal_action": "stop",
+        "true_q_gap": 1.8753417273554334,
+        "contribution": 0.003920954814761629
+      },
+      {
+        "state": [
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "visit_prob": 0.0012405836090250005,
+        "bayes_action": "continue",
+        "nominal_action": "stop",
+        "true_q_gap": 0.26787781178886405,
+        "contribution": 0.0003323248225267488
+      },
+      {
+        "state": [
+          1,
+          0,
+          1,
+          0,
+          2,
+          0,
+          1
+        ],
+        "visit_prob": 0.0006202918045125002,
+        "bayes_action": "continue",
+        "nominal_action": "stop",
+        "true_q_gap": 0.2678778117888676,
+        "contribution": 0.00016616241126337657
+      }
+    ]
+  },
+  {
+    "scenario": "ai_calibrated__human_calibrated",
+    "category": "bias_factorial",
+    "loss_bayes": 7.5148,
+    "loss_nominal": 7.5148,
+    "loss_oracle": 7.5148,
+    "difference": 0.0,
+    "relative_difference": 0.0,
+    "nominal_gap_to_oracle": 0.0,
+    "nominal_is_oracle_equivalent": true,
+    "truth_in_model_support": true,
+    "n_divergent_states": 0,
+    "p_ai_success_root": {
+      "truth": 0.574,
+      "nominal": 0.574,
+      "bayes": 0.5702875000000001
+    },
+    "p_human_success_root": {
+      "truth": 0.8349999999999999,
+      "nominal": 0.8349999999999999,
+      "bayes": 0.8134400000000003
+    },
+    "divergences": []
+  },
+  {
+    "scenario": "ai_calibrated__human_over",
+    "category": "bias_factorial",
+    "loss_bayes": 7.5148,
+    "loss_nominal": 7.5148,
+    "loss_oracle": 7.5148,
+    "difference": 0.0,
+    "relative_difference": 0.0,
+    "nominal_gap_to_oracle": 0.0,
+    "nominal_is_oracle_equivalent": true,
+    "truth_in_model_support": true,
+    "n_divergent_states": 0,
+    "p_ai_success_root": {
+      "truth": 0.574,
+      "nominal": 0.574,
+      "bayes": 0.5702875000000001
+    },
+    "p_human_success_root": {
+      "truth": 0.8349999999999999,
+      "nominal": 0.9366,
+      "bayes": 0.91856
+    },
+    "divergences": []
+  },
+  {
+    "scenario": "ai_over__human_under",
+    "category": "bias_factorial",
+    "loss_bayes": 9.39083077181925,
+    "loss_nominal": 9.394821530405846,
+    "loss_oracle": 7.5148,
+    "difference": -0.003990758586596144,
+    "relative_difference": -0.00042478279908567324,
+    "nominal_gap_to_oracle": 1.8800215304058456,
+    "nominal_is_oracle_equivalent": false,
+    "truth_in_model_support": true,
+    "n_divergent_states": 1,
+    "p_ai_success_root": {
+      "truth": 0.574,
+      "nominal": 0.7165,
+      "bayes": 0.7020625
+    },
+    "p_human_success_root": {
+      "truth": 0.8349999999999999,
+      "nominal": 0.655,
+      "bayes": 0.655
+    },
+    "divergences": [
+      {
+        "state": [
+          1,
+          1,
+          0,
+          0,
+          2,
+          0,
+          1
+        ],
+        "visit_prob": 0.0008944005297375,
+        "bayes_action": "continue",
+        "nominal_action": "stop",
+        "true_q_gap": -4.461936743001629,
+        "contribution": -0.003990758586595872
+      }
+    ]
+  },
+  {
+    "scenario": "ai_over__human_calibrated",
+    "category": "bias_factorial",
+    "loss_bayes": 7.5148,
+    "loss_nominal": 7.5148,
+    "loss_oracle": 7.5148,
+    "difference": 0.0,
+    "relative_difference": 0.0,
+    "nominal_gap_to_oracle": 0.0,
+    "nominal_is_oracle_equivalent": true,
+    "truth_in_model_support": true,
+    "n_divergent_states": 0,
+    "p_ai_success_root": {
+      "truth": 0.574,
+      "nominal": 0.7165,
+      "bayes": 0.7020625
+    },
+    "p_human_success_root": {
+      "truth": 0.8349999999999999,
+      "nominal": 0.8349999999999999,
+      "bayes": 0.8134400000000003
+    },
+    "divergences": []
+  },
+  {
+    "scenario": "ai_over__human_over",
+    "category": "bias_factorial",
+    "loss_bayes": 7.5148,
+    "loss_nominal": 7.5148,
+    "loss_oracle": 7.5148,
+    "difference": 0.0,
+    "relative_difference": 0.0,
+    "nominal_gap_to_oracle": 0.0,
+    "nominal_is_oracle_equivalent": true,
+    "truth_in_model_support": true,
+    "n_divergent_states": 0,
+    "p_ai_success_root": {
+      "truth": 0.574,
+      "nominal": 0.7165,
+      "bayes": 0.7020625
+    },
+    "p_human_success_root": {
+      "truth": 0.8349999999999999,
+      "nominal": 0.9366,
+      "bayes": 0.91856
+    },
+    "divergences": []
+  },
+  {
+    "scenario": "low_hazard__ai_under__human_under",
+    "category": "bias_factorial_low_hazard",
+    "loss_bayes": 6.386974196653378,
+    "loss_nominal": 6.371398752292513,
+    "loss_oracle": 5.975053043656093,
+    "difference": 0.015575444360865554,
+    "relative_difference": 0.002444587910191825,
+    "nominal_gap_to_oracle": 0.39634570863641994,
+    "nominal_is_oracle_equivalent": false,
+    "truth_in_model_support": true,
+    "n_divergent_states": 5,
+    "p_ai_success_root": {
+      "truth": 0.574,
+      "nominal": 0.418,
+      "bayes": 0.42130000000000006
+    },
+    "p_human_success_root": {
+      "truth": 0.8349999999999999,
+      "nominal": 0.655,
+      "bayes": 0.655
+    },
+    "divergences": [
+      {
+        "state": [
+          1,
+          2,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "visit_prob": 0.0181157787,
+        "bayes_action": "continue",
+        "nominal_action": "retry",
+        "true_q_gap": 0.6587565666828965,
+        "contribution": 0.011933888179199147
+      },
+      {
+        "state": [
+          1,
+          2,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "visit_prob": 0.0020251386520469994,
+        "bayes_action": "continue",
+        "nominal_action": "retry",
+        "true_q_gap": 2.814698181751223,
+        "contribution": 0.0057001540817108115
+      },
+      {
+        "state": [
+          0,
+          2,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "visit_prob": 0.03058435475999999,
+        "bayes_action": "retry",
+        "nominal_action": "continue",
+        "true_q_gap": -0.15558325603351708,
+        "contribution": -0.004758413497244996
+      },
+      {
+        "state": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "visit_prob": 0.17885999999999996,
+        "bayes_action": "retry",
+        "nominal_action": "continue",
+        "true_q_gap": 0.008792705198548134,
+        "contribution": 0.001572663251812319
+      },
+      {
+        "state": [
+          1,
+          3,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "visit_prob": 0.004760494050150001,
+        "bayes_action": "continue",
+        "nominal_action": "retry",
+        "true_q_gap": 0.23677213615110482,
+        "contribution": 0.0011271523453886404
+      }
+    ]
+  },
+  {
+    "scenario": "low_hazard__ai_under__human_calibrated",
+    "category": "bias_factorial_low_hazard",
+    "loss_bayes": 6.058354281334237,
+    "loss_nominal": 6.02329249509469,
+    "loss_oracle": 5.975053043656093,
+    "difference": 0.03506178623954703,
+    "relative_difference": 0.005821033308294592,
+    "nominal_gap_to_oracle": 0.048239451438597314,
+    "nominal_is_oracle_equivalent": false,
+    "truth_in_model_support": true,
+    "n_divergent_states": 3,
+    "p_ai_success_root": {
+      "truth": 0.574,
+      "nominal": 0.418,
+      "bayes": 0.42130000000000006
+    },
+    "p_human_success_root": {
+      "truth": 0.8349999999999999,
+      "nominal": 0.8349999999999999,
+      "bayes": 0.8137480000000004
+    },
+    "divergences": [
+      {
+        "state": [
+          1,
+          2,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "visit_prob": 0.0362315574,
+        "bayes_action": "continue",
+        "nominal_action": "retry",
+        "true_q_gap": 0.6587565666828965,
+        "contribution": 0.023867776358398294
+      },
+      {
+        "state": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        "visit_prob": 0.011258648590000005,
+        "bayes_action": "human",
+        "nominal_action": "retry",
+        "true_q_gap": 0.7940300400095008,
+        "contribution": 0.008939705190370614
+      },
+      {
+        "state": [
+          1,
+          3,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "visit_prob": 0.009520988100300002,
+        "bayes_action": "continue",
+        "nominal_action": "retry",
+        "true_q_gap": 0.23677213615110482,
+        "contribution": 0.002254304690777281
+      }
+    ]
+  },
+  {
+    "scenario": "low_hazard__ai_under__human_over",
+    "category": "bias_factorial_low_hazard",
+    "loss_bayes": 7.318960000000001,
+    "loss_nominal": 7.318960000000001,
+    "loss_oracle": 5.975053043656093,
+    "difference": 0.0,
+    "relative_difference": 0.0,
+    "nominal_gap_to_oracle": 1.3439069563439077,
+    "nominal_is_oracle_equivalent": false,
+    "truth_in_model_support": true,
+    "n_divergent_states": 0,
+    "p_ai_success_root": {
+      "truth": 0.574,
+      "nominal": 0.418,
+      "bayes": 0.42130000000000006
+    },
+    "p_human_success_root": {
+      "truth": 0.8349999999999999,
+      "nominal": 0.93772,
+      "bayes": 0.9193720000000002
+    },
+    "divergences": []
+  },
+  {
+    "scenario": "low_hazard__ai_calibrated__human_under",
+    "category": "bias_factorial_low_hazard",
+    "loss_bayes": 6.295071531131757,
+    "loss_nominal": 6.289329093296024,
+    "loss_oracle": 5.975053043656093,
+    "difference": 0.005742437835733583,
+    "relative_difference": 0.0009130445792468726,
+    "nominal_gap_to_oracle": 0.31427604963993083,
+    "nominal_is_oracle_equivalent": false,
+    "truth_in_model_support": true,
+    "n_divergent_states": 3,
+    "p_ai_success_root": {
+      "truth": 0.574,
+      "nominal": 0.574,
+      "bayes": 0.5708375000000001
+    },
+    "p_human_success_root": {
+      "truth": 0.8349999999999999,
+      "nominal": 0.655,
+      "bayes": 0.655
+    },
+    "divergences": [
+      {
+        "state": [
+          0,
+          2,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "visit_prob": 0.004849426762739999,
+        "bayes_action": "continue",
+        "nominal_action": "retry",
+        "true_q_gap": 0.6026733072264197,
+        "contribution": 0.002922620065252825
+      },
+      {
+        "state": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "visit_prob": 0.020156308199999997,
+        "bayes_action": "continue",
+        "nominal_action": "retry",
+        "true_q_gap": 0.12481126475999815,
+        "contribution": 0.0025157343193343215
+      },
+      {
+        "state": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        "visit_prob": 0.0028808822094990023,
+        "bayes_action": "continue",
+        "nominal_action": "stop",
+        "true_q_gap": 0.10555219860920673,
+        "contribution": 0.000304083451146769
+      }
+    ]
+  },
+  {
+    "scenario": "low_hazard__ai_calibrated__human_calibrated",
+    "category": "bias_factorial_low_hazard",
+    "loss_bayes": 5.975357127107239,
+    "loss_nominal": 5.975053043656093,
+    "loss_oracle": 5.975053043656093,
+    "difference": 0.00030408345114629753,
+    "relative_difference": 5.089217600656329e-05,
+    "nominal_gap_to_oracle": 0.0,
+    "nominal_is_oracle_equivalent": true,
+    "truth_in_model_support": true,
+    "n_divergent_states": 1,
+    "p_ai_success_root": {
+      "truth": 0.574,
+      "nominal": 0.574,
+      "bayes": 0.5708375000000001
+    },
+    "p_human_success_root": {
+      "truth": 0.8349999999999999,
+      "nominal": 0.8349999999999999,
+      "bayes": 0.8137480000000004
+    },
+    "divergences": [
+      {
+        "state": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        "visit_prob": 0.0028808822094990023,
+        "bayes_action": "continue",
+        "nominal_action": "stop",
+        "true_q_gap": 0.10555219860920673,
+        "contribution": 0.000304083451146769
+      }
+    ]
+  },
+  {
+    "scenario": "low_hazard__ai_calibrated__human_over",
+    "category": "bias_factorial_low_hazard",
+    "loss_bayes": 6.032232200285061,
+    "loss_nominal": 6.180854119766693,
+    "loss_oracle": 5.975053043656093,
+    "difference": -0.14862191948163161,
+    "relative_difference": -0.02404553102237618,
+    "nominal_gap_to_oracle": 0.20580107611059972,
+    "nominal_is_oracle_equivalent": false,
+    "truth_in_model_support": true,
+    "n_divergent_states": 3,
+    "p_ai_success_root": {
+      "truth": 0.574,
+      "nominal": 0.574,
+      "bayes": 0.5708375000000001
+    },
+    "p_human_success_root": {
+      "truth": 0.8349999999999999,
+      "nominal": 0.93772,
+      "bayes": 0.9193720000000002
+    },
+    "divergences": [
+      {
+        "state": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "visit_prob": 0.17885999999999996,
+        "bayes_action": "continue",
+        "nominal_action": "human",
+        "true_q_gap": -0.7557833879281368,
+        "contribution": -0.13517941676482653
+      },
+      {
+        "state": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "visit_prob": 0.005743630410000002,
+        "bayes_action": "retry",
+        "nominal_action": "human",
+        "true_q_gap": -2.366890532982505,
+        "contribution": -0.013594544442379428
+      },
+      {
+        "state": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        "visit_prob": 0.0014404411047495016,
+        "bayes_action": "continue",
+        "nominal_action": "stop",
+        "true_q_gap": 0.10555219860920673,
+        "contribution": 0.00015204172557338455
+      }
+    ]
+  },
+  {
+    "scenario": "low_hazard__ai_over__human_under",
+    "category": "bias_factorial_low_hazard",
+    "loss_bayes": 6.307131146401904,
+    "loss_nominal": 6.327034177397172,
+    "loss_oracle": 5.975053043656093,
+    "difference": -0.019903030995267912,
+    "relative_difference": -0.003145712578315115,
+    "nominal_gap_to_oracle": 0.351981133741079,
+    "nominal_is_oracle_equivalent": false,
+    "truth_in_model_support": true,
+    "n_divergent_states": 2,
+    "p_ai_success_root": {
+      "truth": 0.574,
+      "nominal": 0.7185,
+      "bayes": 0.7035125
+    },
+    "p_human_success_root": {
+      "truth": 0.8349999999999999,
+      "nominal": 0.655,
+      "bayes": 0.655
+    },
+    "divergences": [
+      {
+        "state": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "visit_prob": 0.088239,
+        "bayes_action": "continue",
+        "nominal_action": "retry",
+        "true_q_gap": -0.19725078202747026,
+        "contribution": -0.017405211755321948
+      },
+      {
+        "state": [
+          0,
+          1,
+          0,
+          0,
+          2,
+          0,
+          1
+        ],
+        "visit_prob": 0.002314745155674,
+        "bayes_action": "continue",
+        "nominal_action": "stop",
+        "true_q_gap": -1.0790903844527335,
+        "contribution": -0.0024978192399463593
+      }
+    ]
+  },
+  {
+    "scenario": "low_hazard__ai_over__human_calibrated",
+    "category": "bias_factorial_low_hazard",
+    "loss_bayes": 6.279943236597164,
+    "loss_nominal": 6.302932042712648,
+    "loss_oracle": 5.975053043656093,
+    "difference": -0.022988806115483484,
+    "relative_difference": -0.003647319368144352,
+    "nominal_gap_to_oracle": 0.32787899905655493,
+    "nominal_is_oracle_equivalent": false,
+    "truth_in_model_support": true,
+    "n_divergent_states": 2,
+    "p_ai_success_root": {
+      "truth": 0.574,
+      "nominal": 0.7185,
+      "bayes": 0.7035125
+    },
+    "p_human_success_root": {
+      "truth": 0.8349999999999999,
+      "nominal": 0.8349999999999999,
+      "bayes": 0.8137480000000004
+    },
+    "divergences": [
+      {
+        "state": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "visit_prob": 0.088239,
+        "bayes_action": "continue",
+        "nominal_action": "retry",
+        "true_q_gap": -0.19725078202747026,
+        "contribution": -0.017405211755321948
+      },
+      {
+        "state": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "visit_prob": 0.020156308199999997,
+        "bayes_action": "continue",
+        "nominal_action": "human",
+        "true_q_gap": -0.27701473428356493,
+        "contribution": -0.00558359436016064
+      }
+    ]
+  },
+  {
+    "scenario": "low_hazard__ai_over__human_over",
+    "category": "bias_factorial_low_hazard",
+    "loss_bayes": 5.989880426657772,
+    "loss_nominal": 6.034170643846705,
+    "loss_oracle": 5.975053043656093,
+    "difference": -0.04429021718893367,
+    "relative_difference": -0.007339901339067738,
+    "nominal_gap_to_oracle": 0.05911760019061241,
+    "nominal_is_oracle_equivalent": false,
+    "truth_in_model_support": true,
+    "n_divergent_states": 2,
+    "p_ai_success_root": {
+      "truth": 0.574,
+      "nominal": 0.7185,
+      "bayes": 0.7035125
+    },
+    "p_human_success_root": {
+      "truth": 0.8349999999999999,
+      "nominal": 0.93772,
+      "bayes": 0.9193720000000002
+    },
+    "divergences": [
+      {
+        "state": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "visit_prob": 0.088239,
+        "bayes_action": "continue",
+        "nominal_action": "retry",
+        "true_q_gap": -0.34959274778870997,
+        "contribution": -0.030847714472127977
+      },
+      {
+        "state": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "visit_prob": 0.005743630410000002,
+        "bayes_action": "retry",
+        "nominal_action": "human",
+        "true_q_gap": -2.3404191699733747,
+        "contribution": -0.01344250271680604
+      }
+    ]
+  },
+  {
+    "scenario": "persistent_low",
+    "category": "stress",
+    "loss_bayes": 5.680485153845776,
+    "loss_nominal": 5.680485153845776,
+    "loss_oracle": 5.680485153845776,
+    "difference": 0.0,
+    "relative_difference": 0.0,
+    "nominal_gap_to_oracle": 0.0,
+    "nominal_is_oracle_equivalent": true,
+    "truth_in_model_support": true,
+    "n_divergent_states": 0,
+    "p_ai_success_root": {
+      "truth": 0.7194999999999999,
+      "nominal": 0.7194999999999999,
+      "bayes": 0.7067125
+    },
+    "p_human_success_root": {
+      "truth": 0.8979999999999999,
+      "nominal": 0.8979999999999999,
+      "bayes": 0.8698262499999998
+    },
+    "divergences": []
+  },
+  {
+    "scenario": "persistent_high",
+    "category": "stress",
+    "loss_bayes": 9.431799999999999,
+    "loss_nominal": 9.431799999999999,
+    "loss_oracle": 9.431799999999999,
+    "difference": 0.0,
+    "relative_difference": 0.0,
+    "nominal_gap_to_oracle": 0.0,
+    "nominal_is_oracle_equivalent": true,
+    "truth_in_model_support": true,
+    "n_divergent_states": 0,
+    "p_ai_success_root": {
+      "truth": 0.37149999999999994,
+      "nominal": 0.37149999999999994,
+      "bayes": 0.38119375000000005
+    },
+    "p_human_success_root": {
+      "truth": 0.7375,
+      "nominal": 0.7375,
+      "bayes": 0.72494625
+    },
+    "divergences": []
+  },
+  {
+    "scenario": "independent_modes",
+    "category": "stress",
+    "loss_bayes": 7.5148,
+    "loss_nominal": 7.5148,
+    "loss_oracle": 7.5148,
+    "difference": 0.0,
+    "relative_difference": 0.0,
+    "nominal_gap_to_oracle": 0.0,
+    "nominal_is_oracle_equivalent": true,
+    "truth_in_model_support": true,
+    "n_divergent_states": 0,
+    "p_ai_success_root": {
+      "truth": 0.5740000000000001,
+      "nominal": 0.5740000000000001,
+      "bayes": 0.5702875000000001
+    },
+    "p_human_success_root": {
+      "truth": 0.835,
+      "nominal": 0.835,
+      "bayes": 0.81344
+    },
+    "divergences": []
+  },
+  {
+    "scenario": "human_delay_3",
+    "category": "stress",
+    "loss_bayes": 7.6648000000000005,
+    "loss_nominal": 7.6648000000000005,
+    "loss_oracle": 7.6648000000000005,
+    "difference": 0.0,
+    "relative_difference": 0.0,
+    "nominal_gap_to_oracle": 0.0,
+    "nominal_is_oracle_equivalent": true,
+    "truth_in_model_support": true,
+    "n_divergent_states": 0,
+    "p_ai_success_root": {
+      "truth": 0.574,
+      "nominal": 0.574,
+      "bayes": 0.5702875000000001
+    },
+    "p_human_success_root": {
+      "truth": 0.8349999999999999,
+      "nominal": 0.8349999999999999,
+      "bayes": 0.8134400000000003
+    },
+    "divergences": []
+  },
+  {
+    "scenario": "human_available_late",
+    "category": "stress",
+    "loss_bayes": 9.282354386812587,
+    "loss_nominal": 9.281855899578797,
+    "loss_oracle": 9.281855899578797,
+    "difference": 0.0004984872337896462,
+    "relative_difference": 5.370555621449231e-05,
+    "nominal_gap_to_oracle": 0.0,
+    "nominal_is_oracle_equivalent": true,
+    "truth_in_model_support": true,
+    "n_divergent_states": 2,
+    "p_ai_success_root": {
+      "truth": 0.574,
+      "nominal": 0.574,
+      "bayes": 0.5702875000000001
+    },
+    "p_human_success_root": {
+      "truth": 0.8349999999999999,
+      "nominal": 0.8349999999999999,
+      "bayes": 0.8134400000000003
+    },
+    "divergences": [
+      {
+        "state": [
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "visit_prob": 0.0012405836090250005,
+        "bayes_action": "continue",
+        "nominal_action": "stop",
+        "true_q_gap": 0.26787781178886405,
+        "contribution": 0.0003323248225267488
+      },
+      {
+        "state": [
+          1,
+          0,
+          1,
+          0,
+          2,
+          0,
+          1
+        ],
+        "visit_prob": 0.0006202918045125002,
+        "bayes_action": "continue",
+        "nominal_action": "stop",
+        "true_q_gap": 0.2678778117888676,
+        "contribution": 0.00016616241126337657
+      }
+    ]
+  },
+  {
+    "scenario": "human_unavailable",
+    "category": "stress",
+    "loss_bayes": 9.373126064598969,
+    "loss_nominal": 9.368706622550416,
+    "loss_oracle": 9.368706622550416,
+    "difference": 0.004419442048552824,
+    "relative_difference": 0.0004717238170224325,
+    "nominal_gap_to_oracle": 0.0,
+    "nominal_is_oracle_equivalent": true,
+    "truth_in_model_support": true,
+    "n_divergent_states": 3,
+    "p_ai_success_root": {
+      "truth": 0.574,
+      "nominal": 0.574,
+      "bayes": 0.5702875000000001
+    },
+    "p_human_success_root": {
+      "truth": 0.8349999999999999,
+      "nominal": 0.8349999999999999,
+      "bayes": 0.8134400000000003
+    },
+    "divergences": [
+      {
+        "state": [
+          0,
+          1,
+          0,
+          0,
+          2,
+          0,
+          1
+        ],
+        "visit_prob": 0.0020907948442499998,
+        "bayes_action": "continue",
+        "nominal_action": "stop",
+        "true_q_gap": 1.8753417273554334,
+        "contribution": 0.003920954814761629
+      },
+      {
+        "state": [
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "visit_prob": 0.0012405836090250005,
+        "bayes_action": "continue",
+        "nominal_action": "stop",
+        "true_q_gap": 0.26787781178886405,
+        "contribution": 0.0003323248225267488
+      },
+      {
+        "state": [
+          1,
+          0,
+          1,
+          0,
+          2,
+          0,
+          1
+        ],
+        "visit_prob": 0.0006202918045125002,
+        "bayes_action": "continue",
+        "nominal_action": "stop",
+        "true_q_gap": 0.2678778117888676,
+        "contribution": 0.00016616241126337657
+      }
+    ]
+  },
+  {
+    "scenario": "high_consequence",
+    "category": "stress",
+    "loss_bayes": 7.8208,
+    "loss_nominal": 7.8208,
+    "loss_oracle": 7.8208,
+    "difference": 0.0,
+    "relative_difference": 0.0,
+    "nominal_gap_to_oracle": 0.0,
+    "nominal_is_oracle_equivalent": true,
+    "truth_in_model_support": true,
+    "n_divergent_states": 0,
+    "p_ai_success_root": {
+      "truth": 0.574,
+      "nominal": 0.574,
+      "bayes": 0.5702875000000001
+    },
+    "p_human_success_root": {
+      "truth": 0.8349999999999999,
+      "nominal": 0.8349999999999999,
+      "bayes": 0.8134400000000003
+    },
+    "divergences": []
+  },
+  {
+    "scenario": "low_consequence",
+    "category": "stress",
+    "loss_bayes": 4.0,
+    "loss_nominal": 4.0,
+    "loss_oracle": 4.0,
+    "difference": 0.0,
+    "relative_difference": 0.0,
+    "nominal_gap_to_oracle": 0.0,
+    "nominal_is_oracle_equivalent": true,
+    "truth_in_model_support": true,
+    "n_divergent_states": 0,
+    "p_ai_success_root": {
+      "truth": 0.574,
+      "nominal": 0.574,
+      "bayes": 0.5702875000000001
+    },
+    "p_human_success_root": {
+      "truth": 0.8349999999999999,
+      "nominal": 0.8349999999999999,
+      "bayes": 0.8134400000000003
+    },
+    "divergences": []
+  },
+  {
+    "scenario": "limited_budget",
+    "category": "stress",
+    "loss_bayes": 7.5148,
+    "loss_nominal": 7.5148,
+    "loss_oracle": 7.5148,
+    "difference": 0.0,
+    "relative_difference": 0.0,
+    "nominal_gap_to_oracle": 0.0,
+    "nominal_is_oracle_equivalent": true,
+    "truth_in_model_support": true,
+    "n_divergent_states": 0,
+    "p_ai_success_root": {
+      "truth": 0.574,
+      "nominal": 0.574,
+      "bayes": 0.5702875000000001
+    },
+    "p_human_success_root": {
+      "truth": 0.8349999999999999,
+      "nominal": 0.8349999999999999,
+      "bayes": 0.8134400000000003
+    },
+    "divergences": []
+  },
+  {
+    "scenario": "short_deadline",
+    "category": "stress",
+    "loss_bayes": 7.5148,
+    "loss_nominal": 7.5148,
+    "loss_oracle": 7.5148,
+    "difference": 0.0,
+    "relative_difference": 0.0,
+    "nominal_gap_to_oracle": 0.0,
+    "nominal_is_oracle_equivalent": true,
+    "truth_in_model_support": true,
+    "n_divergent_states": 0,
+    "p_ai_success_root": {
+      "truth": 0.574,
+      "nominal": 0.574,
+      "bayes": 0.5702875000000001
+    },
+    "p_human_success_root": {
+      "truth": 0.8349999999999999,
+      "nominal": 0.8349999999999999,
+      "bayes": 0.8134400000000003
+    },
+    "divergences": []
+  },
+  {
+    "scenario": "uninformative_diagnostic",
+    "category": "stress",
+    "loss_bayes": 7.5148,
+    "loss_nominal": 7.5148,
+    "loss_oracle": 7.5148,
+    "difference": 0.0,
+    "relative_difference": 0.0,
+    "nominal_gap_to_oracle": 0.0,
+    "nominal_is_oracle_equivalent": true,
+    "truth_in_model_support": true,
+    "n_divergent_states": 0,
+    "p_ai_success_root": {
+      "truth": 0.574,
+      "nominal": 0.574,
+      "bayes": 0.5702875000000001
+    },
+    "p_human_success_root": {
+      "truth": 0.8349999999999999,
+      "nominal": 0.8349999999999999,
+      "bayes": 0.8134400000000003
+    },
+    "divergences": []
+  },
+  {
+    "scenario": "weak_human",
+    "category": "stress",
+    "loss_bayes": 9.373126064598969,
+    "loss_nominal": 9.368706622550416,
+    "loss_oracle": 9.368706622550416,
+    "difference": 0.004419442048552824,
+    "relative_difference": 0.0004717238170224325,
+    "nominal_gap_to_oracle": 0.0,
+    "nominal_is_oracle_equivalent": true,
+    "truth_in_model_support": true,
+    "n_divergent_states": 3,
+    "p_ai_success_root": {
+      "truth": 0.574,
+      "nominal": 0.574,
+      "bayes": 0.5702875000000001
+    },
+    "p_human_success_root": {
+      "truth": 0.345,
+      "nominal": 0.345,
+      "bayes": 0.3472
+    },
+    "divergences": [
+      {
+        "state": [
+          0,
+          1,
+          0,
+          0,
+          2,
+          0,
+          1
+        ],
+        "visit_prob": 0.0020907948442499998,
+        "bayes_action": "continue",
+        "nominal_action": "stop",
+        "true_q_gap": 1.8753417273554334,
+        "contribution": 0.003920954814761629
+      },
+      {
+        "state": [
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "visit_prob": 0.0012405836090250005,
+        "bayes_action": "continue",
+        "nominal_action": "stop",
+        "true_q_gap": 0.26787781178886405,
+        "contribution": 0.0003323248225267488
+      },
+      {
+        "state": [
+          1,
+          0,
+          1,
+          0,
+          2,
+          0,
+          1
+        ],
+        "visit_prob": 0.0006202918045125002,
+        "bayes_action": "continue",
+        "nominal_action": "stop",
+        "true_q_gap": 0.2678778117888676,
+        "contribution": 0.00016616241126337657
+      }
+    ]
+  },
+  {
+    "scenario": "expensive_human",
+    "category": "stress",
+    "loss_bayes": 9.373126064598969,
+    "loss_nominal": 9.368706622550416,
+    "loss_oracle": 9.368706622550416,
+    "difference": 0.004419442048552824,
+    "relative_difference": 0.0004717238170224325,
+    "nominal_gap_to_oracle": 0.0,
+    "nominal_is_oracle_equivalent": true,
+    "truth_in_model_support": true,
+    "n_divergent_states": 3,
+    "p_ai_success_root": {
+      "truth": 0.574,
+      "nominal": 0.574,
+      "bayes": 0.5702875000000001
+    },
+    "p_human_success_root": {
+      "truth": 0.8349999999999999,
+      "nominal": 0.8349999999999999,
+      "bayes": 0.8134400000000003
+    },
+    "divergences": [
+      {
+        "state": [
+          0,
+          1,
+          0,
+          0,
+          2,
+          0,
+          1
+        ],
+        "visit_prob": 0.0020907948442499998,
+        "bayes_action": "continue",
+        "nominal_action": "stop",
+        "true_q_gap": 1.8753417273554334,
+        "contribution": 0.003920954814761629
+      },
+      {
+        "state": [
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "visit_prob": 0.0012405836090250005,
+        "bayes_action": "continue",
+        "nominal_action": "stop",
+        "true_q_gap": 0.26787781178886405,
+        "contribution": 0.0003323248225267488
+      },
+      {
+        "state": [
+          1,
+          0,
+          1,
+          0,
+          2,
+          0,
+          1
+        ],
+        "visit_prob": 0.0006202918045125002,
+        "bayes_action": "continue",
+        "nominal_action": "stop",
+        "true_q_gap": 0.2678778117888676,
+        "contribution": 0.00016616241126337657
+      }
+    ]
+  },
+  {
+    "scenario": "cheap_human",
+    "category": "stress",
+    "loss_bayes": 4.5148,
+    "loss_nominal": 4.5148,
+    "loss_oracle": 4.5148,
+    "difference": 0.0,
+    "relative_difference": 0.0,
+    "nominal_gap_to_oracle": 0.0,
+    "nominal_is_oracle_equivalent": true,
+    "truth_in_model_support": true,
+    "n_divergent_states": 0,
+    "p_ai_success_root": {
+      "truth": 0.574,
+      "nominal": 0.574,
+      "bayes": 0.5702875000000001
+    },
+    "p_human_success_root": {
+      "truth": 0.8349999999999999,
+      "nominal": 0.8349999999999999,
+      "bayes": 0.8134400000000003
+    },
+    "divergences": []
+  },
+  {
+    "scenario": "shift_unrecalibrated",
+    "category": "stress",
+    "loss_bayes": 13.194519999999997,
+    "loss_nominal": 13.194519999999997,
+    "loss_oracle": 12.0,
+    "difference": 0.0,
+    "relative_difference": 0.0,
+    "nominal_gap_to_oracle": 1.1945199999999971,
+    "nominal_is_oracle_equivalent": false,
+    "truth_in_model_support": false,
+    "n_divergent_states": 0,
+    "p_ai_success_root": {
+      "truth": 0.2785,
+      "nominal": 0.574,
+      "bayes": 0.5702875000000001
+    },
+    "p_human_success_root": {
+      "truth": 0.5375,
+      "nominal": 0.8349999999999999,
+      "bayes": 0.8134400000000003
+    },
+    "divergences": []
+  },
+  {
+    "scenario": "shift_perfect_recalibration",
+    "category": "stress",
+    "loss_bayes": 12.0,
+    "loss_nominal": 12.0,
+    "loss_oracle": 12.0,
+    "difference": 0.0,
+    "relative_difference": 0.0,
+    "nominal_gap_to_oracle": 0.0,
+    "nominal_is_oracle_equivalent": true,
+    "truth_in_model_support": true,
+    "n_divergent_states": 0,
+    "p_ai_success_root": {
+      "truth": 0.2785,
+      "nominal": 0.2785,
+      "bayes": 0.29335000000000006
+    },
+    "p_human_success_root": {
+      "truth": 0.5375,
+      "nominal": 0.5375,
+      "bayes": 0.5375
+    },
+    "divergences": []
+  },
+  {
+    "scenario": "irreversible_guard",
+    "category": "stress",
+    "loss_bayes": 7.5148,
+    "loss_nominal": 7.5148,
+    "loss_oracle": 7.5148,
+    "difference": 0.0,
+    "relative_difference": 0.0,
+    "nominal_gap_to_oracle": 0.0,
+    "nominal_is_oracle_equivalent": true,
+    "truth_in_model_support": true,
+    "n_divergent_states": 0,
+    "p_ai_success_root": {
+      "truth": 0.574,
+      "nominal": 0.574,
+      "bayes": 0.5702875000000001
+    },
+    "p_human_success_root": {
+      "truth": 0.8349999999999999,
+      "nominal": 0.8349999999999999,
+      "bayes": 0.8134400000000003
+    },
+    "divergences": []
+  },
+  {
+    "scenario": "conditional_risk_guard",
+    "category": "stress",
+    "loss_bayes": 7.5148,
+    "loss_nominal": 7.5148,
+    "loss_oracle": 7.5148,
+    "difference": 0.0,
+    "relative_difference": 0.0,
+    "nominal_gap_to_oracle": 0.0,
+    "nominal_is_oracle_equivalent": true,
+    "truth_in_model_support": true,
+    "n_divergent_states": 0,
+    "p_ai_success_root": {
+      "truth": 0.574,
+      "nominal": 0.574,
+      "bayes": 0.5702875000000001
+    },
+    "p_human_success_root": {
+      "truth": 0.8349999999999999,
+      "nominal": 0.8349999999999999,
+      "bayes": 0.8134400000000003
+    },
+    "divergences": []
+  },
+  {
+    "scenario": "joint_prior_predictive",
+    "category": "prior_check",
+    "loss_bayes": 7.902880000000001,
+    "loss_nominal": 7.902880000000001,
+    "loss_oracle": 7.902880000000001,
+    "difference": 0.0,
+    "relative_difference": 0.0,
+    "nominal_gap_to_oracle": 0.0,
+    "nominal_is_oracle_equivalent": true,
+    "truth_in_model_support": "mixture",
+    "n_divergent_states": 0,
+    "p_ai_success_root": {
+      "truth": 0.5702875000000001,
+      "nominal": 0.574,
+      "bayes": 0.5702875000000001
+    },
+    "p_human_success_root": {
+      "truth": 0.8134400000000003,
+      "nominal": 0.8349999999999999,
+      "bayes": 0.8134400000000003
+    },
+    "divergences": []
+  },
+  {
+    "scenario": "opposite_coupling",
+    "category": "prior_check",
+    "loss_bayes": 7.902880000000001,
+    "loss_nominal": 7.902880000000001,
+    "loss_oracle": 7.902880000000001,
+    "difference": 0.0,
+    "relative_difference": 0.0,
+    "nominal_gap_to_oracle": 0.0,
+    "nominal_is_oracle_equivalent": true,
+    "truth_in_model_support": "mixture",
+    "n_divergent_states": 0,
+    "p_ai_success_root": {
+      "truth": 0.5702875000000001,
+      "nominal": 0.574,
+      "bayes": 0.5702875000000001
+    },
+    "p_human_success_root": {
+      "truth": 0.8134400000000002,
+      "nominal": 0.8349999999999999,
+      "bayes": 0.8134400000000003
+    },
+    "divergences": []
+  }
+]

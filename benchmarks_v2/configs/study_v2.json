@@ -1,0 +1,65 @@
+{
+  "version": "2.0",
+  "description": "Deployment-stream benchmark: each environment is a stream of episodes; learning policies pool evidence across episodes.",
+  "episodes_per_stream": 100,
+  "recalibration_cadence": 5,
+  "model_grid_offsets": [
+    -0.2,
+    -0.1,
+    0.0,
+    0.1,
+    0.2
+  ],
+  "model_grid_prior": [
+    0.1,
+    0.2,
+    0.4,
+    0.2,
+    0.1
+  ],
+  "splits": {
+    "dev": {
+      "family": "iid",
+      "seed_start": 100000,
+      "n_environments": 60,
+      "role": "gate hyperparameter selection only"
+    },
+    "validation": {
+      "family": "iid",
+      "seed_start": 200000,
+      "n_environments": 60,
+      "role": "confirm frozen gate; no retuning"
+    },
+    "test": {
+      "family": "iid",
+      "seed_start": 300000,
+      "n_environments": 200,
+      "role": "primary held-out evaluation, run once"
+    },
+    "shift": {
+      "family": "shift",
+      "seed_start": 400000,
+      "n_environments": 100,
+      "role": "held-out distribution-shift evaluation, run once"
+    }
+  },
+  "dev_grid": {
+    "alpha": [
+      0.05,
+      0.1,
+      0.2,
+      0.35,
+      0.5,
+      1.0
+    ],
+    "tolerance": [
+      0.0,
+      0.01,
+      0.03
+    ]
+  },
+  "selection_rule": "Among dev settings for which at most 10% of environments show a relative degradation versus nominal greater than 1%, choose the smallest mean relative loss difference versus nominal; break ties toward smaller alpha, then smaller tolerance.",
+  "primary_metric": "per-environment mean exact expected episode loss over the stream",
+  "primary_comparison": "handoffx_v2 - nominal, paired by environment",
+  "practical_tie_tolerance_relative": 0.01
+}
