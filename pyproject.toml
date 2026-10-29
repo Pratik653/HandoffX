@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "handoffx"
-version = "0.2.0"
+version = "0.2.1"
 description = "Auditable continue / retry / ask-a-human / stop decision support for autonomous agents under uncertainty"
 readme = "README.md"
 requires-python = ">=3.11"
@@ -36,6 +36,7 @@ Homepage = "https://github.com/Pratik653/HandoffX"
 Repository = "https://github.com/Pratik653/HandoffX"
 Issues = "https://github.com/Pratik653/HandoffX/issues"
 Changelog = "https://github.com/Pratik653/HandoffX/blob/main/CHANGELOG.md"
+Paper = "https://github.com/Pratik653/HandoffX/tree/main/publication_final"
 
 [project.scripts]
 handoffx = "handoffx.__main__:main"

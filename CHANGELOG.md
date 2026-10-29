@@ -2,7 +2,21 @@
 
 All notable changes to this project are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project uses [Semantic Versioning](https://semver.org/).
 
-## [0.2.0] - unreleased
+## [0.2.1] - unreleased (first PyPI release)
+
+### Fixed
+- `EpisodeBelief.posterior_models()` no longer raises `ModelError` when a model's posterior weight underflows to exactly zero after decisive evidence; such weights are floored at the smallest normal double (perturbation below 1e-307 per model). Weights that do not underflow are bit-for-bit unchanged. Regression tests added (86 tests).
+
+### Added (documentation and research; not part of the installable package)
+- Final consolidated research paper (`publication_final/`: Markdown, DOCX, PDF, BibTeX) integrating Studies I-V.
+- v0.3 feasibility screening (`research_poc_v03/`) and the pre-registered risk-reduction confirmation with exploratory mechanism analysis (`research_poc_v03/confirmation/`). The experimental candidate algorithms are research scripts only.
+
+### Unchanged
+- Public API, CLI and all earlier research artifacts and results.
+
+## [0.2.0] - 2026-10-29 (research snapshot; not published to PyPI)
+
+The code used for the v0.2 pre-registered benchmark (`benchmarks_v2/reproducibility/PRE_REGISTRATION_SHA256.txt` hashes this version of `adaptive.py`).
 
 ### Added
 - `handoffx.Advisor`, `Costs`, `Recommendation`: simple integration API with explanations, warnings for prior-only parameters, per-call human availability and forbidden actions.

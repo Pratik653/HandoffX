@@ -1,10 +1,31 @@
 {
   "title": "HandoffX: auditable continue/retry/human/stop decision support for autonomous agents under uncertainty",
   "upload_type": "software",
-  "description": "Research software, synthetic benchmark, results and manuscript for intervention decisions (continue, retry, human assistance, stop) in autonomous agents. Version 0.2 adds cross-episode calibration and a conservative posterior gate, evaluated on pre-registered held-out synthetic environments. Evidence is synthetic; no real-world performance or safety certification is claimed.",
-  "creators": [{"name": "Pratik653"}],
+  "description": "Research software, synthetic benchmarks, results and the final consolidated research paper for intervention decisions (continue, retry, human assistance, stop) in autonomous agents. Version 0.2.1 is the first packaged release of the stable library (exact finite-horizon planning, cross-episode Bayesian calibration, conservative posterior gate, Advisor API). The repository also archives five studies: the original 38-scenario framework, a pre-registered held-out evaluation of adaptive calibration, a feasibility screening of three extensions and a pre-registered risk-reduction confirmation with an exploratory mechanism analysis. Evidence is synthetic; no real-world performance or safety certification is claimed, and the material has not been peer reviewed.",
+  "creators": [
+    {
+      "name": "Pratik653"
+    }
+  ],
   "license": "MIT",
-  "keywords": ["human-in-the-loop", "autonomous agents", "Bayesian decision-making", "escalation", "learning to defer", "reproducibility"],
-  "version": "0.2.0",
-  "related_identifiers": [{"identifier": "https://github.com/Pratik653/HandoffX", "relation": "isSupplementTo", "scheme": "url"}]
+  "keywords": [
+    "human-in-the-loop",
+    "autonomous agents",
+    "Bayesian decision-making",
+    "escalation",
+    "learning to defer",
+    "POMDP",
+    "risk-sensitive decision-making",
+    "model misspecification",
+    "reproducibility"
+  ],
+  "version": "0.2.1",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Pratik653/HandoffX",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ],
+  "notes": "Software: MIT. Documents, figures and data: CC BY 4.0. A DOI identifies a deposited version and does not imply peer review."
 }

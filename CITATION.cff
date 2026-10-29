@@ -4,7 +4,7 @@ title: "HandoffX: auditable continue/retry/human/stop decision support for auton
 type: software
 authors:
   - alias: Pratik653
-version: 0.2.0
+version: 0.2.1
 license: MIT
 repository-code: "https://github.com/Pratik653/HandoffX"
 keywords:
