@@ -100,7 +100,11 @@ class EpisodeBelief:
     def posterior_models(self) -> ModelSet:
         """The supplied ModelSet with its model prior replaced by the posterior."""
         masses = self.models.prior.sum(axis=1)
-        prior = self.weights[:, None] * self.models.prior / masses[:, None]
+        # A weight that underflows to exactly 0 after decisive evidence is floored at the
+        # smallest normal float, so every model keeps the positive mass ModelSet requires.
+        # The perturbation is below 1e-307 per model; weights that did not underflow are unchanged.
+        w = np.maximum(self.weights, np.finfo(np.float64).tiny)
+        prior = w[:, None] * self.models.prior / masses[:, None]
         prior = prior / prior.sum()
         return ModelSet(self.models.kernels, prior, self.models.names,
                         self.models.evidence_status, int(np.argmax(self.weights)))
