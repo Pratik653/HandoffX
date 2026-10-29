@@ -1,10 +1,11 @@
-"""Build the v0.2 manuscript: Markdown -> DOCX (native Word equations) [-> PDF via export_pdf.ps1].
+"""Build the v0.2 manuscript from PART_II_v0.2.md + the unchanged v0.1 manuscript.
 
-Tooling only, not part of the handoffx package. Requires python-docx, latex2mathml
-and lxml, plus Microsoft Office's MML2OMML.XSL for LaTeX -> Word equations.
+Outputs HandoffX_Updated_Research.md, .docx (native Word equations) and .pdf
+(HTML with MathML printed by headless Microsoft Edge). Tooling only, not part of
+the handoffx package. Requires python-docx, latex2mathml and lxml, Microsoft
+Office's MML2OMML.XSL (LaTeX -> Word equations) and Microsoft Edge.
 
     python publication_v2/build_manuscript.py
-    powershell -File publication_v2/export_pdf.ps1
 """
 from __future__ import annotations
 from pathlib import Path
@@ -148,13 +149,6 @@ def build(md: str, out: Path):
     flush(); doc.save(str(out))
 
 
-if __name__ == '__main__':
-    md = assemble()
-    (HERE / 'HandoffX_Updated_Research.md').write_text(md, encoding='utf-8', newline='\n')
-    build(md, HERE / 'HandoffX_Updated_Research.docx')
-    print('wrote', HERE / 'HandoffX_Updated_Research.md', 'and .docx')
-
-
 # ---------------------------------------------------------------- HTML / PDF
 def html_inline(text: str) -> str:
     import html as h
@@ -260,6 +254,9 @@ def build_pdf(html_path: Path, pdf_path: Path):
 
 
 if __name__ == '__main__':
+    md = assemble()
+    (HERE / 'HandoffX_Updated_Research.md').write_text(md, encoding='utf-8', newline='\n')
+    build(md, HERE / 'HandoffX_Updated_Research.docx')
     tmp = HERE / '_build'; tmp.mkdir(exist_ok=True)
     build_html(md, tmp / 'manuscript.html')
     build_pdf(tmp / 'manuscript.html', HERE / 'HandoffX_Updated_Research.pdf')
