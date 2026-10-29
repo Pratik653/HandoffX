@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "handoffx"
+version = "0.2.0"
+description = "Auditable continue / retry / ask-a-human / stop decision support for autonomous agents under uncertainty"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Pratik653" }]
+keywords = ["human-in-the-loop", "autonomous agents", "decision theory", "bayesian", "escalation", "learning to defer", "POMDP"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Typing :: Typed",
+]
+dependencies = ["numpy>=1.24,<3"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+research = ["scipy>=1.10", "matplotlib>=3.6", "pytest>=7", "sympy>=1.12"]
+
+[project.urls]
+Homepage = "https://github.com/Pratik653/HandoffX"
+Repository = "https://github.com/Pratik653/HandoffX"
+Issues = "https://github.com/Pratik653/HandoffX/issues"
+Changelog = "https://github.com/Pratik653/HandoffX/blob/main/CHANGELOG.md"
+
+[project.scripts]
+handoffx = "handoffx.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["04_Python_Library/src"]
+
+[tool.setuptools.package-data]
+handoffx = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["04_Python_Library/tests"]

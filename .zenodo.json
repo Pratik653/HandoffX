@@ -1,0 +1,10 @@
+{
+  "title": "HandoffX: auditable continue/retry/human/stop decision support for autonomous agents under uncertainty",
+  "upload_type": "software",
+  "description": "Research software, synthetic benchmark, results and manuscript for intervention decisions (continue, retry, human assistance, stop) in autonomous agents. Version 0.2 adds cross-episode calibration and a conservative posterior gate, evaluated on pre-registered held-out synthetic environments. Evidence is synthetic; no real-world performance or safety certification is claimed.",
+  "creators": [{"name": "Pratik653"}],
+  "license": "MIT",
+  "keywords": ["human-in-the-loop", "autonomous agents", "Bayesian decision-making", "escalation", "learning to defer", "reproducibility"],
+  "version": "0.2.0",
+  "related_identifiers": [{"identifier": "https://github.com/Pratik653/HandoffX", "relation": "isSupplementTo", "scheme": "url"}]
+}

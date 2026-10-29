@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use HandoffX, please cite it as below."
+title: "HandoffX: auditable continue/retry/human/stop decision support for autonomous agents under uncertainty"
+type: software
+authors:
+  - alias: Pratik653
+version: 0.2.0
+license: MIT
+repository-code: "https://github.com/Pratik653/HandoffX"
+keywords:
+  - human-in-the-loop
+  - autonomous agents
+  - Bayesian decision-making
+  - escalation
+  - learning to defer
+abstract: >-
+  Research software and synthetic benchmark for deciding whether an autonomous
+  agent should continue, retry, request human assistance or stop. Exact
+  finite-horizon planning with latent persistent failure modes, cross-episode
+  Bayesian calibration of supplied success estimates and a conservative
+  posterior gate. Evidence is from synthetic simulations only.

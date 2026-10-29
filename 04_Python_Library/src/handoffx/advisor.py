@@ -69,12 +69,18 @@ def _check_p(name: str, p: float) -> float:
     return float(p)
 
 
-def _kernel(succ, severe, persistent_success, diag):
-    """Two latent modes: 0 = transient, 1 = persistent failure state."""
+def _kernel(succ, severe, persistent_success, persistent_rate, diag):
+    """Two latent modes: 0 = no persistent fault, 1 = persistent fault.
+
+    Supplied AI success probabilities are marginal over the mode prior, so the
+    no-fault success is solved from p = (1 - r) p0 + r min(p0, ps).
+    """
     k = np.zeros((2, 3, 4))
     for z in range(2):
         for a in range(3):
-            p = succ[a] if (z == 0 or a == 2) else min(succ[a], persistent_success)
+            ps = min(persistent_success, succ[a])
+            p0 = succ[a] if (a == 2 or persistent_rate == 0) else (succ[a] - persistent_rate * ps) / (1 - persistent_rate)
+            p = p0 if (z == 0 or a == 2) else ps
             q = severe[a]; p = float(np.clip(p, .005, 1 - q - .005)); f = 1 - p - q
             k[z, a, 0] = p; k[z, a, 1] = q
             if a == 2:
@@ -135,6 +141,8 @@ class Advisor:
         if not 0 <= uncertainty <= .4:
             raise ModelError('uncertainty must be in [0, 0.4] (absolute probability offset)')
         z = _check_p('persistent_failure_rate', persistent_failure_rate) if persistent_failure_rate else 0.
+        if not 0 <= persistent_success < 1:
+            raise ModelError('persistent_success must be in [0, 1)')
         if len(severe) != 3 or any(not 0 <= q < .5 for q in severe):
             raise ModelError('severe must be three probabilities in [0, 0.5)')
         spec = TaskSpec(horizon=horizon, milestones=milestones, budget=budget, resource_cost=(1, 1, 1),
@@ -146,7 +154,7 @@ class Advisor:
         for i, da in enumerate(_GRID):
             for j, dh in enumerate(_GRID):
                 s = [succ[0] + da * uncertainty, succ[1] + da * uncertainty, succ[2] + dh * uncertainty]
-                ks.append(_kernel(s, severe, persistent_success, (.15, .85)))
+                ks.append(_kernel(s, severe, persistent_success, z, (.15, .85)))
                 prior.append(_GRID_PRIOR[i] * _GRID_PRIOR[j] * np.array([1 - z, z]))
                 names.append(f'ai{da * uncertainty:+.3f};human{dh * uncertainty:+.3f}')
         prior = np.array(prior); prior /= prior.sum()
@@ -197,6 +205,10 @@ class Advisor:
         return self._selection
 
     def calibrated_estimates(self) -> dict[str, float]:
-        """Posterior predictive first-attempt success probabilities."""
+        """Posterior predictive first-attempt success probabilities.
+
+        Before any episode these can differ slightly from the supplied values
+        because grid models near 0 or 1 are clipped to valid probabilities.
+        """
         p = self.controller.belief.posterior_models().predict(State())
         return {'continue_success': float(p[0, 0]), 'human_success': float(p[2, 0])}
