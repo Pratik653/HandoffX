@@ -18,7 +18,7 @@
 
 ## Library changes since the research snapshot
 
-- **Fixed:** `EpisodeBelief.posterior_models()` underflow. Posterior weights that underflow to 0 are floored at the smallest normal double.
+- **Fixed:** `EpisodeBelief.posterior_models()` underflow. Finite posterior weights that underflow to 0 are floored at the smallest normal double; models with exactly zero likelihood are omitted, because they are ruled out rather than improbable.
   - Regression tests prove two things: the old code fails the new test, and non-underflowing weights are bit-for-bit unchanged.
   - The defect was never triggered in any reported experiment.
 - **Unchanged:** the public API (`Advisor`, `Planner`, `ModelSet`, `TaskSpec`, `ActionGuard`, `EpisodeBelief`, `AdaptiveController`, …) and the CLI.
@@ -28,7 +28,7 @@
 
 | Check | Result |
 |---|---|
-| Test suite (`pytest`) | 86 passed |
+| Test suite (`pytest`) | 87 passed |
 | `python -m build` | sdist and wheel built |
 | `twine check --strict` | PASSED (both) |
 | Fresh virtual environment, Python 3.11, install from the built wheel | OK (numpy 2.4.6 resolved) |

@@ -110,7 +110,7 @@ Yao, S., Shinn, N., Razavi, P., & Narasimhan, K. (2025). τ-bench: A benchmark f
   - oracle off-oracle mass is exactly 0;
   - the protocol was committed and pushed before execution.
 - **Study V**: the catastrophe-weighted runner with weight 1 reproduces bayes_recal bit for bit.
-- **Software**: 86 automated tests in version 0.2.1, including regression tests for the posterior-underflow correction.
+- **Software**: 87 automated tests in version 0.2.1, including regression tests for the posterior-underflow correction.
 
 # Appendix D. Worked examples
 
@@ -128,7 +128,7 @@ All materials are in the public repository https://github.com/Pratik653/HandoffX
 python -m venv .venv
 . .venv/bin/activate                     # Windows: .venv\Scripts\activate
 pip install -e ".[research]"
-pytest                                   # 86 tests (version 0.2.1)
+pytest                                   # 87 tests (version 0.2.1)
 python 05_Experiments/scripts/run_experiments.py              # Study I
 python benchmarks_v2/scripts/run_v2.py test                   # Study II, held-out test split
 python benchmarks_v2/scripts/analyze_v2.py validation test shift original

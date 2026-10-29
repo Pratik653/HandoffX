@@ -100,14 +100,18 @@ HandoffX does not show universal superiority, real-world safety or a better esti
 
 # Declarations
 
-**Authorship.** Prepared by the repository owner, Pratik653. The author's full name, affiliation and ORCID will be added before formal submission.
+**Author.** Pratik653. *[To be confirmed by the author before submission: full name, affiliation, ORCID and contact address.]*
 
-**Use of AI tools.** AI-based writing and coding assistance was used in preparing software, analyses and text. The author reviewed the material and is responsible for its content. Disclosure requirements of the target venue should be checked before submission.
+**Author contributions.** *[To be confirmed by the author.]*
 
-**Data and code availability.** All code, configurations, results and figures are in the public repository https://github.com/Pratik653/HandoffX. Raw episode arrays are reproducible from the stored configurations and seeds.
+**Use of AI tools.** AI-based writing and coding assistance was used in preparing software, analyses and text. The author reviewed the material and is responsible for its content. *[Author to confirm this wording against the target venue's disclosure policy.]*
+
+**Data and code availability.** All code, configurations, results and figures are in the public repository https://github.com/Pratik653/HandoffX. Raw episode arrays can be regenerated from the stored configurations and seeds.
 
 **Licences.** Software: MIT. Text, figures and data: CC BY 4.0.
 
-**Funding and competing interests.** To be completed by the author.
+**Funding.** *[To be provided by the author.]*
+
+**Competing interests.** *[To be provided by the author.]*
 
 **Peer review.** This paper has not been peer reviewed. A repository DOI, if assigned, identifies a deposited version and does not imply peer review.

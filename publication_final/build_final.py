@@ -121,7 +121,11 @@ def build_docx(md: str, out: Path, bm):
     st = doc.styles['Normal']; st.font.name = 'Times New Roman'; st.font.size = Pt(11)
     st.paragraph_format.space_after = Pt(6); st.paragraph_format.line_spacing = 1.15
     for lvl, size in ((1, 15), (2, 12.5), (3, 11.5)):
-        hs = doc.styles[f'Heading {lvl}']; hs.font.name = 'Times New Roman'; hs.font.size = Pt(size); hs.font.color.rgb = RGBColor(0, 0, 0)
+        hs = doc.styles[f'Heading {lvl}']; hs.font.size = Pt(size); hs.font.color.rgb = RGBColor(0, 0, 0)
+        rf = hs.element.get_or_add_rPr().get_or_add_rFonts()
+        for a in ('w:asciiTheme', 'w:hAnsiTheme', 'w:eastAsiaTheme', 'w:cstheme'):
+            rf.attrib.pop(qn(a), None)
+        rf.set(qn('w:ascii'), 'Times New Roman'); rf.set(qn('w:hAnsi'), 'Times New Roman')
 
     def field(par, instr, placeholder=''):
         r = par.add_run(); b = OxmlElement('w:fldChar'); b.set(qn('w:fldCharType'), 'begin'); r._r.append(b)
@@ -141,7 +145,7 @@ def build_docx(md: str, out: Path, bm):
         if k in meta:
             p = doc.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.CENTER; rr = p.add_run(meta[k]); rr.italic = it; rr.font.size = Pt(size)
     doc.add_paragraph().add_run().add_break(WD_BREAK.PAGE)
-    doc.add_heading('Contents', level=1)
+    c = doc.add_paragraph(); r = c.add_run('Contents'); r.bold = True; r.font.size = Pt(15)
     field(doc.add_paragraph(), 'TOC \\o "1-2" \\h \\z \\u', 'Update this field (right-click, Update Field) to show the table of contents.')
     doc.add_paragraph().add_run().add_break(WD_BREAK.PAGE)
 
@@ -322,6 +326,30 @@ def build_pdf(html_path: Path, pdf_path: Path):
                     f'--print-to-pdf={pdf_path}', html_path.resolve().as_uri()], check=True, timeout=300)
 
 
+def word_refresh(path: Path) -> bool:
+    """Optional: let Microsoft Word populate the TOC and page fields, then clear the update-on-open flag."""
+    import tempfile, zipfile, shutil
+    ps = (f"$d='{path}'; $w=New-Object -ComObject Word.Application; $w.Visible=$false; $w.DisplayAlerts=0; "
+          "try {{ $doc=$w.Documents.Open($d); $doc.TablesOfContents | ForEach-Object {{ $_.Update() }}; $doc.Fields.Update() | Out-Null; "
+          "$doc.Save(); $doc.Close() }} finally {{ $w.Quit() }}").format()
+    try:
+        subprocess.run(['powershell', '-NoProfile', '-Command', ps], check=True, timeout=180)
+    except Exception as e:
+        print('Word refresh unavailable:', e); return False
+    tmp = Path(tempfile.mkdtemp()) / path.name
+    with zipfile.ZipFile(path) as zin, zipfile.ZipFile(tmp, 'w', zipfile.ZIP_DEFLATED) as zout:
+        for it in zin.infolist():
+            data = zin.read(it.filename)
+            if it.filename == 'word/settings.xml':
+                data = re.sub(rb'<w:updateFields[^>]*/>', b'', data)
+            if it.filename == 'docProps/core.xml':   # Word stamps the local Office user; keep only the published author
+                data = re.sub(rb'<cp:lastModifiedBy>.*?</cp:lastModifiedBy>', b'<cp:lastModifiedBy>Pratik653</cp:lastModifiedBy>', data)
+            if it.filename == 'docProps/app.xml':
+                data = re.sub(rb'<(Company|Manager)>.*?</>', b'', data)
+            zout.writestr(it, data)
+    shutil.copyfile(tmp, path); return True
+
+
 if __name__ == '__main__':
     md = assemble()
     (HERE / f'{NAME}.md').write_text(md, encoding='utf-8', newline='\n')
@@ -329,6 +357,8 @@ if __name__ == '__main__':
     if '--md-only' not in sys.argv:
         bm = _load_v2_helpers()
         build_docx(md, HERE / f'{NAME}.docx', bm)
+        if '--word-refresh' in sys.argv:
+            print('Word refresh:', word_refresh(HERE / f'{NAME}.docx'))
         tmp = HERE / '_build'; tmp.mkdir(exist_ok=True)
         build_html(md, tmp / 'paper.html', bm)
         build_pdf(tmp / 'paper.html', HERE / f'{NAME}.pdf')

@@ -374,7 +374,7 @@ Under the deployment structure of Section 4.4, the posterior over the model inde
 
 $$w_E(m)\propto w_0(m)\prod_{e=1}^{E}\sum_{z}\pi(z\mid m)\prod_{(a,o)\in\tau_e}k(o\mid m,z,a). \tag{9}$$
 
-Each episode contributes its marginal likelihood, in which the latent mode is summed out per episode, because modes are redrawn independently across episodes. Proposition A1 (Section 7.10) shows that the data-dependent choice of actions does not enter (9). Planning then uses the posterior-weighted model set as the prior of the within-episode recursion (4)–(6). Studies II–IV recompute this "posterior model set" every five episodes. The implementation (`handoffx.adaptive.EpisodeBelief`) works in log space. A history with zero likelihood under every model raises an error rather than being renormalized. From version 0.2.1, posterior weights that underflow to zero are floored at the smallest normal floating-point number when the posterior model set is formed (Section 8.4).
+Each episode contributes its marginal likelihood, in which the latent mode is summed out per episode, because modes are redrawn independently across episodes. Proposition A1 (Section 7.10) shows that the data-dependent choice of actions does not enter (9). Planning then uses the posterior-weighted model set as the prior of the within-episode recursion (4)–(6). Studies II–IV recompute this "posterior model set" every five episodes. The implementation (`handoffx.adaptive.EpisodeBelief`) works in log space. A history with zero likelihood under every model raises an error rather than being renormalized. From version 0.2.1, when the posterior model set is formed, models with exactly zero likelihood are omitted and finite posterior weights that underflow to zero are floored at the smallest normal floating-point number (Section 8.4).
 
 # 6. Decision policies and algorithms
 
@@ -741,10 +741,13 @@ Costs are finite and nonnegative; executable action durations and resource use a
 
 `recommend_or_stop` provides explicit unscored abstention for a missing planner or model error. It does not swallow all programming exceptions or pretend a quantitative bound exists. Consumers must preserve that distinction in user interfaces. Caller-supplied objects and serialized inputs still require application-level schema, size, authentication and audit controls; this prototype is not hardened for hostile inputs.
 
-**Numerical correction in version 0.2.1.** `EpisodeBelief.posterior_models()` previously raised `ModelError` when decisive evidence drove a model's posterior weight below the smallest representable double. The posterior model set then contained a model with zero mass, which `ModelSet` rejects. Version 0.2.1 floors such weights at the smallest normal double ($\approx2.2\times10^{-308}$) before forming the posterior model set:
-- the perturbation is below $10^{-307}$ per model;
-- weights that did not underflow are bit-for-bit unchanged, which a regression test checks;
-- predictions equal those of the model set without the underflowed model to within $10^{-15}$.
+**Numerical correction in version 0.2.1.** `EpisodeBelief.posterior_models()` previously raised `ModelError` when decisive evidence drove a model's posterior weight below the smallest representable double. The posterior model set then contained a model with zero mass, which `ModelSet` rejects. Version 0.2.1 distinguishes two cases when forming the posterior model set:
+- A model whose likelihood is exactly zero (log weight $-\infty$) has been ruled out by the evidence, so it is omitted. Flooring it would revive it and could misattribute a later impossible history to it instead of raising the misspecification error.
+- A model whose posterior weight is positive but underflows in floating point is kept, and its weight is floored at the smallest normal double ($\approx2.2\times10^{-308}$):
+  - the perturbation is below $10^{-307}$ per model;
+  - predictions equal those of the model set without that model to within $10^{-15}$.
+
+When neither case occurs, the posterior model set is bit-for-bit identical to version 0.2.0. Regression tests and a 300-stream comparison check this.
 
 The defect was not triggered in any reported run.
 
@@ -802,7 +805,7 @@ The package is distributed as `handoffx` under the MIT licence:
 - a `py.typed` marker;
 - a console entry point.
 
-Research datasets, manuscripts and benchmark results are excluded from the wheel. Version 0.2.1 has 86 automated tests. Continuous integration runs them on Linux, Windows and macOS with Python 3.11–3.13, and also checks the command-line interface, the agent demonstration, building and a clean wheel installation. Releases are built and published by a GitHub Actions workflow using PyPI Trusted Publishing (OpenID Connect) from a protected environment, so no long-lived token is stored. Distribution status at the time of writing is recorded in the repository's release report. This paper does not assume publication.
+Research datasets, manuscripts and benchmark results are excluded from the wheel. Version 0.2.1 has 87 automated tests. Continuous integration runs them on Linux, Windows and macOS with Python 3.11–3.13, and also checks the command-line interface, the agent demonstration, building and a clean wheel installation. Releases are built and published by a GitHub Actions workflow using PyPI Trusted Publishing (OpenID Connect) from a protected environment, so no long-lived token is stored. Distribution status at the time of writing is recorded in the repository's release report. This paper does not assume publication.
 
 ## 8.9. Controlled agent demonstration
 
@@ -1675,15 +1678,19 @@ HandoffX does not show universal superiority, real-world safety or a better esti
 
 # Declarations
 
-**Authorship.** Prepared by the repository owner, Pratik653. The author's full name, affiliation and ORCID will be added before formal submission.
+**Author.** Pratik653. *[To be confirmed by the author before submission: full name, affiliation, ORCID and contact address.]*
 
-**Use of AI tools.** AI-based writing and coding assistance was used in preparing software, analyses and text. The author reviewed the material and is responsible for its content. Disclosure requirements of the target venue should be checked before submission.
+**Author contributions.** *[To be confirmed by the author.]*
 
-**Data and code availability.** All code, configurations, results and figures are in the public repository https://github.com/Pratik653/HandoffX. Raw episode arrays are reproducible from the stored configurations and seeds.
+**Use of AI tools.** AI-based writing and coding assistance was used in preparing software, analyses and text. The author reviewed the material and is responsible for its content. *[Author to confirm this wording against the target venue's disclosure policy.]*
+
+**Data and code availability.** All code, configurations, results and figures are in the public repository https://github.com/Pratik653/HandoffX. Raw episode arrays can be regenerated from the stored configurations and seeds.
 
 **Licences.** Software: MIT. Text, figures and data: CC BY 4.0.
 
-**Funding and competing interests.** To be completed by the author.
+**Funding.** *[To be provided by the author.]*
+
+**Competing interests.** *[To be provided by the author.]*
 
 **Peer review.** This paper has not been peer reviewed. A repository DOI, if assigned, identifies a deposited version and does not imply peer review.
 
@@ -1896,7 +1903,7 @@ Threats: hand-designed costs and kernels; often terminal human dominance; duplic
   - oracle off-oracle mass is exactly 0;
   - the protocol was committed and pushed before execution.
 - **Study V**: the catastrophe-weighted runner with weight 1 reproduces bayes_recal bit for bit.
-- **Software**: 86 automated tests in version 0.2.1, including regression tests for the posterior-underflow correction.
+- **Software**: 87 automated tests in version 0.2.1, including regression tests for the posterior-underflow correction.
 
 # Appendix D. Worked examples
 
@@ -2058,7 +2065,7 @@ All materials are in the public repository https://github.com/Pratik653/HandoffX
 python -m venv .venv
 . .venv/bin/activate                     # Windows: .venv\Scripts\activate
 pip install -e ".[research]"
-pytest                                   # 86 tests (version 0.2.1)
+pytest                                   # 87 tests (version 0.2.1)
 python 05_Experiments/scripts/run_experiments.py              # Study I
 python benchmarks_v2/scripts/run_v2.py test                   # Study II, held-out test split
 python benchmarks_v2/scripts/analyze_v2.py validation test shift original

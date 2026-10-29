@@ -139,7 +139,7 @@ The package has three layers:
 ```bash
 python -m venv .venv && . .venv/bin/activate       # Windows: .venv\Scripts\activate
 pip install -e ".[research]"
-pytest                                              # 86 tests
+pytest                                              # 87 tests
 python benchmarks_v2/scripts/run_v2.py test         # Study II held-out test split
 python research_poc_v03/confirmation/scripts/run_confirmation.py confirm   # Study IV
 ```

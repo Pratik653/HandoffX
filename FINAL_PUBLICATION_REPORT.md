@@ -10,7 +10,7 @@ All deliverables are in `publication_final/`.
 |---|---|
 | `HandoffX_Final_Research_Paper.md` | Generated from `src/` by `build_final.py`; 19 numbered sections, declarations, 35 references and appendices A–F |
 | `HandoffX_Final_Research_Paper.pdf` | 83 pages, A4. Title page, linked contents, equations (1)–(14), 33 numbered tables, 12 numbered figures, page numbers |
-| `HandoffX_Final_Research_Paper.docx` | Native Word equations (306 math objects), 33 tables, 12 images, 177 headings, TOC field |
+| `HandoffX_Final_Research_Paper.docx` | Native Word equations (307 math objects), 33 tables, 12 images, populated table of contents; verified in Microsoft Word (82 pages) |
 | `HandoffX_Final_References.bib` | 35 BibTeX records |
 
 ## How the paper was consolidated
@@ -56,11 +56,11 @@ It also checks that every in-text citation has a reference entry and every refer
 ## Formatting verification
 
 - **PDF:** rendered page images were inspected for the title page, contents, equation-heavy pages, table pages, figure pages, references and the final appendix. A table-overflow problem that shrank the whole document was found and fixed.
-- **DOCX:** validated structurally only. Microsoft Word automation hung on this machine, so the document was **not opened in Word**. Its pagination and the populated table of contents (a field that Word refreshes on opening) are unverified.
+- **DOCX:** opened, field-refreshed and exported by Microsoft Word on 29 October 2026 (82 pages, no field errors). Rendered pages were inspected: contents, equations, tables and figures. Word's user-name stamp in the document properties was removed.
 
 ## Items for the author
 
-1. **Authorship metadata.** The paper, `CITATION.cff`, `.zenodo.json` and `pyproject.toml` use the GitHub handle `Pratik653`. Add your full name, affiliation and ORCID before formal submission; none was invented.
+1. **Authorship metadata.** See `publication_final/AUTHOR_DECLARATIONS_FOR_CONFIRMATION.md`. The paper, `CITATION.cff`, `.zenodo.json` and `pyproject.toml` use the GitHub handle `Pratik653`. Add your full name, affiliation and ORCID before formal submission; none was invented.
 2. **AI-assistance disclosure.**
    - The Declarations section contains a neutral statement that AI-based writing and coding assistance was used and that the author is responsible for the content. It names no assistant and gives no credit.
    - Most journals require such a disclosure. Keep, edit or remove it according to the target venue's policy.

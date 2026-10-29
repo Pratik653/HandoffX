@@ -42,10 +42,13 @@ Cross-episode layer:
 
 <<v01|## ARC-06.|## ARC-07.>>
 
-**Numerical correction in version 0.2.1.** `EpisodeBelief.posterior_models()` previously raised `ModelError` when decisive evidence drove a model's posterior weight below the smallest representable double. The posterior model set then contained a model with zero mass, which `ModelSet` rejects. Version 0.2.1 floors such weights at the smallest normal double ($\approx2.2\times10^{-308}$) before forming the posterior model set:
-- the perturbation is below $10^{-307}$ per model;
-- weights that did not underflow are bit-for-bit unchanged, which a regression test checks;
-- predictions equal those of the model set without the underflowed model to within $10^{-15}$.
+**Numerical correction in version 0.2.1.** `EpisodeBelief.posterior_models()` previously raised `ModelError` when decisive evidence drove a model's posterior weight below the smallest representable double. The posterior model set then contained a model with zero mass, which `ModelSet` rejects. Version 0.2.1 distinguishes two cases when forming the posterior model set:
+- A model whose likelihood is exactly zero (log weight $-\infty$) has been ruled out by the evidence, so it is omitted. Flooring it would revive it and could misattribute a later impossible history to it instead of raising the misspecification error.
+- A model whose posterior weight is positive but underflows in floating point is kept, and its weight is floored at the smallest normal double ($\approx2.2\times10^{-308}$):
+  - the perturbation is below $10^{-307}$ per model;
+  - predictions equal those of the model set without that model to within $10^{-15}$.
+
+When neither case occurs, the posterior model set is bit-for-bit identical to version 0.2.0. Regression tests and a 300-stream comparison check this.
 
 The defect was not triggered in any reported run.
 
@@ -99,7 +102,7 @@ The package is distributed as `handoffx` under the MIT licence:
 - a `py.typed` marker;
 - a console entry point.
 
-Research datasets, manuscripts and benchmark results are excluded from the wheel. Version 0.2.1 has 86 automated tests. Continuous integration runs them on Linux, Windows and macOS with Python 3.11–3.13, and also checks the command-line interface, the agent demonstration, building and a clean wheel installation. Releases are built and published by a GitHub Actions workflow using PyPI Trusted Publishing (OpenID Connect) from a protected environment, so no long-lived token is stored. Distribution status at the time of writing is recorded in the repository's release report. This paper does not assume publication.
+Research datasets, manuscripts and benchmark results are excluded from the wheel. Version 0.2.1 has 87 automated tests. Continuous integration runs them on Linux, Windows and macOS with Python 3.11–3.13, and also checks the command-line interface, the agent demonstration, building and a clean wheel installation. Releases are built and published by a GitHub Actions workflow using PyPI Trusted Publishing (OpenID Connect) from a protected environment, so no long-lived token is stored. Distribution status at the time of writing is recorded in the repository's release report. This paper does not assume publication.
 
 ## 8.9. Controlled agent demonstration
 
