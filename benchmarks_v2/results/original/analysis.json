@@ -1,0 +1,616 @@
+{
+  "split": "original",
+  "n_environments": 38,
+  "policies": {
+    "nominal": {
+      "mean_loss": 7.69769871501304,
+      "mean_difference_vs_nominal": 0.0,
+      "difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_relative_difference": 0.0,
+      "relative_ci95": [
+        0.0,
+        0.0
+      ],
+      "effect_size_dz": 0.0,
+      "wins_ties_losses_exact": [
+        0,
+        38,
+        0
+      ],
+      "wins_ties_losses_1pct": [
+        0,
+        38,
+        0
+      ],
+      "worst_relative_degradation": 0.0,
+      "best_relative_improvement": 0.0,
+      "mean_regret_vs_oracle": 0.2554908646451299,
+      "share_of_nominal_gap_closed": 0.0,
+      "first20_loss": 7.69769871501304,
+      "last20_loss": 7.69769871501304,
+      "severe_probability": 0.013163615128027191,
+      "success_probability": 0.7479154920710702,
+      "human_rate": 0.5689609392634122,
+      "realized_loss_cvar95": 39.705000000000005,
+      "calibration_error_ai_start_end": [
+        0.05501694078947366,
+        0.05501694078947366
+      ],
+      "calibration_error_human_start_end": [
+        0.06082577631578943,
+        0.06082577631578943
+      ],
+      "mean_switched_episodes": 0.0,
+      "mean_seconds_per_stream": 0.05775469210526371
+    },
+    "bayes_static": {
+      "mean_loss": 7.647762071501103,
+      "mean_difference_vs_nominal": -0.049936643511936996,
+      "difference_ci95": [
+        -0.1492136483774364,
+        0.0035509950862554736
+      ],
+      "mean_relative_difference": -0.005620267929554795,
+      "relative_ci95": [
+        -0.01657787407328556,
+        0.0003974773552733915
+      ],
+      "effect_size_dz": -0.17106891009285996,
+      "wins_ties_losses_exact": [
+        6,
+        23,
+        9
+      ],
+      "wins_ties_losses_1pct": [
+        2,
+        36,
+        0
+      ],
+      "worst_relative_degradation": 0.00701485869140242,
+      "best_relative_improvement": -0.19268022788851533,
+      "mean_regret_vs_oracle": 0.20555422113319285,
+      "share_of_nominal_gap_closed": 0.19545373405541402,
+      "first20_loss": 7.647762071501105,
+      "last20_loss": 7.647762071501105,
+      "severe_probability": 0.012158745212282055,
+      "success_probability": 0.7518755694585031,
+      "human_rate": 0.591377945998221,
+      "realized_loss_cvar95": 39.360526315789485,
+      "calibration_error_ai_start_end": [
+        0.05501694078947366,
+        0.05501694078947366
+      ],
+      "calibration_error_human_start_end": [
+        0.06082577631578943,
+        0.06082577631578943
+      ],
+      "mean_switched_episodes": 0.0,
+      "mean_seconds_per_stream": 0.047804521052639576
+    },
+    "robust_static": {
+      "mean_loss": 7.96774882928901,
+      "mean_difference_vs_nominal": 0.2700501142759704,
+      "difference_ci95": [
+        0.08486450232253846,
+        0.5020640014303852
+      ],
+      "mean_relative_difference": 0.03449013922568798,
+      "relative_ci95": [
+        0.012369378568839663,
+        0.06179647785430422
+      ],
+      "effect_size_dz": 0.40331647884691363,
+      "wins_ties_losses_exact": [
+        1,
+        21,
+        16
+      ],
+      "wins_ties_losses_1pct": [
+        0,
+        28,
+        10
+      ],
+      "worst_relative_degradation": 0.28916767782746255,
+      "best_relative_improvement": -0.0026158878681889056,
+      "mean_regret_vs_oracle": 0.5255409789211003,
+      "share_of_nominal_gap_closed": -1.056985402006694,
+      "first20_loss": 7.96774882928901,
+      "last20_loss": 7.96774882928901,
+      "severe_probability": 0.012595848866407654,
+      "success_probability": 0.686531975250849,
+      "human_rate": 0.5069456147340263,
+      "realized_loss_cvar95": 39.82184210526317,
+      "calibration_error_ai_start_end": [
+        0.05501694078947366,
+        0.05501694078947366
+      ],
+      "calibration_error_human_start_end": [
+        0.06082577631578943,
+        0.06082577631578943
+      ],
+      "mean_switched_episodes": 0.0,
+      "mean_seconds_per_stream": 0.0533579473684196
+    },
+    "plugin_recal": {
+      "mean_loss": 7.780873635008277,
+      "mean_difference_vs_nominal": 0.08317491999523649,
+      "difference_ci95": [
+        -0.09535871973178665,
+        0.30381215498316233
+      ],
+      "mean_relative_difference": 0.007035238299032849,
+      "relative_ci95": [
+        -0.011220874672603295,
+        0.027997675276839593
+      ],
+      "effect_size_dz": 0.1260303074091527,
+      "wins_ties_losses_exact": [
+        7,
+        21,
+        10
+      ],
+      "wins_ties_losses_1pct": [
+        3,
+        30,
+        5
+      ],
+      "worst_relative_degradation": 0.2439489447843082,
+      "best_relative_improvement": -0.18304621649408948,
+      "mean_regret_vs_oracle": 0.33866578464036634,
+      "share_of_nominal_gap_closed": -0.32554948730070754,
+      "first20_loss": 7.792138492074964,
+      "last20_loss": 7.768396657462984,
+      "severe_probability": 0.015581065020290961,
+      "success_probability": 0.74631979050505,
+      "human_rate": 0.5403430951118786,
+      "realized_loss_cvar95": 43.67789473684212,
+      "calibration_error_ai_start_end": [
+        0.05501694078947366,
+        0.028814244416263485
+      ],
+      "calibration_error_human_start_end": [
+        0.06082577631578943,
+        0.04302034516552641
+      ],
+      "mean_switched_episodes": 0.0,
+      "mean_seconds_per_stream": 0.7057501026315803
+    },
+    "bayes_recal": {
+      "mean_loss": 7.75590720065263,
+      "mean_difference_vs_nominal": 0.05820848563958998,
+      "difference_ci95": [
+        -0.10471552743820578,
+        0.2476244356335134
+      ],
+      "mean_relative_difference": 0.004954236654276018,
+      "relative_ci95": [
+        -0.012007086733522741,
+        0.023541696490756905
+      ],
+      "effect_size_dz": 0.10011927305433743,
+      "wins_ties_losses_exact": [
+        7,
+        20,
+        11
+      ],
+      "wins_ties_losses_1pct": [
+        3,
+        32,
+        3
+      ],
+      "worst_relative_degradation": 0.2266702088233694,
+      "best_relative_improvement": -0.19268022788851533,
+      "mean_regret_vs_oracle": 0.31369935028471985,
+      "share_of_nominal_gap_closed": -0.2278300076225428,
+      "first20_loss": 7.700729402852303,
+      "last20_loss": 7.782590624532313,
+      "severe_probability": 0.014826317683350252,
+      "success_probability": 0.7453760994057761,
+      "human_rate": 0.5463183539765787,
+      "realized_loss_cvar95": 42.93447368421054,
+      "calibration_error_ai_start_end": [
+        0.05501694078947366,
+        0.028733504635796964
+      ],
+      "calibration_error_human_start_end": [
+        0.06082577631578943,
+        0.04979752413244983
+      ],
+      "mean_switched_episodes": 0.0,
+      "mean_seconds_per_stream": 0.7315897184210485
+    },
+    "ts_recal": {
+      "mean_loss": 7.720576146900927,
+      "mean_difference_vs_nominal": 0.022877431887885925,
+      "difference_ci95": [
+        -0.15365915364046284,
+        0.23959221548172716
+      ],
+      "mean_relative_difference": 0.00010527468770734182,
+      "relative_ci95": [
+        -0.01806946043427993,
+        0.019360412035717884
+      ],
+      "effect_size_dz": 0.036359290565475794,
+      "wins_ties_losses_exact": [
+        10,
+        8,
+        20
+      ],
+      "wins_ties_losses_1pct": [
+        8,
+        22,
+        8
+      ],
+      "worst_relative_degradation": 0.22856915034185263,
+      "best_relative_improvement": -0.17334787916032177,
+      "mean_regret_vs_oracle": 0.2783682965330158,
+      "share_of_nominal_gap_closed": -0.08954305242836012,
+      "first20_loss": 7.818447176971463,
+      "last20_loss": 7.654243762596862,
+      "severe_probability": 0.014924458236238468,
+      "success_probability": 0.7550106601127757,
+      "human_rate": 0.5561604029303058,
+      "realized_loss_cvar95": 40.837368421052645,
+      "calibration_error_ai_start_end": [
+        0.05501694078947366,
+        0.027179152908987005
+      ],
+      "calibration_error_human_start_end": [
+        0.06082577631578943,
+        0.03262125027876492
+      ],
+      "mean_switched_episodes": 0.0,
+      "mean_seconds_per_stream": 0.2609055368421055
+    },
+    "handoffx_v2": {
+      "mean_loss": 7.710929665547025,
+      "mean_difference_vs_nominal": 0.013230950533985352,
+      "difference_ci95": [
+        -0.14077731064953797,
+        0.19369673564264897
+      ],
+      "mean_relative_difference": -0.0010359563625614875,
+      "relative_ci95": [
+        -0.01610260978344941,
+        0.014164590132821156
+      ],
+      "effect_size_dz": 0.025806422068125747,
+      "wins_ties_losses_exact": [
+        7,
+        21,
+        10
+      ],
+      "wins_ties_losses_1pct": [
+        3,
+        33,
+        2
+      ],
+      "worst_relative_degradation": 0.1925912721981382,
+      "best_relative_improvement": -0.19268022788851533,
+      "mean_regret_vs_oracle": 0.2687218151791152,
+      "share_of_nominal_gap_closed": -0.051786393820236185,
+      "first20_loss": 7.6653405949866675,
+      "last20_loss": 7.735405547378135,
+      "severe_probability": 0.013784739297684022,
+      "success_probability": 0.7493070551246065,
+      "human_rate": 0.5711668082229011,
+      "realized_loss_cvar95": 41.10052631578948,
+      "calibration_error_ai_start_end": [
+        0.05501694078947366,
+        0.03240741170230291
+      ],
+      "calibration_error_human_start_end": [
+        0.06082577631578943,
+        0.04535255234096559
+      ],
+      "mean_switched_episodes": 31.973684210526315,
+      "mean_seconds_per_stream": 1.0189552605263184
+    },
+    "gate_static": {
+      "mean_loss": 7.647762071501103,
+      "mean_difference_vs_nominal": -0.049936643511936996,
+      "difference_ci95": [
+        -0.1492136483774364,
+        0.0035509950862554736
+      ],
+      "mean_relative_difference": -0.005620267929554795,
+      "relative_ci95": [
+        -0.01657787407328556,
+        0.0003974773552733915
+      ],
+      "effect_size_dz": -0.17106891009285996,
+      "wins_ties_losses_exact": [
+        6,
+        23,
+        9
+      ],
+      "wins_ties_losses_1pct": [
+        2,
+        36,
+        0
+      ],
+      "worst_relative_degradation": 0.00701485869140242,
+      "best_relative_improvement": -0.19268022788851533,
+      "mean_regret_vs_oracle": 0.20555422113319285,
+      "share_of_nominal_gap_closed": 0.19545373405541402,
+      "first20_loss": 7.647762071501105,
+      "last20_loss": 7.647762071501105,
+      "severe_probability": 0.012158745212282055,
+      "success_probability": 0.7518755694585031,
+      "human_rate": 0.591377945998221,
+      "realized_loss_cvar95": 39.360526315789485,
+      "calibration_error_ai_start_end": [
+        0.05501694078947366,
+        0.05501694078947366
+      ],
+      "calibration_error_human_start_end": [
+        0.06082577631578943,
+        0.06082577631578943
+      ],
+      "mean_switched_episodes": 39.473684210526315,
+      "mean_seconds_per_stream": 0.10543630789473618
+    },
+    "v2_iid": {
+      "mean_loss": 8.076171370759981,
+      "mean_difference_vs_nominal": 0.3784726557469425,
+      "difference_ci95": [
+        0.16095798064529643,
+        0.5875822275282195
+      ],
+      "mean_relative_difference": 0.05408910341977592,
+      "relative_ci95": [
+        0.02533054034783782,
+        0.08394465271422329
+      ],
+      "effect_size_dz": 0.5523014100287912,
+      "wins_ties_losses_exact": [
+        1,
+        22,
+        15
+      ],
+      "wins_ties_losses_1pct": [
+        1,
+        22,
+        15
+      ],
+      "worst_relative_degradation": 0.2707513457889626,
+      "best_relative_improvement": -0.19268022788851533,
+      "mean_regret_vs_oracle": 0.6339635203920724,
+      "share_of_nominal_gap_closed": -1.4813549450099954,
+      "first20_loss": 8.04307980375129,
+      "last20_loss": 8.09314610213464,
+      "severe_probability": 0.017587026157413695,
+      "success_probability": 0.773434374635679,
+      "human_rate": 0.5910702932414833,
+      "realized_loss_cvar95": 45.543947368421065,
+      "calibration_error_ai_start_end": [
+        0.05501694078947368,
+        0.04171256824717409
+      ],
+      "calibration_error_human_start_end": [
+        0.060825776315789455,
+        0.05821501655799087
+      ],
+      "mean_switched_episodes": 17.36842105263158,
+      "mean_seconds_per_stream": 1.0722382578947383
+    },
+    "oracle": {
+      "mean_loss": 7.44220785036791,
+      "mean_difference_vs_nominal": -0.2554908646451299,
+      "difference_ci95": [
+        -0.438916255508088,
+        -0.09965009486227376
+      ],
+      "mean_relative_difference": -0.0297503112067822,
+      "relative_ci95": [
+        -0.050028675359006645,
+        -0.012511505295832032
+      ],
+      "effect_size_dz": -0.4632552609584011,
+      "wins_ties_losses_exact": [
+        12,
+        26,
+        0
+      ],
+      "wins_ties_losses_1pct": [
+        10,
+        28,
+        0
+      ],
+      "worst_relative_degradation": 0.0,
+      "best_relative_improvement": -0.20011253266719914,
+      "mean_regret_vs_oracle": 0.0,
+      "share_of_nominal_gap_closed": 1.0,
+      "first20_loss": 7.44220785036791,
+      "last20_loss": 7.44220785036791,
+      "severe_probability": 0.009822313419207975,
+      "success_probability": 0.7609449954514119,
+      "human_rate": 0.6242632647180842,
+      "realized_loss_cvar95": 35.85868421052632,
+      "calibration_error_ai_start_end": [
+        0.05501694078947366,
+        0.05501694078947366
+      ],
+      "calibration_error_human_start_end": [
+        0.06082577631578943,
+        0.06082577631578943
+      ],
+      "mean_switched_episodes": 0.0,
+      "mean_seconds_per_stream": 0.04075447105262392
+    }
+  },
+  "subgroups": {
+    "calibrated": {
+      "n": 22,
+      "handoffx_v2": {
+        "mean_relative_difference": 0.008852065423428231,
+        "share_degraded_gt_1pct": 0.045454545454545456,
+        "share_improved_gt_1pct": 0.0
+      },
+      "bayes_recal": {
+        "mean_relative_difference": 0.008852065423428231,
+        "share_degraded_gt_1pct": 0.045454545454545456,
+        "share_improved_gt_1pct": 0.0
+      },
+      "plugin_recal": {
+        "mean_relative_difference": 0.013578538214105634,
+        "share_degraded_gt_1pct": 0.13636363636363635,
+        "share_improved_gt_1pct": 0.0
+      },
+      "ts_recal": {
+        "mean_relative_difference": 0.020903521479592835,
+        "share_degraded_gt_1pct": 0.2727272727272727,
+        "share_improved_gt_1pct": 0.0
+      },
+      "robust_static": {
+        "mean_relative_difference": 0.0198945743110264,
+        "share_degraded_gt_1pct": 0.18181818181818182,
+        "share_improved_gt_1pct": 0.0
+      }
+    },
+    "biased": {
+      "n": 16,
+      "handoffx_v2": {
+        "mean_relative_difference": -0.01463198631829735,
+        "share_degraded_gt_1pct": 0.0625,
+        "share_improved_gt_1pct": 0.1875
+      },
+      "bayes_recal": {
+        "mean_relative_difference": -0.00040527790330827443,
+        "share_degraded_gt_1pct": 0.125,
+        "share_improved_gt_1pct": 0.1875
+      },
+      "plugin_recal": {
+        "mean_relative_difference": -0.0019617990841922298,
+        "share_degraded_gt_1pct": 0.125,
+        "share_improved_gt_1pct": 0.1875
+      },
+      "ts_recal": {
+        "mean_relative_difference": -0.028492314651135213,
+        "share_degraded_gt_1pct": 0.125,
+        "share_improved_gt_1pct": 0.5
+      },
+      "robust_static": {
+        "mean_relative_difference": 0.054559040983347636,
+        "share_degraded_gt_1pct": 0.375,
+        "share_improved_gt_1pct": 0.0
+      }
+    },
+    "human_underestimated": {
+      "n": 6,
+      "handoffx_v2": {
+        "mean_relative_difference": -0.005812391645769996,
+        "share_degraded_gt_1pct": 0.0,
+        "share_improved_gt_1pct": 0.16666666666666666
+      },
+      "bayes_recal": {
+        "mean_relative_difference": -0.005812391645769996,
+        "share_degraded_gt_1pct": 0.0,
+        "share_improved_gt_1pct": 0.16666666666666666
+      },
+      "plugin_recal": {
+        "mean_relative_difference": -0.0057001903361263845,
+        "share_degraded_gt_1pct": 0.0,
+        "share_improved_gt_1pct": 0.16666666666666666
+      },
+      "ts_recal": {
+        "mean_relative_difference": -0.023934516595472136,
+        "share_degraded_gt_1pct": 0.0,
+        "share_improved_gt_1pct": 0.3333333333333333
+      },
+      "robust_static": {
+        "mean_relative_difference": 0.031502384932138285,
+        "share_degraded_gt_1pct": 0.16666666666666666,
+        "share_improved_gt_1pct": 0.0
+      }
+    },
+    "human_overestimated": {
+      "n": 6,
+      "handoffx_v2": {
+        "mean_relative_difference": -0.03556049097132017,
+        "share_degraded_gt_1pct": 0.0,
+        "share_improved_gt_1pct": 0.3333333333333333
+      },
+      "bayes_recal": {
+        "mean_relative_difference": -0.03556049097132017,
+        "share_degraded_gt_1pct": 0.0,
+        "share_improved_gt_1pct": 0.3333333333333333
+      },
+      "plugin_recal": {
+        "mean_relative_difference": -0.03983164087116791,
+        "share_degraded_gt_1pct": 0.0,
+        "share_improved_gt_1pct": 0.3333333333333333
+      },
+      "ts_recal": {
+        "mean_relative_difference": -0.06273781603777466,
+        "share_degraded_gt_1pct": 0.0,
+        "share_improved_gt_1pct": 0.8333333333333334
+      },
+      "robust_static": {
+        "mean_relative_difference": 0.0584447275140443,
+        "share_degraded_gt_1pct": 0.5,
+        "share_improved_gt_1pct": 0.0
+      }
+    },
+    "ai_underestimated": {
+      "n": 6,
+      "handoffx_v2": {
+        "mean_relative_difference": -0.0032421733920079674,
+        "share_degraded_gt_1pct": 0.0,
+        "share_improved_gt_1pct": 0.0
+      },
+      "bayes_recal": {
+        "mean_relative_difference": 0.03453619474522027,
+        "share_degraded_gt_1pct": 0.16666666666666666,
+        "share_improved_gt_1pct": 0.0
+      },
+      "plugin_recal": {
+        "mean_relative_difference": 0.03526384803875248,
+        "share_degraded_gt_1pct": 0.16666666666666666,
+        "share_improved_gt_1pct": 0.0
+      },
+      "ts_recal": {
+        "mean_relative_difference": -0.014963382316855496,
+        "share_degraded_gt_1pct": 0.16666666666666666,
+        "share_improved_gt_1pct": 0.5
+      },
+      "robust_static": {
+        "mean_relative_difference": 0.042273044152529186,
+        "share_degraded_gt_1pct": 0.16666666666666666,
+        "share_improved_gt_1pct": 0.0
+      }
+    },
+    "ai_overestimated": {
+      "n": 6,
+      "handoffx_v2": {
+        "mean_relative_difference": -0.03209552789310286,
+        "share_degraded_gt_1pct": 0.16666666666666666,
+        "share_improved_gt_1pct": 0.3333333333333333
+      },
+      "bayes_recal": {
+        "mean_relative_difference": -0.03193600692369356,
+        "share_degraded_gt_1pct": 0.16666666666666666,
+        "share_improved_gt_1pct": 0.3333333333333333
+      },
+      "plugin_recal": {
+        "mean_relative_difference": -0.03667246996022622,
+        "share_degraded_gt_1pct": 0.16666666666666666,
+        "share_improved_gt_1pct": 0.3333333333333333
+      },
+      "ts_recal": {
+        "mean_relative_difference": -0.05236156441104626,
+        "share_degraded_gt_1pct": 0.16666666666666666,
+        "share_improved_gt_1pct": 0.5
+      },
+      "robust_static": {
+        "mean_relative_difference": 0.06759975659428596,
+        "share_degraded_gt_1pct": 0.5,
+        "share_improved_gt_1pct": 0.0
+      }
+    }
+  }
+}
