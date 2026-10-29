@@ -1,74 +1,85 @@
 # Final PyPI release report: handoffx 0.2.1
 
-**Publication status: NOT YET PUBLISHED.** The release is prepared and validated, and awaits the owner's final approval. This file will be updated with independently verified PyPI results after publication.
+**Publication status: PUBLISHED and independently verified (29 October 2026).**
 
-## Package
-
-| Item | Value |
+| | |
 |---|---|
-| Distribution name | `handoffx` (PyPI: HTTP 404 on 29 October 2026, so the name is unclaimed) |
-| Version | 0.2.1 (0.2.0 was a research snapshot, never published) |
-| Licence | MIT (`License-Expression: MIT`, `LICENSE` included) |
-| Python | ≥ 3.11; classifiers 3.11, 3.12, 3.13 |
+| PyPI project | https://pypi.org/project/handoffx/0.2.1/ |
+| GitHub release | https://github.com/Pratik653/HandoffX/releases/tag/v0.2.1 |
+| Installation | `pip install handoffx` (or `pip install handoffx==0.2.1`) |
+| Verified version | 0.2.1 (the only version on PyPI) |
+| Release commit | a762b6b, the merge of PR #1 into `main`; annotated tag `v0.2.1` |
+| Release workflow | https://github.com/Pratik653/HandoffX/actions/runs/40852910419: `build` success, `publish-pypi` success |
+
+## Publication sequence
+
+1. CI on PR #1 passed: 10/10 checks (build, plus tests on Linux, Windows and macOS × Python 3.11–3.13).
+2. PR #1 was merged into `main`.
+3. Tag `v0.2.1` was pushed, and GitHub Release `v0.2.1` was published, which triggered `release.yml`.
+4. The `build` job checked that the tag matches the package version (`v0.2.1`), built the sdist and wheel, and passed `twine check --strict`.
+5. The `publish-pypi` job waited at the protected `pypi` environment until the owner approved the deployment in GitHub. Protection was not bypassed.
+6. Trusted Publishing:
+   - the GitHub OIDC token was exchanged for a short-lived PyPI upload credential, and no stored token was used;
+   - `twine check` passed inside the publish action;
+   - PEP 740 publish attestations were generated for both files;
+   - both files were uploaded to `upload.pypi.org`.
+7. No other tag, release or version was created.
+
+## Independent verification of PyPI
+
+These checks used the public PyPI JSON API, the Simple index and the project page (HTTP 200).
+
+| Field | Published value |
+|---|---|
+| Name / version | `handoffx` / `0.2.1`, not yanked |
+| Summary | Auditable continue / retry / ask-a-human / stop decision support for autonomous agents under uncertainty |
+| Author | `Pratik653`; no author or maintainer e-mail |
+| Licence | `License-Expression: MIT`, licence file included |
+| Requires-Python | `>=3.11`; classifiers 3.11, 3.12, 3.13; `Typing :: Typed` |
 | Dependencies | `numpy>=1.24,<3`; extras `test`, `research` |
-| Entry points | `handoffx` console script; `python -m handoffx` |
-| Wheel contents | `handoffx/*.py`, `py.typed`, licence and metadata only; no research data, manuscripts or results |
-| Author metadata | `Pratik653`; no e-mail address in the package metadata |
-| Project URLs | Homepage, Repository, Issues, Changelog, Paper (all `github.com/Pratik653/HandoffX`) |
+| Project links | Homepage, Repository, Issues, Changelog, Paper (all `github.com/Pratik653/HandoffX`) |
+| Description | README, `text/markdown`, 8,852 characters |
 
-## Library changes since the research snapshot
+**Files.** SHA-256 digests are identical to the attested digests in the workflow log:
 
-- **Fixed:** `EpisodeBelief.posterior_models()` underflow. Finite posterior weights that underflow to 0 are floored at the smallest normal double; models with exactly zero likelihood are omitted, because they are ruled out rather than improbable.
-  - Regression tests prove two things: the old code fails the new test, and non-underflowing weights are bit-for-bit unchanged.
-  - The defect was never triggered in any reported experiment.
-- **Unchanged:** the public API (`Advisor`, `Planner`, `ModelSet`, `TaskSpec`, `ActionGuard`, `EpisodeBelief`, `AdaptiveController`, …) and the CLI.
-- **Not added:** none of the experimental candidates (A, B, C, catastrophe weighting) is in the package.
+| File | Size | SHA-256 |
+|---|---|---|
+| `handoffx-0.2.1-py3-none-any.whl` | 29,264 bytes | `c38dd1ad79c4e755368e05f37daadad51085520b5a9261a6128da29753299985` |
+| `handoffx-0.2.1.tar.gz` | 24,951 bytes | `c15351613d8a2b2c64ad427bbc152149400259eb338ac3d1d316f6cfc65b7c37` |
 
-## Validation performed locally (29 October 2026)
+**Content audit of the downloaded published files.**
+- The wheel contains only `handoffx/*.py`, `py.typed`, the licence and metadata. There is no research data, manuscript or results; the sdist has 26 members.
+- No AI-assistant names or co-author trailers in the files or the PyPI metadata.
+- No personal name, e-mail address, local filesystem path, or PyPI/GitHub token pattern.
+
+## Clean installation from PyPI
+
+- **Environment:** a fresh Python 3.11 virtual environment outside the repository.
+- **Command:** `python -m pip install --no-cache-dir --index-url https://pypi.org/simple handoffx==0.2.1`
+- **Source:** pip downloaded `handoffx-0.2.1-py3-none-any.whl` (29 kB) and `numpy-2.4.6` from PyPI. The package was imported from the venv's `site-packages`, and the test asserted it was not loaded from the repository checkout.
 
 | Check | Result |
 |---|---|
-| Test suite (`pytest`) | 87 passed |
-| `python -m build` | sdist and wheel built |
-| `twine check --strict` | PASSED (both) |
-| Fresh virtual environment, Python 3.11, install from the built wheel | OK (numpy 2.4.6 resolved) |
-| Import, version, `py.typed` present | 0.2.1; yes |
-| README quick-start example | recommends `human`; `record_episode` and `calibrated_estimates` work |
-| CLI: `handoffx --history …` and `python -m handoffx --json --no-human` | OK |
-| Secrets scan (gitleaks) and personal-data check | see the commit audit in the release PR |
-| GitHub Actions CI on the release branch | see the PR checks |
+| Import and `handoffx.__version__` | 0.2.1 |
+| README quick start (`Advisor.from_estimates`, `recommend`, `explain`) | action `human`; explanation printed |
+| `record_episode` and `calibrated_estimates()` | OK (continue 0.773, human 0.900) |
+| Per-call options (`human_available=False`, `forbidden=["retry"]`) | action `continue`; admissible `continue`, `stop` |
+| Research API import (`handoffx.adaptive.EpisodeBelief`) | OK |
+| Console script `handoffx --history continue:hard_failure,retry:hard_failure` | `Recommended: human`, with expected losses for all actions |
+| `python -m handoffx --json --no-human` | valid JSON recommendation |
 
-## Publishing infrastructure
+## Library content of 0.2.1
 
-- **Workflow:** `.github/workflows/release.yml`.
-  - Triggered by a *published* GitHub Release.
-  - Checks that the tag equals `v` + the package version.
-  - Builds, runs `twine check --strict` and uploads the artifact.
-  - Publishes with `pypa/gh-action-pypi-publish` using OIDC (`id-token: write` only in the publish job). No token is stored.
-- **GitHub environment `pypi`:**
-  - required reviewer: Pratik653;
-  - deployment policy: tags matching `v*`;
-  - administrator bypass allowed by GitHub default.
-- **PyPI Trusted Publisher.** It must be registered by the owner as a *pending publisher* (cannot be verified from here):
-  - PyPI project name: `handoffx`;
-  - owner: `Pratik653`;
-  - repository: `HandoffX`;
-  - workflow: `release.yml`;
-  - environment: `pypi`.
+- **Fixed:** `EpisodeBelief.posterior_models()` underflow.
+  - Finite posterior weights that underflow to 0 are floored at the smallest normal double.
+  - Models with exactly zero likelihood are omitted, because they are ruled out rather than improbable.
+  - Otherwise results are bit-for-bit identical to 0.2.0.
+  - 87 tests.
+- **Unchanged:** the public API and CLI. No experimental v0.3 algorithm is included.
 
-## Exact publication steps (after approval)
+## Unresolved items
 
-1. Merge the release pull request into `main`.
-2. Create and push tag `v0.2.1` on the merge commit.
-3. Publish GitHub Release `v0.2.1`. This triggers the Release workflow.
-4. Approve the `pypi` environment deployment in the workflow run.
-5. Verify:
-   - `https://pypi.org/pypi/handoffx/json` shows 0.2.1;
-   - `pip install handoffx==0.2.1` works in a clean environment;
-   - the quick start and CLI run;
-   - the project page metadata matches GitHub.
-
-## Outstanding issues
-
-- The owner must add the PyPI pending trusted publisher before step 3; otherwise the publish job fails with an OIDC authorization error.
-- Author full name and ORCID are not set; the handle is used.
+- Author full name, affiliation and ORCID are not set; metadata uses the handle `Pratik653`. They can only change in a future release, because PyPI metadata is immutable per version.
+- Zenodo: not deposited, by decision; the GitHub–Zenodo integration is not enabled.
+- `pip show` displays an empty `License:` line because the licence is declared with the newer `License-Expression` field (shown as MIT on PyPI). This is cosmetic.
+- The release workflow logs a GitHub notice that `actions/download-artifact@v4` targets the deprecated Node.js 20 runtime. It did not affect this release; updating the action version can be done in a later maintenance change.
