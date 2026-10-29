@@ -109,5 +109,5 @@ if __name__ == '__main__':
     md = ''
     for split in sys.argv[1:]:
         md += table(analyse(split)) + '\n'
-    (RES / 'TABLES.md').write_text(md)
+    (RES / 'TABLES.md').write_text(md, encoding='utf-8')
     print(md)
