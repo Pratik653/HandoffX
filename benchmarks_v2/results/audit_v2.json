@@ -1,0 +1,29 @@
+{
+  "dev": {
+    "rows": 1200,
+    "max_abs_summary_vs_raw": 0.0,
+    "policies_below_oracle": 0
+  },
+  "validation": {
+    "rows": 600,
+    "max_abs_summary_vs_raw": 0.0,
+    "policies_below_oracle": 0
+  },
+  "test": {
+    "rows": 2000,
+    "max_abs_summary_vs_raw": 0.0,
+    "policies_below_oracle": 0
+  },
+  "shift": {
+    "rows": 1000,
+    "max_abs_summary_vs_raw": 0.0,
+    "policies_below_oracle": 0
+  },
+  "original": {
+    "rows": 380,
+    "max_abs_summary_vs_raw": 0.0,
+    "policies_below_oracle": 0
+  },
+  "seed_overlap_between_splits": 0,
+  "all_passed": true
+}
