@@ -1,0 +1,21 @@
+{
+  "study": "HandoffX v0.3 candidate A independent confirmation",
+  "candidate": "A_prev (frozen: research_poc_v03/scripts/poc_lib.py::prevalence_augmented, LEVELS (-0.25, 0, 0.25), LEVEL_PRIOR (0.25, 0.5, 0.25); ungated posterior planning; no guard; no human sampling)",
+  "comparator": "bayes_recal",
+  "seed_base": 800000,
+  "n_per_kind": {"persist_shift": 150, "human_shift": 150, "hazard_shift": 40, "calibrated": 40, "near_nominal": 40, "ai_bias": 40, "joint_bias": 40},
+  "episodes_per_stream": 100,
+  "cadence": 5,
+  "bootstrap": {"resamples": 10000, "seed": 13, "level": 0.95, "stratified_by": "kind"},
+  "primary": {
+    "endpoint": "stream-mean exact per-episode severe-failure probability",
+    "target_distribution": ["persist_shift", "human_shift"],
+    "weighting": "equal (150 + 150)",
+    "success": "ARD 95% CI upper bound < 0 AND relative risk reduction (ratio of means) >= 10%"
+  },
+  "loss_noninferiority": {
+    "statistic": "mean cumulative exact loss ratio A / bayes_recal - 1 on the target distribution",
+    "margin": 0.005,
+    "bound": "one-sided 97.5% upper bound (upper end of 95% stratified bootstrap percentile interval) < margin"
+  }
+}

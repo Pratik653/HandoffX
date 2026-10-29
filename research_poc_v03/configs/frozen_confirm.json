@@ -1,0 +1,19 @@
+{
+  "frozen_after": "pilot (research_poc_v03/results/pilot)",
+  "candidates": [
+    "A_prev",
+    "B_humants",
+    "C_bfguard",
+    "ABC",
+    "A_static_diag"
+  ],
+  "pilot_drop_rule_outcome": {
+    "A_prev": "survives (pooled -0.92%)",
+    "B_humants": "survives by rule (pooled +0.08% not worse than +0.25pp) although target kind human_bias was +2.24%",
+    "C_bfguard": "survives (pooled +0.41% but target kind calibrated -2.04%)"
+  },
+  "combination": "ABC: all three survived, so the pre-specified combination is all three flags",
+  "diagnostic_added_after_pilot": "A_static_diag tests whether A's pilot gain comes from learning prevalence or from hedging over it (pilot showed no better prevalence estimation). Mechanism diagnostic only; not eligible for the GO decision.",
+  "hyperparameters_changed": "none",
+  "decision_criteria": "unchanged, EXPERIMENT_PROTOCOL.md"
+}

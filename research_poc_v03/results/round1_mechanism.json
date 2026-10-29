@@ -1,0 +1,53 @@
+{
+ "reproduces_v02_runner_max_abs_diff": 0.0,
+ "A_level_posterior_after_300_nominal_episodes": {
+  "-0.25": [
+   0.385,
+   0.457,
+   0.158
+  ],
+  "+0.00": [
+   0.106,
+   0.754,
+   0.14
+  ],
+  "+0.25": [
+   0.281,
+   0.275,
+   0.444
+  ]
+ },
+ "B_point_mass_equivalence": true,
+ "C_log_bayes_factor": {
+  "calibrated": {
+   "logBF_at_0_25_50_100": [
+    0.0,
+    -0.0,
+    -0.0,
+    -0.0
+   ],
+   "threshold": 1.099
+  },
+  "success_bias": {
+   "logBF_at_0_25_50_100": [
+    0.0,
+    -0.0,
+    -0.0,
+    -0.0
+   ],
+   "threshold": 1.099
+  },
+  "prevalence_misspec": {
+   "logBF_at_0_25_50_100": [
+    0.0,
+    0.39,
+    0.41,
+    0.89
+   ],
+   "threshold": 1.099
+  }
+ },
+ "A_smoke_mean_loss_30ep": 5.7588,
+ "B_smoke_mean_loss_30ep": 5.7248,
+ "C_smoke_mean_loss_30ep": 5.7309
+}

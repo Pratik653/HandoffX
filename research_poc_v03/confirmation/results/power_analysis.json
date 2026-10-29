@@ -1,0 +1,56 @@
+{
+ "proxies": {
+  "persist_shift": {
+   "proxy_kind": "prevalence_misspec",
+   "n_earlier": 100,
+   "ARD": -0.0018634589808226903,
+   "sd_dS": 0.00575678153785385,
+   "base_severe": 0.014420216524947804,
+   "loss_rel": -0.012561891496264825,
+   "sd_dL_rel": 0.04582829607611748
+  },
+  "human_shift": {
+   "proxy_kind": "human_bias",
+   "n_earlier": 100,
+   "ARD": -0.0011100580304408403,
+   "sd_dS": 0.005122252950647162,
+   "base_severe": 0.014923624823161077,
+   "loss_rel": 0.007495399108903314,
+   "sd_dL_rel": 0.02751054196386217
+  }
+ },
+ "design_n": {
+  "persist_shift": 150,
+  "human_shift": 150,
+  "hazard_shift": 40,
+  "calibrated": 40,
+  "near_nominal": 40,
+  "ai_bias": 40,
+  "joint_bias": 40
+ },
+ "persist_shift": {
+  "se_ARD": 0.0004700392442805525,
+  "power_RRR10pct": 0.8660421008413923,
+  "power_at_earlier_effect": 0.9774904156731754,
+  "minimum_detectable_RRR_80pct": 0.09132053908470439
+ },
+ "human_shift": {
+  "se_ARD": 0.0004182302020850364,
+  "power_RRR10pct": 0.9461130699558797,
+  "power_at_earlier_effect": 0.7562151778438215,
+  "minimum_detectable_RRR_80pct": 0.07851401707331646
+ },
+ "pooled": {
+  "se_ARD": 0.00031458440564494105,
+  "power_RRR10pct": 0.9965735154111837,
+  "power_at_earlier_effect": 0.9971634749312241,
+  "minimum_detectable_RRR_80pct": 0.060069822515699124
+ },
+ "noninferiority": {
+  "se_loss_rel_approx": 0.0021821482688647695,
+  "power_if_true_diff_+0.0%": 0.629798612035279,
+  "power_if_true_diff_-0.2%": 0.8939566400228478,
+  "power_if_true_diff_-0.5%": 0.9956374297244381,
+  "power_if_true_diff_+0.2%": 0.2792039358170268
+ }
+}
