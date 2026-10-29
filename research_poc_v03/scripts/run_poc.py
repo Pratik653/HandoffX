@@ -17,7 +17,7 @@ CANDIDATES = {'A_prev': dict(prev=True), 'B_humants': dict(humants=True), 'C_bfg
               # post-pilot mechanism diagnostic (not eligible for GO): A's augmented prior without cross-episode learning
               'A_static_diag': dict(prev=True, learn=False)}
 BASELINES = ('nominal', 'handoffx_v2', 'bayes_recal', 'ts_recal', 'oracle')
-SPLITS = {'pilot': (500000, 12), 'confirm': (600000, 50)}
+SPLITS = {'pilot': (500000, 12), 'confirm': (600000, 50), 'replicate': (700000, 50)}
 
 
 def job(args):
@@ -36,8 +36,10 @@ def main():
     a = ap.parse_args(); start, n = SPLITS[a.split]
     if a.split == 'pilot':
         policies = list(BASELINES) + ['A_prev', 'B_humants', 'C_bfguard']
-    else:
+    elif a.split == 'confirm':
         policies = list(BASELINES) + json.loads((ROOT / 'research_poc_v03/configs/frozen_confirm.json').read_text())['candidates']
+    else:
+        policies = ['nominal', 'handoffx_v2', 'bayes_recal', 'oracle', 'A_prev', 'AC', 'ABC']
     jobs = [(start + 1000 * k + i, kind, policies) for k, kind in enumerate(KINDS) for i in range(n)]
     out = ROOT / 'research_poc_v03/results' / a.split; (out / 'raw').mkdir(parents=True, exist_ok=True)
     tic = time.perf_counter(); summary = []; raw = {}

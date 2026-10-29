@@ -50,3 +50,9 @@ Reference: −0.5% is about one quarter of the v0.2 nominal-to-oracle gap on hel
 ## Budget
 
 Planned compute: pilot ≈ 5 min, confirmation ≈ 15 min on 16 CPU workers; well inside the 60–120 min budget.
+
+## Addendum (written after Round 3, before Round 4) — targeted replication
+
+Round 3 outcome under the frozen criteria: A = CONDITIONAL GO (fails the calibrated-environment limit, +0.84% vs nominal); B = NO-GO (+0.53%, CI excludes 0); C = no pooled gain, significant calibrated-environment benefit; ABC = meets every numeric GO threshold narrowly, but includes the individually harmful B, and the simpler A+C combination was not tested, so the "no simpler method provides this" condition is unresolved.
+
+Round 4 answers that single question on fresh environments: seeds 700000 + 1000·k + i, 50 per kind (300), run once. Policies: nominal, handoffx_v2, bayes_recal, oracle, A_prev, **AC** (A's model set + C's guard; no new hyperparameters), ABC. The same frozen GO criteria apply to AC and ABC. AC is preferred if it meets them, because it is simpler. Round 3 numbers are not pooled with Round 4.
