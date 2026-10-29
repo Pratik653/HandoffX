@@ -30,3 +30,17 @@ Predictive diagnostics (end of stream): nominal: AI cal 0.062, human cal 0.072, 
 
 Predictive diagnostics (end of stream): nominal: AI cal 0.074, human cal 0.074, prevalence TV 0.069, human obs 0.0, guarded eps 0.0; handoffx_v2: AI cal 0.057, human cal 0.059, prevalence TV 0.069, human obs 32.2, guarded eps 0.0; bayes_recal: AI cal 0.057, human cal 0.060, prevalence TV 0.069, human obs 30.8, guarded eps 0.0; ts_recal: AI cal 0.054, human cal 0.054, prevalence TV 0.069, human obs 34.9, guarded eps 0.0; A_prev: AI cal 0.057, human cal 0.057, prevalence TV 0.074, human obs 31.7, guarded eps 0.0; B_humants: AI cal 0.055, human cal 0.052, prevalence TV 0.069, human obs 35.5, guarded eps 0.0; C_bfguard: AI cal 0.056, human cal 0.056, prevalence TV 0.069, human obs 33.7, guarded eps 80.5; ABC: AI cal 0.053, human cal 0.053, prevalence TV 0.071, human obs 35.1, guarded eps 77.4; A_static_diag: AI cal 0.075, human cal 0.079, prevalence TV 0.087, human obs 0.0, guarded eps 0.0
 
+### replicate (n = 300; calibrated 50, success_bias 50, prevalence_misspec 50, human_bias 50, mixed 50, shift 50)
+
+| Policy | vs bayes_recal pooled [95% CI] | calibrated | success_bias | prevalence_misspec | human_bias | mixed | shift | vs nominal | vs v0.2 | W/T/L 1% vs bayes_recal | last-20 regret | severe p | human rate | retries/ep | s/stream |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| nominal | +0.48% [-0.09, +1.10] | -0.62% | +1.97% | -0.86% | +1.05% | +0.50% | +0.84% | +0.00% | +0.76% | 39/225/36 | 0.277 | 0.0165 | 0.364 | 0.225 | 0.04 |
+| handoffx_v2 | -0.29% [-0.54, -0.08] | -0.28% | -0.21% | -0.25% | -0.22% | -0.03% | -0.72% | -0.57% | +0.00% | 18/274/8 | 0.198 | 0.0174 | 0.322 | 0.235 | 1.58 |
+| bayes_recal | +0.00% [+0.00, +0.00] | +0.00% | +0.00% | +0.00% | +0.00% | +0.00% | +0.00% | -0.23% | +0.34% | 0/300/0 | 0.217 | 0.0176 | 0.306 | 0.237 | 0.66 |
+| oracle | -2.42% [-2.99, -1.91] | -0.62% | -2.06% | -2.48% | -1.32% | -1.15% | -6.91% | -2.69% | -2.13% | 106/194/0 | 0.000 | 0.0135 | 0.371 | 0.191 | 0.04 |
+| A_prev | -0.25% [-0.71, +0.17] | +0.30% | -0.02% | -0.31% | +0.59% | -0.09% | -2.00% | -0.51% | +0.08% | 32/244/24 | 0.171 | 0.0147 | 0.336 | 0.197 | 0.68 |
+| AC | -0.12% [-0.51, +0.28] | -0.40% | +1.10% | -1.06% | +0.40% | +0.20% | -0.94% | -0.45% | +0.20% | 39/236/25 | 0.182 | 0.0161 | 0.337 | 0.211 | 0.23 |
+| ABC | -0.08% [-0.49, +0.32] | -0.30% | +1.25% | -1.14% | +0.48% | +0.16% | -0.95% | -0.44% | +0.21% | 41/224/35 | 0.183 | 0.0162 | 0.352 | 0.208 | 0.46 |
+
+Predictive diagnostics (end of stream): nominal: AI cal 0.065, human cal 0.066, prevalence TV 0.066, human obs 0.0, guarded eps 0.0; handoffx_v2: AI cal 0.047, human cal 0.051, prevalence TV 0.066, human obs 32.2, guarded eps 0.0; bayes_recal: AI cal 0.046, human cal 0.052, prevalence TV 0.066, human obs 30.6, guarded eps 0.0; A_prev: AI cal 0.048, human cal 0.052, prevalence TV 0.073, human obs 33.7, guarded eps 0.0; AC: AI cal 0.047, human cal 0.050, prevalence TV 0.072, human obs 33.7, guarded eps 76.3; ABC: AI cal 0.046, human cal 0.049, prevalence TV 0.071, human obs 35.2, guarded eps 76.5
+

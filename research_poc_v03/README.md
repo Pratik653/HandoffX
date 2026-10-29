@@ -20,5 +20,13 @@ python research_poc_v03/scripts/plateau_attribution.py
 python research_poc_v03/scripts/round1_mechanism.py
 python research_poc_v03/scripts/run_poc.py pilot
 python research_poc_v03/scripts/run_poc.py confirm
-python research_poc_v03/scripts/analyze_poc.py pilot confirm
+python research_poc_v03/scripts/run_poc.py replicate
+python research_poc_v03/scripts/analyze_poc.py pilot confirm replicate
+python research_poc_v03/scripts/secondary_checks.py
+python research_poc_v03/scripts/make_figure.py
 ```
+- Round 1 mechanism checks: v0.2 runner reproduced exactly; A's prevalence level weakly identifiable; B equivalence holds; C Bayes factor ≈ 0 when calibrated. Found a latent `EpisodeBelief.posterior_models()` underflow issue (not triggered in any run; production code unchanged). Found a "stop at step one" learning trap.
+- Round 2 pilot (72 envs, 37 s): A −0.92%, B +0.08%, C +0.41% vs bayes_recal; all survive the drop rule. Frozen confirmation set plus an A-without-learning mechanism diagnostic.
+- Round 3 confirmation (300 envs, 128 s): A −0.52% [−0.88, −0.19] but calibrated +0.84% vs nominal (fails GO limit); B +0.53% (NO-GO); C −0.26%; ABC −0.52% (narrow numeric GO, includes harmful B).
+- Round 4 pre-registered replication (300 envs, 73 s): A −0.25% [−0.71, +0.17]; AC −0.12%; ABC −0.08%. No replicated pooled gain. Consistent across all rounds: A reduces severe failures 13–17% and shift-environment loss 2–3%.
+- Decision: broad v0.3 NO-GO; prevalence-flexible learning CONDITIONAL GO as a tail-risk / shift-robustness direction (see GO_NO_GO_DECISION.md).
