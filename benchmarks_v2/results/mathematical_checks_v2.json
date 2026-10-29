@@ -1,0 +1,10 @@
+{
+  "A1_max_abs_error_sequential_vs_batch": 4.829470157119431e-15,
+  "A1_max_abs_error_order": 1.942890293094024e-16,
+  "A2_max_prior_ratio_deviation_untried_human": 1.3322676295501878e-15,
+  "A3_min_posterior_advantage_of_bayes_candidate": 0.0,
+  "A3_max_posterior_risk_increase_of_gate": 0.0,
+  "A4_dominance_violations_alpha0": 0,
+  "performance_difference_max_abs_error": 7.91033905045424e-16,
+  "all_passed": true
+}
