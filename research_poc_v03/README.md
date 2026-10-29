@@ -30,3 +30,8 @@ python research_poc_v03/scripts/make_figure.py
 - Round 3 confirmation (300 envs, 128 s): A −0.52% [−0.88, −0.19] but calibrated +0.84% vs nominal (fails GO limit); B +0.53% (NO-GO); C −0.26%; ABC −0.52% (narrow numeric GO, includes harmful B).
 - Round 4 pre-registered replication (300 envs, 73 s): A −0.25% [−0.71, +0.17]; AC −0.12%; ABC −0.08%. No replicated pooled gain. Consistent across all rounds: A reduces severe failures 13–17% and shift-environment loss 2–3%.
 - Decision: broad v0.3 NO-GO; prevalence-flexible learning CONDITIONAL GO as a tail-risk / shift-robustness direction (see GO_NO_GO_DECISION.md).
+- Follow-up `confirmation/` (pre-registered independent confirmation of A; 500 fresh environments, 135 s):
+  - Severe-failure RRR 17.8% [12.0, 24.0] vs bayes_recal, confirmed in both new shift families and in every kind.
+  - Loss non-inferiority not demonstrated: +0.28% [−0.21, +0.82] against a 0.5% margin. Human-effectiveness shift costs +1.14% loss.
+  - Mechanism: evidence-triggered conservatism (more stopping, fewer retries), not prevalence estimation.
+  - Decision: CONDITIONAL GO for a risk-sensitive controller, with explicit risk control preferred over A's implicit hedge. See `confirmation/FINAL_RESEARCH_DECISION.md`.
