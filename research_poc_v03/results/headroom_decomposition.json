@@ -1,0 +1,1248 @@
+{
+ "summary": {
+  "iid/all": {
+   "n": 60,
+   "oracle": -0.03401720506685281,
+   "oracle_success_only": -0.029333061578886287,
+   "oracle_prevalence_only": -0.0012094748409595287,
+   "mean_prevalence_tv_distance": 0.08736859440389827
+  },
+  "iid/calibrated": {
+   "n": 13,
+   "oracle": -0.0004958884812966076,
+   "oracle_success_only": 0.0,
+   "oracle_prevalence_only": -0.0004958884812966076,
+   "mean_prevalence_tv_distance": 0.08732326746789469
+  },
+  "iid/biased": {
+   "n": 47,
+   "oracle": -0.043289058590517286,
+   "oracle_success_only": -0.03744646159006759,
+   "oracle_prevalence_only": -0.0014068497915045901,
+   "mean_prevalence_tv_distance": 0.08738113164151629
+  },
+  "shift/all": {
+   "n": 60,
+   "oracle": -0.08186729973326058,
+   "oracle_success_only": -0.07381606392791058,
+   "oracle_prevalence_only": -0.03184602514686795,
+   "mean_prevalence_tv_distance": 0.13065533761594622
+  },
+  "shift/calibrated": {
+   "n": 4,
+   "oracle": -0.0008645149818875886,
+   "oracle_success_only": 0.0,
+   "oracle_prevalence_only": 0.0004199814355403903,
+   "mean_prevalence_tv_distance": 0.16425906158474296
+  },
+  "shift/biased": {
+   "n": 56,
+   "oracle": -0.08765321292978721,
+   "oracle_success_only": -0.07908863992276134,
+   "oracle_prevalence_only": -0.03415073990275425,
+   "mean_prevalence_tv_distance": 0.12825507161817504
+  }
+ },
+ "rows": [
+  {
+   "family": "iid",
+   "seed": 100000,
+   "calibrated": true,
+   "nominal": 5.1161538732419976,
+   "oracle": 5.1161538732419976,
+   "oracle_success": 5.1161538732419976,
+   "oracle_prevalence": 5.1161538732419976,
+   "z_tv": 0.07351380298857846
+  },
+  {
+   "family": "iid",
+   "seed": 100001,
+   "calibrated": false,
+   "nominal": 6.523211578046299,
+   "oracle": 6.05087780367055,
+   "oracle_success": 6.05087780367055,
+   "oracle_prevalence": 6.523211578046299,
+   "z_tv": 0.029804536798485784
+  },
+  {
+   "family": "iid",
+   "seed": 100002,
+   "calibrated": false,
+   "nominal": 6.013021208565794,
+   "oracle": 5.614650388375862,
+   "oracle_success": 5.615324538755632,
+   "oracle_prevalence": 6.026926688433087,
+   "z_tv": 0.07513665947998632
+  },
+  {
+   "family": "iid",
+   "seed": 100003,
+   "calibrated": false,
+   "nominal": 11.382555683956328,
+   "oracle": 8.891982874804985,
+   "oracle_success": 8.910090428503427,
+   "oracle_prevalence": 11.382555683956328,
+   "z_tv": 0.05172069879791599
+  },
+  {
+   "family": "iid",
+   "seed": 100004,
+   "calibrated": false,
+   "nominal": 9.30927870955664,
+   "oracle": 9.245588213110477,
+   "oracle_success": 9.297091832702886,
+   "oracle_prevalence": 9.245588213110477,
+   "z_tv": 0.16353572097488334
+  },
+  {
+   "family": "iid",
+   "seed": 100005,
+   "calibrated": false,
+   "nominal": 7.1527029352689615,
+   "oracle": 7.137510939204752,
+   "oracle_success": 7.137510939204752,
+   "oracle_prevalence": 7.1527029352689615,
+   "z_tv": 0.01336966732745843
+  },
+  {
+   "family": "iid",
+   "seed": 100006,
+   "calibrated": true,
+   "nominal": 6.3670104123539275,
+   "oracle": 6.3670104123539275,
+   "oracle_success": 6.3670104123539275,
+   "oracle_prevalence": 6.3670104123539275,
+   "z_tv": 0.03170279496062795
+  },
+  {
+   "family": "iid",
+   "seed": 100007,
+   "calibrated": false,
+   "nominal": 12.049002131754404,
+   "oracle": 12.040460291234902,
+   "oracle_success": 12.040489486748351,
+   "oracle_prevalence": 12.049002131754404,
+   "z_tv": 0.02311293829076938
+  },
+  {
+   "family": "iid",
+   "seed": 100008,
+   "calibrated": false,
+   "nominal": 11.542306322243611,
+   "oracle": 7.651609759611196,
+   "oracle_success": 7.651609759611196,
+   "oracle_prevalence": 11.542306322243611,
+   "z_tv": 0.02534598597170877
+  },
+  {
+   "family": "iid",
+   "seed": 100009,
+   "calibrated": false,
+   "nominal": 9.957395595018687,
+   "oracle": 9.840332553362995,
+   "oracle_success": 9.840332553362995,
+   "oracle_prevalence": 9.957395595018687,
+   "z_tv": 0.10475786441973808
+  },
+  {
+   "family": "iid",
+   "seed": 100010,
+   "calibrated": false,
+   "nominal": 10.51638212532338,
+   "oracle": 10.41546326399827,
+   "oracle_success": 10.425182941169847,
+   "oracle_prevalence": 10.46974657992034,
+   "z_tv": 0.15452115019947002
+  },
+  {
+   "family": "iid",
+   "seed": 100011,
+   "calibrated": false,
+   "nominal": 4.332368614100146,
+   "oracle": 4.332368614100146,
+   "oracle_success": 4.332368614100146,
+   "oracle_prevalence": 4.636608158755991,
+   "z_tv": 0.0661749904192114
+  },
+  {
+   "family": "iid",
+   "seed": 100012,
+   "calibrated": false,
+   "nominal": 6.084663179431752,
+   "oracle": 5.556586807687297,
+   "oracle_success": 5.556586807687297,
+   "oracle_prevalence": 6.086301059285045,
+   "z_tv": 0.11540179856493393
+  },
+  {
+   "family": "iid",
+   "seed": 100013,
+   "calibrated": true,
+   "nominal": 8.083029811787648,
+   "oracle": 8.082961494031352,
+   "oracle_success": 8.083029811787648,
+   "oracle_prevalence": 8.082961494031352,
+   "z_tv": 0.0414365806275305
+  },
+  {
+   "family": "iid",
+   "seed": 100014,
+   "calibrated": false,
+   "nominal": 7.952082157462751,
+   "oracle": 7.694053730046838,
+   "oracle_success": 7.694053730046838,
+   "oracle_prevalence": 7.9009018784575655,
+   "z_tv": 0.1305272682563333
+  },
+  {
+   "family": "iid",
+   "seed": 100015,
+   "calibrated": false,
+   "nominal": 3.7403351085102257,
+   "oracle": 3.7403351085102257,
+   "oracle_success": 3.7403351085102257,
+   "oracle_prevalence": 3.7403351085102257,
+   "z_tv": 0.10424670032065433
+  },
+  {
+   "family": "iid",
+   "seed": 100016,
+   "calibrated": true,
+   "nominal": 9.361824349720766,
+   "oracle": 9.344317247957864,
+   "oracle_success": 9.361824349720766,
+   "oracle_prevalence": 9.344317247957864,
+   "z_tv": 0.11880500769015974
+  },
+  {
+   "family": "iid",
+   "seed": 100017,
+   "calibrated": false,
+   "nominal": 7.159217344979198,
+   "oracle": 7.102813343373007,
+   "oracle_success": 7.102813343373007,
+   "oracle_prevalence": 7.159217344979198,
+   "z_tv": 0.07388624884829977
+  },
+  {
+   "family": "iid",
+   "seed": 100018,
+   "calibrated": false,
+   "nominal": 6.400822004472214,
+   "oracle": 6.400822004472214,
+   "oracle_success": 6.400822004472214,
+   "oracle_prevalence": 6.400822004472214,
+   "z_tv": 0.05363852154604282
+  },
+  {
+   "family": "iid",
+   "seed": 100019,
+   "calibrated": false,
+   "nominal": 6.362209953397068,
+   "oracle": 6.32153225266224,
+   "oracle_success": 6.362209953397068,
+   "oracle_prevalence": 6.32153225266224,
+   "z_tv": 0.07441945375598702
+  },
+  {
+   "family": "iid",
+   "seed": 100020,
+   "calibrated": false,
+   "nominal": 3.8773266545959935,
+   "oracle": 3.874162626258923,
+   "oracle_success": 3.874162626258923,
+   "oracle_prevalence": 3.904672791546284,
+   "z_tv": 0.044898269982920284
+  },
+  {
+   "family": "iid",
+   "seed": 100021,
+   "calibrated": false,
+   "nominal": 8.375936059475102,
+   "oracle": 8.375936059475102,
+   "oracle_success": 8.375936059475102,
+   "oracle_prevalence": 8.375936059475102,
+   "z_tv": 0.08866354853454772
+  },
+  {
+   "family": "iid",
+   "seed": 100022,
+   "calibrated": false,
+   "nominal": 9.604724861986107,
+   "oracle": 9.603238753905206,
+   "oracle_success": 9.603238753905206,
+   "oracle_prevalence": 9.604724861986107,
+   "z_tv": 0.026749918634790162
+  },
+  {
+   "family": "iid",
+   "seed": 100023,
+   "calibrated": false,
+   "nominal": 10.583849394554685,
+   "oracle": 10.044176149344498,
+   "oracle_success": 10.583849394554685,
+   "oracle_prevalence": 10.044176149344498,
+   "z_tv": 0.12951841260111938
+  },
+  {
+   "family": "iid",
+   "seed": 100024,
+   "calibrated": false,
+   "nominal": 4.986675814629683,
+   "oracle": 4.926566837454356,
+   "oracle_success": 4.984860832800888,
+   "oracle_prevalence": 4.932087492083699,
+   "z_tv": 0.0497502869271194
+  },
+  {
+   "family": "iid",
+   "seed": 100025,
+   "calibrated": true,
+   "nominal": 7.306462887138443,
+   "oracle": 7.306462887138443,
+   "oracle_success": 7.306462887138443,
+   "oracle_prevalence": 7.306462887138443,
+   "z_tv": 0.13110596049429266
+  },
+  {
+   "family": "iid",
+   "seed": 100026,
+   "calibrated": false,
+   "nominal": 5.150853932414605,
+   "oracle": 5.150853932414605,
+   "oracle_success": 5.150853932414605,
+   "oracle_prevalence": 5.150853932414605,
+   "z_tv": 0.09395501115709007
+  },
+  {
+   "family": "iid",
+   "seed": 100027,
+   "calibrated": false,
+   "nominal": 11.934130649471653,
+   "oracle": 9.726549418344533,
+   "oracle_success": 9.817404568188017,
+   "oracle_prevalence": 11.934130649471653,
+   "z_tv": 0.11737101219367471
+  },
+  {
+   "family": "iid",
+   "seed": 100028,
+   "calibrated": true,
+   "nominal": 13.376405912322687,
+   "oracle": 13.376405912322687,
+   "oracle_success": 13.376405912322687,
+   "oracle_prevalence": 13.376405912322687,
+   "z_tv": 0.01783327164605991
+  },
+  {
+   "family": "iid",
+   "seed": 100029,
+   "calibrated": false,
+   "nominal": 5.103636725623453,
+   "oracle": 5.103636725623453,
+   "oracle_success": 5.103636725623453,
+   "oracle_prevalence": 5.103636725623453,
+   "z_tv": 0.05656455368490576
+  },
+  {
+   "family": "iid",
+   "seed": 100030,
+   "calibrated": false,
+   "nominal": 5.129552486627036,
+   "oracle": 5.104778572147968,
+   "oracle_success": 5.129552486627036,
+   "oracle_prevalence": 5.129552486627036,
+   "z_tv": 0.014185518909892603
+  },
+  {
+   "family": "iid",
+   "seed": 100031,
+   "calibrated": false,
+   "nominal": 8.54757356698077,
+   "oracle": 7.562687142489196,
+   "oracle_success": 7.562687142489196,
+   "oracle_prevalence": 8.54757356698077,
+   "z_tv": 0.05669616884881268
+  },
+  {
+   "family": "iid",
+   "seed": 100032,
+   "calibrated": false,
+   "nominal": 9.007422207632992,
+   "oracle": 8.772242573273575,
+   "oracle_success": 8.772242573273575,
+   "oracle_prevalence": 9.007422207632992,
+   "z_tv": 0.05737469266439377
+  },
+  {
+   "family": "iid",
+   "seed": 100033,
+   "calibrated": false,
+   "nominal": 7.487095373335237,
+   "oracle": 7.47292670119277,
+   "oracle_success": 7.487720851757485,
+   "oracle_prevalence": 7.501708095829064,
+   "z_tv": 0.0886886613125148
+  },
+  {
+   "family": "iid",
+   "seed": 100034,
+   "calibrated": true,
+   "nominal": 5.888428922335386,
+   "oracle": 5.888428922335386,
+   "oracle_success": 5.888428922335386,
+   "oracle_prevalence": 5.888428922335386,
+   "z_tv": 0.08219745589180544
+  },
+  {
+   "family": "iid",
+   "seed": 100035,
+   "calibrated": false,
+   "nominal": 7.183493168986085,
+   "oracle": 6.323642126738513,
+   "oracle_success": 6.323642126738513,
+   "oracle_prevalence": 7.036145997852614,
+   "z_tv": 0.07887168569356992
+  },
+  {
+   "family": "iid",
+   "seed": 100036,
+   "calibrated": false,
+   "nominal": 8.306142851160455,
+   "oracle": 8.26765646607545,
+   "oracle_success": 8.306142851160455,
+   "oracle_prevalence": 8.26765646607545,
+   "z_tv": 0.1509370327989922
+  },
+  {
+   "family": "iid",
+   "seed": 100037,
+   "calibrated": false,
+   "nominal": 3.66761112638076,
+   "oracle": 3.454161451197747,
+   "oracle_success": 3.454161451197747,
+   "oracle_prevalence": 3.6774171800267332,
+   "z_tv": 0.18451350731972063
+  },
+  {
+   "family": "iid",
+   "seed": 100038,
+   "calibrated": false,
+   "nominal": 8.05549581905645,
+   "oracle": 7.691278816568136,
+   "oracle_success": 7.691278816568136,
+   "oracle_prevalence": 8.071972706078324,
+   "z_tv": 0.12323817844066834
+  },
+  {
+   "family": "iid",
+   "seed": 100039,
+   "calibrated": false,
+   "nominal": 7.853571889126395,
+   "oracle": 7.513090084166031,
+   "oracle_success": 7.832661071380448,
+   "oracle_prevalence": 7.525878258004078,
+   "z_tv": 0.16830324298438126
+  },
+  {
+   "family": "iid",
+   "seed": 100040,
+   "calibrated": false,
+   "nominal": 7.811900011718004,
+   "oracle": 7.811900011718004,
+   "oracle_success": 7.811900011718004,
+   "oracle_prevalence": 7.811900011718004,
+   "z_tv": 0.021082132171553553
+  },
+  {
+   "family": "iid",
+   "seed": 100041,
+   "calibrated": false,
+   "nominal": 9.65395224926895,
+   "oracle": 7.829284109732667,
+   "oracle_success": 7.830179969307816,
+   "oracle_prevalence": 12.066366630061378,
+   "z_tv": 0.08591511062856554
+  },
+  {
+   "family": "iid",
+   "seed": 100042,
+   "calibrated": true,
+   "nominal": 7.6724966541478,
+   "oracle": 7.665758743661174,
+   "oracle_success": 7.6724966541478,
+   "oracle_prevalence": 7.665758743661174,
+   "z_tv": 0.14243402241664305
+  },
+  {
+   "family": "iid",
+   "seed": 100043,
+   "calibrated": false,
+   "nominal": 7.366691613238173,
+   "oracle": 7.150149324575641,
+   "oracle_success": 7.151221515917921,
+   "oracle_prevalence": 7.366691613238173,
+   "z_tv": 0.056795824001455525
+  },
+  {
+   "family": "iid",
+   "seed": 100044,
+   "calibrated": false,
+   "nominal": 5.8804030637686155,
+   "oracle": 5.678571838736955,
+   "oracle_success": 5.828581830409251,
+   "oracle_prevalence": 5.731405333981327,
+   "z_tv": 0.05383921199454249
+  },
+  {
+   "family": "iid",
+   "seed": 100045,
+   "calibrated": false,
+   "nominal": 10.766468085864155,
+   "oracle": 10.732670270163108,
+   "oracle_success": 10.732682617917899,
+   "oracle_prevalence": 10.766468085864155,
+   "z_tv": 0.05118512886174438
+  },
+  {
+   "family": "iid",
+   "seed": 100046,
+   "calibrated": false,
+   "nominal": 9.838101683606391,
+   "oracle": 9.834226521238193,
+   "oracle_success": 9.834226521238193,
+   "oracle_prevalence": 9.838101683606391,
+   "z_tv": 0.06059943750413986
+  },
+  {
+   "family": "iid",
+   "seed": 100047,
+   "calibrated": false,
+   "nominal": 6.528457944359556,
+   "oracle": 6.51487896622308,
+   "oracle_success": 6.556524394945162,
+   "oracle_prevalence": 6.54318099424795,
+   "z_tv": 0.13714462515140347
+  },
+  {
+   "family": "iid",
+   "seed": 100048,
+   "calibrated": false,
+   "nominal": 6.256540389440806,
+   "oracle": 6.256540389440806,
+   "oracle_success": 6.256689861041901,
+   "oracle_prevalence": 6.256540389440806,
+   "z_tv": 0.09508565956738455
+  },
+  {
+   "family": "iid",
+   "seed": 100049,
+   "calibrated": true,
+   "nominal": 6.762337530952226,
+   "oracle": 6.762337530952226,
+   "oracle_success": 6.762337530952226,
+   "oracle_prevalence": 6.762337530952226,
+   "z_tv": 0.08581362283109621
+  },
+  {
+   "family": "iid",
+   "seed": 100050,
+   "calibrated": true,
+   "nominal": 5.819904999494193,
+   "oracle": 5.819904999494193,
+   "oracle_success": 5.819904999494193,
+   "oracle_prevalence": 5.819904999494193,
+   "z_tv": 0.05491990978643682
+  },
+  {
+   "family": "iid",
+   "seed": 100051,
+   "calibrated": false,
+   "nominal": 7.799791268537838,
+   "oracle": 7.799791268537838,
+   "oracle_success": 7.815621389781322,
+   "oracle_prevalence": 7.799791268537838,
+   "z_tv": 0.06302626783890011
+  },
+  {
+   "family": "iid",
+   "seed": 100052,
+   "calibrated": false,
+   "nominal": 4.747246203009816,
+   "oracle": 4.7465162585330205,
+   "oracle_success": 4.7465162585330205,
+   "oracle_prevalence": 4.753995623646022,
+   "z_tv": 0.12727378889627788
+  },
+  {
+   "family": "iid",
+   "seed": 100053,
+   "calibrated": true,
+   "nominal": 4.672992097998784,
+   "oracle": 4.661122574824304,
+   "oracle_success": 4.672992097998784,
+   "oracle_prevalence": 4.661122574824304,
+   "z_tv": 0.11148424005633731
+  },
+  {
+   "family": "iid",
+   "seed": 100054,
+   "calibrated": true,
+   "nominal": 5.453091056609682,
+   "oracle": 5.453091056609682,
+   "oracle_success": 5.453091056609682,
+   "oracle_prevalence": 5.453091056609682,
+   "z_tv": 0.18527293942865433
+  },
+  {
+   "family": "iid",
+   "seed": 100055,
+   "calibrated": true,
+   "nominal": 7.028439010932157,
+   "oracle": 7.020357504875997,
+   "oracle_success": 7.028439010932157,
+   "oracle_prevalence": 7.020357504875997,
+   "z_tv": 0.05868286826440863
+  },
+  {
+   "family": "iid",
+   "seed": 100056,
+   "calibrated": false,
+   "nominal": 8.246976968246772,
+   "oracle": 8.246976968246772,
+   "oracle_success": 8.246976968246772,
+   "oracle_prevalence": 8.246976968246772,
+   "z_tv": 0.04635915256767484
+  },
+  {
+   "family": "iid",
+   "seed": 100057,
+   "calibrated": false,
+   "nominal": 6.031215328577707,
+   "oracle": 5.950783458684658,
+   "oracle_success": 5.95081547389694,
+   "oracle_prevalence": 6.028864984012678,
+   "z_tv": 0.06735166237449004
+  },
+  {
+   "family": "iid",
+   "seed": 100058,
+   "calibrated": false,
+   "nominal": 6.6471228016962804,
+   "oracle": 6.0276443644751305,
+   "oracle_success": 6.6471228016962804,
+   "oracle_prevalence": 6.05609336779964,
+   "z_tv": 0.16354186935734943
+  },
+  {
+   "family": "iid",
+   "seed": 100059,
+   "calibrated": false,
+   "nominal": 4.520992669131001,
+   "oracle": 3.877509683100652,
+   "oracle_success": 3.9238063239808145,
+   "oracle_prevalence": 3.8941061851407217,
+   "z_tv": 0.2878334095747921
+  },
+  {
+   "family": "shift",
+   "seed": 100000,
+   "calibrated": false,
+   "nominal": 21.163173716257266,
+   "oracle": 12.825446098483862,
+   "oracle_success": 12.825446098483862,
+   "oracle_prevalence": 12.825446098483862,
+   "z_tv": 0.18734526348009578
+  },
+  {
+   "family": "shift",
+   "seed": 100001,
+   "calibrated": false,
+   "nominal": 8.820106427012927,
+   "oracle": 6.862703087493084,
+   "oracle_success": 6.862703087493084,
+   "oracle_prevalence": 8.821932002073833,
+   "z_tv": 0.15157815294053106
+  },
+  {
+   "family": "shift",
+   "seed": 100002,
+   "calibrated": false,
+   "nominal": 10.30664378660724,
+   "oracle": 9.533410755793437,
+   "oracle_success": 9.533410755793437,
+   "oracle_prevalence": 10.296489019903651,
+   "z_tv": 0.1542522977070051
+  },
+  {
+   "family": "shift",
+   "seed": 100003,
+   "calibrated": false,
+   "nominal": 14.175538508730927,
+   "oracle": 11.366736357409646,
+   "oracle_success": 11.366736357409646,
+   "oracle_prevalence": 14.175538508730927,
+   "z_tv": 0.12035662236211456
+  },
+  {
+   "family": "shift",
+   "seed": 100004,
+   "calibrated": false,
+   "nominal": 11.501578272134758,
+   "oracle": 10.213424478285658,
+   "oracle_success": 11.343526618013488,
+   "oracle_prevalence": 11.311006695835538,
+   "z_tv": 0.235070646861184
+  },
+  {
+   "family": "shift",
+   "seed": 100005,
+   "calibrated": false,
+   "nominal": 11.255026939117762,
+   "oracle": 10.64794061191387,
+   "oracle_success": 11.19395803026573,
+   "oracle_prevalence": 11.363660550612678,
+   "z_tv": 0.14908849688048717
+  },
+  {
+   "family": "shift",
+   "seed": 100006,
+   "calibrated": true,
+   "nominal": 8.059451301937255,
+   "oracle": 8.051988993387196,
+   "oracle_success": 8.059451301937255,
+   "oracle_prevalence": 8.0897366566882,
+   "z_tv": 0.1460894758658961
+  },
+  {
+   "family": "shift",
+   "seed": 100007,
+   "calibrated": false,
+   "nominal": 14.44247672641865,
+   "oracle": 14.437648503076716,
+   "oracle_success": 14.437648503076716,
+   "oracle_prevalence": 14.44247672641865,
+   "z_tv": 0.1029595608112664
+  },
+  {
+   "family": "shift",
+   "seed": 100008,
+   "calibrated": false,
+   "nominal": 15.76034323031178,
+   "oracle": 10.490443345221049,
+   "oracle_success": 10.903059522526766,
+   "oracle_prevalence": 15.76034323031178,
+   "z_tv": 0.14911103413667742
+  },
+  {
+   "family": "shift",
+   "seed": 100009,
+   "calibrated": false,
+   "nominal": 13.061554740940437,
+   "oracle": 10.427090789627371,
+   "oracle_success": 10.427090789627371,
+   "oracle_prevalence": 13.079613569725701,
+   "z_tv": 0.14373624937192425
+  },
+  {
+   "family": "shift",
+   "seed": 100010,
+   "calibrated": false,
+   "nominal": 12.71249993015401,
+   "oracle": 12.533790776485915,
+   "oracle_success": 12.539811107211232,
+   "oracle_prevalence": 12.61694191150062,
+   "z_tv": 0.24163373099851032
+  },
+  {
+   "family": "shift",
+   "seed": 100011,
+   "calibrated": false,
+   "nominal": 4.6771086857315805,
+   "oracle": 4.6771086857315805,
+   "oracle_success": 4.6771086857315805,
+   "oracle_prevalence": 4.6771086857315805,
+   "z_tv": 0.060868042633049624
+  },
+  {
+   "family": "shift",
+   "seed": 100012,
+   "calibrated": false,
+   "nominal": 7.688757451350574,
+   "oracle": 5.556586807687297,
+   "oracle_success": 5.556586807687297,
+   "oracle_prevalence": 5.556586807687297,
+   "z_tv": 0.1731630052842664
+  },
+  {
+   "family": "shift",
+   "seed": 100013,
+   "calibrated": false,
+   "nominal": 9.372403798486637,
+   "oracle": 9.163226878474923,
+   "oracle_success": 9.166700051341312,
+   "oracle_prevalence": 9.16655136432093,
+   "z_tv": 0.09856568066351049
+  },
+  {
+   "family": "shift",
+   "seed": 100014,
+   "calibrated": false,
+   "nominal": 13.434719714056282,
+   "oracle": 12.90115207867283,
+   "oracle_success": 12.973877851062635,
+   "oracle_prevalence": 13.647722423965995,
+   "z_tv": 0.0939264082584352
+  },
+  {
+   "family": "shift",
+   "seed": 100015,
+   "calibrated": false,
+   "nominal": 3.78611601680071,
+   "oracle": 3.78611601680071,
+   "oracle_success": 3.78611601680071,
+   "oracle_prevalence": 3.78611601680071,
+   "z_tv": 0.1572741711351805
+  },
+  {
+   "family": "shift",
+   "seed": 100016,
+   "calibrated": false,
+   "nominal": 9.607432201661428,
+   "oracle": 9.607432201661428,
+   "oracle_success": 9.607432201661428,
+   "oracle_prevalence": 9.607432201661428,
+   "z_tv": 0.13192767065861552
+  },
+  {
+   "family": "shift",
+   "seed": 100017,
+   "calibrated": false,
+   "nominal": 9.536063391932062,
+   "oracle": 9.264833354553591,
+   "oracle_success": 9.314611786063828,
+   "oracle_prevalence": 9.529886928002497,
+   "z_tv": 0.1569792543250931
+  },
+  {
+   "family": "shift",
+   "seed": 100018,
+   "calibrated": false,
+   "nominal": 6.400822004472214,
+   "oracle": 6.400822004472214,
+   "oracle_success": 6.400822004472214,
+   "oracle_prevalence": 6.400822004472214,
+   "z_tv": 0.09912591846804668
+  },
+  {
+   "family": "shift",
+   "seed": 100019,
+   "calibrated": false,
+   "nominal": 9.362432610310172,
+   "oracle": 8.792015277536622,
+   "oracle_success": 8.83452007857706,
+   "oracle_prevalence": 8.792015277536622,
+   "z_tv": 0.1955288352890779
+  },
+  {
+   "family": "shift",
+   "seed": 100020,
+   "calibrated": false,
+   "nominal": 6.035757448732314,
+   "oracle": 5.971716353969038,
+   "oracle_success": 5.982209855062246,
+   "oracle_prevalence": 6.0546361947967355,
+   "z_tv": 0.1015919803422455
+  },
+  {
+   "family": "shift",
+   "seed": 100021,
+   "calibrated": false,
+   "nominal": 9.358026558633345,
+   "oracle": 9.358026558633345,
+   "oracle_success": 9.358026558633345,
+   "oracle_prevalence": 9.358026558633345,
+   "z_tv": 0.09567148481277159
+  },
+  {
+   "family": "shift",
+   "seed": 100022,
+   "calibrated": false,
+   "nominal": 13.257550889028312,
+   "oracle": 11.588769690128812,
+   "oracle_success": 11.588769690128812,
+   "oracle_prevalence": 11.588769690128812,
+   "z_tv": 0.107313315627426
+  },
+  {
+   "family": "shift",
+   "seed": 100023,
+   "calibrated": false,
+   "nominal": 10.583849394554685,
+   "oracle": 10.583849394554685,
+   "oracle_success": 10.583849394554685,
+   "oracle_prevalence": 10.583849394554685,
+   "z_tv": 0.07031849195827222
+  },
+  {
+   "family": "shift",
+   "seed": 100024,
+   "calibrated": false,
+   "nominal": 6.688009331328411,
+   "oracle": 6.683560252572537,
+   "oracle_success": 6.687930482110078,
+   "oracle_prevalence": 6.688282713257699,
+   "z_tv": 0.11336023164682354
+  },
+  {
+   "family": "shift",
+   "seed": 100025,
+   "calibrated": false,
+   "nominal": 9.030596235474743,
+   "oracle": 9.030596235474743,
+   "oracle_success": 9.030596235474743,
+   "oracle_prevalence": 9.030596235474743,
+   "z_tv": 0.096032382334386
+  },
+  {
+   "family": "shift",
+   "seed": 100026,
+   "calibrated": false,
+   "nominal": 6.431635495650644,
+   "oracle": 6.431635495650644,
+   "oracle_success": 6.431635495650644,
+   "oracle_prevalence": 6.431635495650644,
+   "z_tv": 0.15974606329512372
+  },
+  {
+   "family": "shift",
+   "seed": 100027,
+   "calibrated": false,
+   "nominal": 13.754629757900403,
+   "oracle": 11.369446195427605,
+   "oracle_success": 11.369446195427605,
+   "oracle_prevalence": 13.754629757900403,
+   "z_tv": 0.032933439899616355
+  },
+  {
+   "family": "shift",
+   "seed": 100028,
+   "calibrated": false,
+   "nominal": 23.26334805185062,
+   "oracle": 16.563294640147806,
+   "oracle_success": 16.563294640147806,
+   "oracle_prevalence": 16.563294640147806,
+   "z_tv": 0.08481472980483294
+  },
+  {
+   "family": "shift",
+   "seed": 100029,
+   "calibrated": false,
+   "nominal": 6.913403838815709,
+   "oracle": 6.913403838815709,
+   "oracle_success": 6.913403838815709,
+   "oracle_prevalence": 6.913403838815709,
+   "z_tv": 0.07331433119576092
+  },
+  {
+   "family": "shift",
+   "seed": 100030,
+   "calibrated": false,
+   "nominal": 6.458179501676311,
+   "oracle": 6.458179501676311,
+   "oracle_success": 6.458179501676311,
+   "oracle_prevalence": 6.458179501676311,
+   "z_tv": 0.13287162206626396
+  },
+  {
+   "family": "shift",
+   "seed": 100031,
+   "calibrated": false,
+   "nominal": 12.023054057926661,
+   "oracle": 7.914300271916194,
+   "oracle_success": 7.914300271916194,
+   "oracle_prevalence": 7.914300271916194,
+   "z_tv": 0.1512107113948399
+  },
+  {
+   "family": "shift",
+   "seed": 100032,
+   "calibrated": false,
+   "nominal": 11.186004832369147,
+   "oracle": 11.122461501864551,
+   "oracle_success": 11.241221128897138,
+   "oracle_prevalence": 11.136680064488681,
+   "z_tv": 0.10034019475085976
+  },
+  {
+   "family": "shift",
+   "seed": 100033,
+   "calibrated": false,
+   "nominal": 10.945817433814074,
+   "oracle": 8.819034780452714,
+   "oracle_success": 8.819034780452714,
+   "oracle_prevalence": 10.944652576781387,
+   "z_tv": 0.03643599556492885
+  },
+  {
+   "family": "shift",
+   "seed": 100034,
+   "calibrated": false,
+   "nominal": 6.3964417900815,
+   "oracle": 6.3964417900815,
+   "oracle_success": 6.3964417900815,
+   "oracle_prevalence": 6.3964417900815,
+   "z_tv": 0.09510375508965045
+  },
+  {
+   "family": "shift",
+   "seed": 100035,
+   "calibrated": false,
+   "nominal": 9.35954403847106,
+   "oracle": 6.6352912778350746,
+   "oracle_success": 6.6352912778350746,
+   "oracle_prevalence": 9.358585750102868,
+   "z_tv": 0.09695408986695786
+  },
+  {
+   "family": "shift",
+   "seed": 100036,
+   "calibrated": false,
+   "nominal": 11.891237969336213,
+   "oracle": 9.182071161445236,
+   "oracle_success": 11.51075631961849,
+   "oracle_prevalence": 9.182071161445236,
+   "z_tv": 0.21443862593429702
+  },
+  {
+   "family": "shift",
+   "seed": 100037,
+   "calibrated": false,
+   "nominal": 5.437988877997892,
+   "oracle": 4.9178236249255525,
+   "oracle_success": 5.041974717694285,
+   "oracle_prevalence": 4.932272044957355,
+   "z_tv": 0.17335897164702166
+  },
+  {
+   "family": "shift",
+   "seed": 100038,
+   "calibrated": false,
+   "nominal": 12.443643343748903,
+   "oracle": 9.313483598326206,
+   "oracle_success": 9.313483598326206,
+   "oracle_prevalence": 11.192621705614348,
+   "z_tv": 0.1494442407169799
+  },
+  {
+   "family": "shift",
+   "seed": 100039,
+   "calibrated": false,
+   "nominal": 10.054685551949529,
+   "oracle": 9.406621745101223,
+   "oracle_success": 9.415936203516633,
+   "oracle_prevalence": 9.436039697511848,
+   "z_tv": 0.26673330103091075
+  },
+  {
+   "family": "shift",
+   "seed": 100040,
+   "calibrated": false,
+   "nominal": 10.000443976319993,
+   "oracle": 10.000443976319993,
+   "oracle_success": 10.000443976319993,
+   "oracle_prevalence": 10.000443976319993,
+   "z_tv": 0.11964816863213411
+  },
+  {
+   "family": "shift",
+   "seed": 100041,
+   "calibrated": false,
+   "nominal": 13.529232972846742,
+   "oracle": 10.155488987523654,
+   "oracle_success": 10.183487472877681,
+   "oracle_prevalence": 15.252054103341464,
+   "z_tv": 0.19253334452595122
+  },
+  {
+   "family": "shift",
+   "seed": 100042,
+   "calibrated": false,
+   "nominal": 8.312977253024949,
+   "oracle": 8.312977253024949,
+   "oracle_success": 8.312977253024949,
+   "oracle_prevalence": 8.312977253024949,
+   "z_tv": 0.09384884640922034
+  },
+  {
+   "family": "shift",
+   "seed": 100043,
+   "calibrated": false,
+   "nominal": 8.180852946530411,
+   "oracle": 7.662502902686254,
+   "oracle_success": 7.662502902686254,
+   "oracle_prevalence": 8.473108716411886,
+   "z_tv": 0.12849275219099504
+  },
+  {
+   "family": "shift",
+   "seed": 100044,
+   "calibrated": false,
+   "nominal": 10.566842337677222,
+   "oracle": 10.419424283234394,
+   "oracle_success": 10.420490629606647,
+   "oracle_prevalence": 10.448061591701313,
+   "z_tv": 0.08747033484516936
+  },
+  {
+   "family": "shift",
+   "seed": 100045,
+   "calibrated": false,
+   "nominal": 15.682167136529541,
+   "oracle": 15.588683205453838,
+   "oracle_success": 15.588683205453838,
+   "oracle_prevalence": 15.682167136529541,
+   "z_tv": 0.12682119149991938
+  },
+  {
+   "family": "shift",
+   "seed": 100046,
+   "calibrated": false,
+   "nominal": 14.181852819255724,
+   "oracle": 14.153155180177286,
+   "oracle_success": 14.153155180177286,
+   "oracle_prevalence": 14.153155180177286,
+   "z_tv": 0.09128991368545192
+  },
+  {
+   "family": "shift",
+   "seed": 100047,
+   "calibrated": false,
+   "nominal": 8.353641758632623,
+   "oracle": 6.5682220365622115,
+   "oracle_success": 6.5682220365622115,
+   "oracle_prevalence": 8.353641758632623,
+   "z_tv": 0.11399562306981283
+  },
+  {
+   "family": "shift",
+   "seed": 100048,
+   "calibrated": false,
+   "nominal": 8.435226426983368,
+   "oracle": 8.41555523135838,
+   "oracle_success": 8.418298500196114,
+   "oracle_prevalence": 8.435226426983368,
+   "z_tv": 0.06026307791574201
+  },
+  {
+   "family": "shift",
+   "seed": 100049,
+   "calibrated": true,
+   "nominal": 6.762337530952226,
+   "oracle": 6.762337530952226,
+   "oracle_success": 6.762337530952226,
+   "oracle_prevalence": 6.762337530952226,
+   "z_tv": 0.165100176146767
+  },
+  {
+   "family": "shift",
+   "seed": 100050,
+   "calibrated": true,
+   "nominal": 8.269527337134598,
+   "oracle": 8.262690619455292,
+   "oracle_success": 8.269527337134598,
+   "oracle_prevalence": 8.266447746115112,
+   "z_tv": 0.13233698052341902
+  },
+  {
+   "family": "shift",
+   "seed": 100051,
+   "calibrated": false,
+   "nominal": 10.212786393872939,
+   "oracle": 10.18844733071979,
+   "oracle_success": 10.18844733071979,
+   "oracle_prevalence": 10.18844733071979,
+   "z_tv": 0.05802296595991785
+  },
+  {
+   "family": "shift",
+   "seed": 100052,
+   "calibrated": false,
+   "nominal": 5.848917386935129,
+   "oracle": 5.792344159575789,
+   "oracle_success": 5.799068573532775,
+   "oracle_prevalence": 5.845270591116334,
+   "z_tv": 0.08498612108127318
+  },
+  {
+   "family": "shift",
+   "seed": 100053,
+   "calibrated": false,
+   "nominal": 10.634394052383751,
+   "oracle": 10.44153230503905,
+   "oracle_success": 10.516189750145326,
+   "oracle_prevalence": 10.626495383817904,
+   "z_tv": 0.19111077074476526
+  },
+  {
+   "family": "shift",
+   "seed": 100054,
+   "calibrated": true,
+   "nominal": 8.395796116779188,
+   "oracle": 8.381477792145521,
+   "oracle_success": 8.395796116779188,
+   "oracle_prevalence": 8.381477792145521,
+   "z_tv": 0.21350961380288974
+  },
+  {
+   "family": "shift",
+   "seed": 100055,
+   "calibrated": false,
+   "nominal": 5.215986129762339,
+   "oracle": 4.739452908725914,
+   "oracle_success": 4.739452908725914,
+   "oracle_prevalence": 5.215986129762339,
+   "z_tv": 0.12116656734961403
+  },
+  {
+   "family": "shift",
+   "seed": 100056,
+   "calibrated": false,
+   "nominal": 8.246976968246772,
+   "oracle": 8.246976968246772,
+   "oracle_success": 8.246976968246772,
+   "oracle_prevalence": 8.246976968246772,
+   "z_tv": 0.13869887958084148
+  },
+  {
+   "family": "shift",
+   "seed": 100057,
+   "calibrated": false,
+   "nominal": 10.152838367976104,
+   "oracle": 9.53897342092839,
+   "oracle_success": 10.019147637625023,
+   "oracle_prevalence": 10.053707216655512,
+   "z_tv": 0.1195274031852049
+  },
+  {
+   "family": "shift",
+   "seed": 100058,
+   "calibrated": false,
+   "nominal": 6.6471228016962804,
+   "oracle": 6.6471228016962804,
+   "oracle_success": 6.6471228016962804,
+   "oracle_prevalence": 6.6471228016962804,
+   "z_tv": 0.0913174783202701
+  },
+  {
+   "family": "shift",
+   "seed": 100059,
+   "calibrated": false,
+   "nominal": 5.625563700304731,
+   "oracle": 5.227161676729987,
+   "oracle_success": 5.227672483902359,
+   "oracle_prevalence": 5.31069380909208,
+   "z_tv": 0.2086115703764786
+  }
+ ]
+}
