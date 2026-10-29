@@ -1,0 +1,174 @@
+{
+  "tables": [
+    [
+      1,
+      "Mathematical notation and abbreviations"
+    ],
+    [
+      2,
+      "Refined research questions and evidence requirements"
+    ],
+    [
+      3,
+      "Base action and outcome parameters"
+    ],
+    [
+      4,
+      "Implemented comparison policies"
+    ],
+    [
+      5,
+      "Exact loss comparisons across the designed scenarios"
+    ],
+    [
+      6,
+      "Selected paired comparisons with nominal planning"
+    ],
+    [
+      7,
+      "Implemented module responsibilities"
+    ],
+    [
+      8,
+      "Research-question answers"
+    ],
+    [
+      9,
+      "Complete per-scenario expected losses"
+    ],
+    [
+      10,
+      "Assumptions and their consequences"
+    ],
+    [
+      11,
+      "Executed mathematical validation checks"
+    ]
+  ],
+  "figures": [
+    [
+      1,
+      "Paired differences from nominal planning"
+    ],
+    [
+      2,
+      "Exact expected loss over the fixed design"
+    ],
+    [
+      3,
+      "Human-effectiveness miscalibration"
+    ],
+    [
+      4,
+      "Posterior recovery after dependent failures"
+    ],
+    [
+      5,
+      "Robust bounds and model coverage"
+    ],
+    [
+      6,
+      "Cold root-decision runtime"
+    ]
+  ],
+  "sections": [
+    {
+      "title": "1. Introduction",
+      "pdf_page": 7
+    },
+    {
+      "title": "2. Research questions and evidence criteria",
+      "pdf_page": 8
+    },
+    {
+      "title": "3. Literature and prior-art equivalence",
+      "pdf_page": 8
+    },
+    {
+      "title": "4. Formal mathematical specification",
+      "pdf_page": 13
+    },
+    {
+      "title": "5. Worked examples and interpretation",
+      "pdf_page": 18
+    },
+    {
+      "title": "6. Mathematical properties and proofs",
+      "pdf_page": 20
+    },
+    {
+      "title": "7. Counterexamples and limits",
+      "pdf_page": 25
+    },
+    {
+      "title": "8. Computational methodology",
+      "pdf_page": 27
+    },
+    {
+      "title": "9. Experimental findings",
+      "pdf_page": 31
+    },
+    {
+      "title": "10. Python architecture and implemented functionality",
+      "pdf_page": 40
+    },
+    {
+      "title": "11. Practical interpretation and integration boundaries",
+      "pdf_page": 43
+    },
+    {
+      "title": "12. Discussion and threats to validity",
+      "pdf_page": 44
+    },
+    {
+      "title": "13. Answers to the research questions",
+      "pdf_page": 46
+    },
+    {
+      "title": "14. Conclusions and future research",
+      "pdf_page": 46
+    },
+    {
+      "title": "References",
+      "pdf_page": 48
+    },
+    {
+      "title": "Appendix A. Complete scenario results",
+      "pdf_page": 51
+    },
+    {
+      "title": "Appendix B. Assumptions and exclusions",
+      "pdf_page": 53
+    },
+    {
+      "title": "Appendix C. Mathematical and experimental verification",
+      "pdf_page": 55
+    },
+    {
+      "title": "Appendix D. Reproduction and artifact navigation",
+      "pdf_page": 57
+    }
+  ],
+  "figure_pdf_pages": [
+    33,
+    34,
+    35,
+    36,
+    37,
+    39
+  ],
+  "table_pdf_pages": [
+    6,
+    8,
+    14,
+    30,
+    32,
+    33,
+    40,
+    46,
+    51,
+    53,
+    55
+  ],
+  "verified_pdf_page_count": 58
+}

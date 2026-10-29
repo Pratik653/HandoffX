@@ -1,0 +1,9 @@
+# Testing strategy and actual execution
+
+Sixty pytest cases passed on the recorded Linux environment. These cover malformed states and models, probability normalization, immutable inputs, posterior updates against direct likelihood calculations, marginal preservation, terminal-order semantics, unscored missing-evidence handling, JSON outputs, scenario roundtrips, oracle optimality, the performance-difference identity, robust supported-model bounds, correct-prior Bayes equivalence, guards, random-seed determinism, simulation agreement with exact values, static thresholds, an independently enumerated history recursion, and validity of all study configurations.
+
+The full main comparative run was then repeated without changing its synthetic model, policies or tuning choices. Every non-timing summary column matched across 418 cells. A separate scalar implementation matched 16,000 grouped-simulator trajectories. All 5,016,000 stored episode records were checked for terminal-outcome partition and summary consistency. The 418 robust objective evaluations checked that each fixed-model loss was below its rectangular envelope and the robust policy's envelope value did not exceed another evaluated policy's envelope.
+
+CLI, basic, static and custom-input examples were executed. Editable installation and wheel construction are recorded in logs. Tests demonstrate correctness on covered cases, not security hardening, mathematical proof of all implementation paths, Windows certification, or real-agent effectiveness. Numerical random checks supplement the written proofs, not replace them.
+
+Before a public release, add Windows CI, strict external JSON schemas, dependency-version matrices, concurrency contracts, higher-horizon stress tests, mutation/coverage analysis, adversarial adapters, and independent review. Before deployment, add application-specific probability calibration and outcome semantics; unit tests cannot verify those external assumptions.

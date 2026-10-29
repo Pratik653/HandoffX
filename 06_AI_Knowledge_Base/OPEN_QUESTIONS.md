@@ -1,0 +1,5 @@
+# Open questions, not claimed results
+
+How can conditional rescue/recovery models be estimated from selectively observed outcomes? How should uncertainty-set coverage be validated after shift? Does correlation modeling help in real sequential tasks after matching marginal calibration? What benchmarks avoid immediate-rescue dominance without tuning to favor a complex policy? How should nonterminal human clarification, fatigue, queues and real repair transitions be represented? Which approximation yields useful latency at larger horizons? Can a practical transfer certificate replace the loose uniform-history bound? What risk metric should a domain owner constrain separately from expected loss?
+
+These are research directions, not unproved theorems disguised as findings. The package uses no conjecture as an implemented guarantee. Any theoretical novelty claim requires a renewed equivalence audit, including historical shared-autonomy and reliability literature not exhaustively searched here.

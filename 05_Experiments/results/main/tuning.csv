@@ -1,0 +1,9 @@
+policy,setting,mean_development_loss
+confidence,0.2,9.500881889003743
+confidence,0.35,8.971960218248114
+confidence,0.5,8.562135
+confidence,0.65,8.562135
+confidence,0.8,8.562135
+retry_first,1,9.349890791203412
+retry_first,2,9.254798255771606
+retry_first,3,10.04251088050621

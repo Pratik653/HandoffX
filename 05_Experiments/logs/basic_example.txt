@@ -1,0 +1,46 @@
+{
+  "action": "human",
+  "admissible_actions": [
+    "stop",
+    "continue",
+    "human"
+  ],
+  "assumptions": [
+    "finite horizon; stationary fixed hidden mode within an episode",
+    "model probabilities supplied, not predicted or calibrated by this library",
+    "safe stop must be authorized by the integrating system",
+    "guarantees require the stated model/ambiguity assumptions"
+  ],
+  "evidence_status": "synthetic",
+  "reason": "human minimizes posterior expected cumulative loss among externally admissible actions.",
+  "value_semantics": "posterior expected cumulative loss",
+  "values": {
+    "continue": 9.142142905971884,
+    "human": 7.902880000000001,
+    "stop": 12.0
+  }
+}
+{
+  "action": "human",
+  "admissible_actions": [
+    "stop",
+    "continue",
+    "retry",
+    "human"
+  ],
+  "assumptions": [
+    "finite horizon; stationary fixed hidden mode within an episode",
+    "model probabilities supplied, not predicted or calibrated by this library",
+    "safe stop must be authorized by the integrating system",
+    "guarantees require the stated model/ambiguity assumptions"
+  ],
+  "evidence_status": "synthetic",
+  "reason": "human minimizes posterior expected cumulative loss among externally admissible actions.",
+  "value_semantics": "posterior expected cumulative loss",
+  "values": {
+    "continue": 17.278844202124567,
+    "human": 11.112593509981355,
+    "retry": 13.595274262481396,
+    "stop": 12.0
+  }
+}

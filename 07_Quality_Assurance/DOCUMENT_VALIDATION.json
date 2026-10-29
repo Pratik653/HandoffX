@@ -1,0 +1,176 @@
+{
+  "checked_utc": "2026-10-28T11:16:05.200792+00:00",
+  "manuscript_pdf_pages": 58,
+  "executive_summary_pdf_pages": 2,
+  "figures": 6,
+  "tables": 11,
+  "active_primary_metadata_records": 22,
+  "selected_original_fulltexts_examined": 6,
+  "canonical_math_expression_occurrences": 211,
+  "unique_rendered_math_expressions": 178,
+  "native_word_math_elements": 0,
+  "pdf_image_instances": 217,
+  "toc_entries_verified_against_pdf": 19,
+  "pdf_out_of_page_text_boxes": [],
+  "pdf_out_of_page_image_boxes": [],
+  "source_and_config_hashes_match_executed_run": true,
+  "citation_checks": {
+    "MAD18": {
+      "citation": "Madras et al., 2018",
+      "located_in_body": true,
+      "bibliography_title_present": true,
+      "primary_record": "https://papers.neurips.cc/paper_files/paper/2018/hash/09d37c08f7b129e96277388757530c72-Abstract.html",
+      "inspection_level": "metadata/abstract"
+    },
+    "MOZ20": {
+      "citation": "Mozannar & Sontag, 2020",
+      "located_in_body": true,
+      "bibliography_title_present": true,
+      "primary_record": "https://proceedings.mlr.press/v119/mozannar20b.html",
+      "inspection_level": "selected original full text"
+    },
+    "VER22": {
+      "citation": "Verma & Nalisnick, 2022",
+      "located_in_body": true,
+      "bibliography_title_present": true,
+      "primary_record": "https://proceedings.mlr.press/v162/verma22c.html",
+      "inspection_level": "metadata/abstract"
+    },
+    "VER23": {
+      "citation": "Verma et al., 2023",
+      "located_in_body": true,
+      "bibliography_title_present": true,
+      "primary_record": "https://proceedings.mlr.press/v206/verma23a.html",
+      "inspection_level": "metadata/abstract"
+    },
+    "CHA22": {
+      "citation": "Charusaie et al., 2022",
+      "located_in_body": true,
+      "bibliography_title_present": true,
+      "primary_record": "https://proceedings.mlr.press/v162/charusaie22a.html",
+      "inspection_level": "metadata/abstract"
+    },
+    "HEM23": {
+      "citation": "Hemmer et al., 2023",
+      "located_in_body": true,
+      "bibliography_title_present": true,
+      "primary_record": "https://ojs.aaai.org/index.php/AAAI/article/view/25742",
+      "inspection_level": "metadata/abstract"
+    },
+    "IYE05": {
+      "citation": "Iyengar, 2005",
+      "located_in_body": true,
+      "bibliography_title_present": true,
+      "primary_record": "https://pubsonline.informs.org/doi/10.1287/moor.1040.0129",
+      "inspection_level": "metadata/abstract"
+    },
+    "NIL05": {
+      "citation": "Nilim & El Ghaoui, 2005",
+      "located_in_body": true,
+      "bibliography_title_present": true,
+      "primary_record": "https://pubsonline.informs.org/doi/abs/10.1287/opre.1050.0216",
+      "inspection_level": "metadata/abstract"
+    },
+    "SUI20": {
+      "citation": "Suilen et al., 2020",
+      "located_in_body": true,
+      "bibliography_title_present": true,
+      "primary_record": "https://www.ijcai.org/proceedings/2020/569",
+      "inspection_level": "metadata/abstract"
+    },
+    "CUB21": {
+      "citation": "Cubuktepe et al., 2021",
+      "located_in_body": true,
+      "bibliography_title_present": true,
+      "primary_record": "https://ojs.aaai.org/index.php/AAAI/article/view/17401",
+      "inspection_level": "metadata/abstract"
+    },
+    "ROS11": {
+      "citation": "Rosenthal et al., 2011",
+      "located_in_body": true,
+      "bibliography_title_present": true,
+      "primary_record": "https://ojs.aaai.org/index.php/AAAI/article/view/7980",
+      "inspection_level": "metadata/abstract"
+    },
+    "SIN23": {
+      "citation": "Singi et al., 2023",
+      "located_in_body": true,
+      "bibliography_title_present": true,
+      "primary_record": "https://arxiv.org/abs/2303.06710v2",
+      "inspection_level": "selected original full text"
+    },
+    "GHO24": {
+      "citation": "Ghoummaid & Shalit, 2024",
+      "located_in_body": true,
+      "bibliography_title_present": true,
+      "primary_record": "https://papers.nips.cc/paper_files/paper/2024/hash/660cf2a1eabe448920a3ab6754555adb-Abstract-Conference.html",
+      "inspection_level": "metadata/abstract"
+    },
+    "JIT23": {
+      "citation": "Jitkrittum et al., 2023",
+      "located_in_body": true,
+      "bibliography_title_present": true,
+      "primary_record": "https://papers.neurips.cc/paper_files/paper/2023/hash/1f09e1ee5035a4c3fe38a5681cae5815-Abstract-Conference.html",
+      "inspection_level": "metadata/abstract"
+    },
+    "SHA26": {
+      "citation": "Shaikh, 2026",
+      "located_in_body": true,
+      "bibliography_title_present": true,
+      "primary_record": "https://arxiv.org/abs/2608.24087v1",
+      "inspection_level": "selected original full text"
+    },
+    "HIL26": {
+      "citation": "Trinh et al., 2026",
+      "located_in_body": true,
+      "bibliography_title_present": true,
+      "primary_record": "https://arxiv.org/abs/2604.09408v4",
+      "inspection_level": "selected original full text"
+    },
+    "ALV25": {
+      "citation": "Alves et al., 2025",
+      "located_in_body": true,
+      "bibliography_title_present": true,
+      "primary_record": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12019285/",
+      "inspection_level": "selected original full text"
+    },
+    "ANG24": {
+      "citation": "Angelopoulos et al., 2024",
+      "located_in_body": true,
+      "bibliography_title_present": true,
+      "primary_record": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/f3549ef9b5ff520a7e41ff3cc306ab2b-Abstract-Conference.html",
+      "inspection_level": "metadata/abstract"
+    },
+    "YAO25": {
+      "citation": "Yao et al., 2025",
+      "located_in_body": true,
+      "bibliography_title_present": true,
+      "primary_record": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/1b126cc38b8638e07bef37e7b2bb72bf-Abstract-Conference.html",
+      "inspection_level": "metadata/abstract"
+    },
+    "BAL23": {
+      "citation": "Balazadeh et al., 2023",
+      "located_in_body": true,
+      "bibliography_title_present": true,
+      "primary_record": "https://arxiv.org/abs/2002.04258v3",
+      "inspection_level": "metadata/abstract"
+    },
+    "KAE98": {
+      "citation": "Kaelbling et al., 1998",
+      "located_in_body": true,
+      "bibliography_title_present": true,
+      "primary_record": "https://www.sciencedirect.com/science/article/pii/S000437029800023X",
+      "inspection_level": "metadata/abstract"
+    },
+    "ROSS11": {
+      "citation": "Ross et al., 2011",
+      "located_in_body": true,
+      "bibliography_title_present": true,
+      "primary_record": "https://www.jmlr.org/papers/v12/ross11a.html",
+      "inspection_level": "selected original full text"
+    }
+  },
+  "visual_review": "All 58 manuscript pages and both executive-summary pages inspected; unchanged pages retained from earlier inspected renders, changed pages re-inspected.",
+  "math_delivery": "High-resolution LaTeX-rendered expressions with LaTeX alternative text; canonical editable LaTeX in Markdown. Equations are not native editable Word equation objects.",
+  "review_type": "Automated and visual self-review; not independent external peer review."
+}

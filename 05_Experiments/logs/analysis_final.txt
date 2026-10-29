@@ -1,0 +1,78 @@
+{
+  "comparisons": {
+    "bayes_iid": {
+      "lower": 15,
+      "equal": 23,
+      "higher": 0,
+      "mean_difference": -0.394995767608019,
+      "minimum_difference": -1.7455015066381403,
+      "maximum_difference": 0.0
+    },
+    "bayes_independent": {
+      "lower": 1,
+      "equal": 31,
+      "higher": 6,
+      "mean_difference": 0.003083742013483481,
+      "minimum_difference": -0.13517941676482703,
+      "maximum_difference": 0.08044712587968039
+    },
+    "nominal_dp": {
+      "lower": 6,
+      "equal": 23,
+      "higher": 9,
+      "mean_difference": -0.049936643511936475,
+      "minimum_difference": -1.793531419092587,
+      "maximum_difference": 0.06529313274017312
+    },
+    "oracle": {
+      "lower": 0,
+      "equal": 22,
+      "higher": 16,
+      "mean_difference": 0.20555422113319302,
+      "minimum_difference": 0.0,
+      "maximum_difference": 1.8760307718192495
+    },
+    "robust_dp": {
+      "lower": 18,
+      "equal": 20,
+      "higher": 0,
+      "mean_difference": -0.319986757787907,
+      "minimum_difference": -4.4852,
+      "maximum_difference": 0.0
+    },
+    "static_loss": {
+      "lower": 13,
+      "equal": 23,
+      "higher": 2,
+      "mean_difference": -0.4081218837784879,
+      "minimum_difference": -2.717645613187413,
+      "maximum_difference": 1.8760307718192495
+    }
+  },
+  "design_means": {
+    "oracle": 7.44220785036791,
+    "bayes_independent": 7.64467832948762,
+    "handoffx_bayes": 7.647762071501103,
+    "nominal_dp": 7.69769871501304,
+    "robust_dp": 7.96774882928901,
+    "bayes_iid": 8.042757839109122,
+    "static_loss": 8.055883955279592,
+    "confidence": 8.234198136678117,
+    "always_human": 8.375800200096752,
+    "retry_first": 10.134286360208037,
+    "always_continue": 16.088745495726936
+  },
+  "raw_episode_count": 5016000,
+  "mean_interval_contains_exact": 418,
+  "rectangular_robust_vs_bayes_worst_fixed": {
+    "lower": 8,
+    "equal": 20,
+    "higher": 10
+  },
+  "largest_rectangularization_gap": 0.48577782434178296,
+  "model_coverage_bound_failures": [
+    "shift_unrecalibrated"
+  ],
+  "candidate_cold_median_ms": 10.26874949991452,
+  "candidate_cached_median_us": 4.088206500000524
+}

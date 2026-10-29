@@ -1,0 +1,2 @@
+{'continue': 8.0, 'human': 6.0, 'stop': 12.0}
+Human success threshold: 0.8

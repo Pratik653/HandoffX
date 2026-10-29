@@ -1,0 +1,9 @@
+{
+  "status": "all assertions passed",
+  "stored_episode_checks": 5016000,
+  "full_main_rerun_numerical_rows_identical": 418,
+  "scalar_trajectory_matches": 16000,
+  "robust_objective_policy_scenario_checks": 418,
+  "scope": "automated self-audit with separate scalar and evaluation recursions; not external replication",
+  "posthoc_disclosure": "Robust-objective comparisons added after the main run to distinguish expected-loss and minimax objectives; no policies or environments retuned."
+}

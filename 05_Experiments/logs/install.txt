@@ -1,0 +1,14 @@
+WARNING: The directory '/home/oai/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Obtaining file:///mnt/data/HandoffX_Complete_Research/04_Python_Library
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: handoffx
+  Building editable for handoffx (pyproject.toml): started
+  Building editable for handoffx (pyproject.toml): finished with status 'done'
+  Created wheel for handoffx: filename=handoffx-0.1.0-0.editable-py3-none-any.whl size=2625 sha256=061dde5a3cdce4145fc4ddb86e45b1d23c44430cb8050b974f3b18145fc47eb0
+  Stored in directory: /tmp/pip-ephem-wheel-cache-hzo208_2/wheels/43/11/ff/2080485d81f5b03183591cc3171b93125475ea12ee3306a22b
+Successfully built handoffx
+Installing collected packages: handoffx
+Successfully installed handoffx-0.1.0

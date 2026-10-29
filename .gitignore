@@ -1,0 +1,23 @@
+# Environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+# Build artifacts (rebuilt reproducibly; attached to releases instead)
+dist/
+04_Python_Library/dist/
+# Large regenerable raw episode arrays (archived via GitHub Releases / Zenodo; checksums in SHA256SUMS.txt)
+05_Experiments/results/main/raw/
+benchmarks_v2/results/**/raw/
+05_Experiments/results/quick/
+# OS/editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

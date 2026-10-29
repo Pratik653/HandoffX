@@ -1,0 +1,10 @@
+{
+  "required_named_artifacts_present": 38,
+  "raw_npz_files": 418,
+  "original_audit_files_preserved_byte_for_byte": 7,
+  "wheel_matches_current_library_source": true,
+  "no_blank_files": true,
+  "python_tests": "60 passed in final release run; see logs/pytest_release.txt",
+  "reproduction_audit": "all assertions passed; see results/reproduction_audit.json",
+  "completion_scope": "Bounded synthetic study and research prototype. External validity, exhaustive literature coverage, finalized authorship/licensing and external peer review not completed."
+}

@@ -1,0 +1,66 @@
+{
+  "status": "all assertions passed",
+  "seed": 70128,
+  "checks": {
+    "P1_symbolic_difference_zero": true,
+    "P2_random_trials": 5000,
+    "P2_stable_gap_cases": 3306,
+    "P3_human_after_failure_positive": 0.32,
+    "P3_human_after_failure_negative": 0.6800000000000002,
+    "P4_random_mixtures": 5000,
+    "P4_three_retry_true_success": 0.65225,
+    "P4_three_retry_iid_success": 0.875,
+    "P4_recovery_after_three_failures": 0.06035226455787203,
+    "P5_oracle_recursion_error": 0.0,
+    "P6_worst_fixed_model_loss": 10.7548,
+    "P6_envelope_value": 10.7548,
+    "P7_policy_model_pairs": 99,
+    "P7_maximum_exact_severe_risk": 0.0034,
+    "P8_enumerated_states": 376,
+    "P8_uniform_history_TV": 0.39974256060088453,
+    "P8_actual_regret": 0.0,
+    "P8_conservative_regret_bound": 483.2887557664694,
+    "P9_prior_loss": 5.0,
+    "P9_perfect_information_loss": 1.0,
+    "P9_noisy_information_loss": 2.5999999999999988
+  },
+  "counterexamples": {
+    "CE1": {
+      "AI_loss": 0.3,
+      "good_human_loss": 0.15,
+      "poor_human_loss": 0.7
+    },
+    "CE2": {
+      "one_tick_AI": 0.5,
+      "human": 0.4,
+      "two_tick_AI_then_human": 0.26
+    },
+    "CE3": {
+      "iid_success": 0.875,
+      "persistent_success": 0.65225
+    },
+    "CE4": {
+      "true_AI_loss": 0.05,
+      "robust_selected_human_true_loss": 0.25
+    },
+    "CE5": {
+      "fixed_worst": 1,
+      "rectangular_worst": 2
+    },
+    "CE6": {
+      "observed_AI_loss": 0.5,
+      "unobserved_human_world_1": 0.15,
+      "unobserved_human_world_2": 1.05
+    },
+    "CE7": {
+      "group_blind_loss": 0.45,
+      "conditional_loss": 0.275
+    },
+    "CE8": {
+      "AI_expected_loss": 1.0,
+      "human_expected_loss": 2,
+      "AI_severe_probability": 0.01
+    }
+  },
+  "proof_status": "Numerical checks supplement the complete written proofs; no external peer review."
+}

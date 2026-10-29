@@ -1,0 +1,1901 @@
+[
+  {
+    "occurrence": 1,
+    "type": "InlineMath",
+    "latex": "J",
+    "image": "eq_000.png",
+    "width_inches": 0.1025000015894572,
+    "scale": 1,
+    "depth_tex_pt": 0.222
+  },
+  {
+    "occurrence": 2,
+    "type": "InlineMath",
+    "latex": "T",
+    "image": "eq_001.png",
+    "width_inches": 0.11629166867997912,
+    "scale": 1,
+    "depth_tex_pt": 0.0
+  },
+  {
+    "occurrence": 3,
+    "type": "InlineMath",
+    "latex": "B",
+    "image": "eq_002.png",
+    "width_inches": 0.125083327293396,
+    "scale": 1,
+    "depth_tex_pt": 0.0
+  },
+  {
+    "occurrence": 4,
+    "type": "InlineMath",
+    "latex": "x_t",
+    "image": "eq_003.png",
+    "width_inches": 0.13988888263702393,
+    "scale": 1,
+    "depth_tex_pt": 1.88797
+  },
+  {
+    "occurrence": 5,
+    "type": "InlineMath",
+    "latex": "h_t=(o_0,a_0,o_1,\\ldots,o_t)",
+    "image": "eq_004.png",
+    "width_inches": 1.6062777837117512,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 6,
+    "type": "InlineMath",
+    "latex": "\\mathcal A(h_t)",
+    "image": "eq_005.png",
+    "width_inches": 0.44341667493184406,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 7,
+    "type": "InlineMath",
+    "latex": "P_\\theta(x'\\mid x,a)",
+    "image": "eq_006.png",
+    "width_inches": 0.8320833312140571,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 8,
+    "type": "InlineMath",
+    "latex": "O_\\theta(o\\mid x',a)",
+    "image": "eq_007.png",
+    "width_inches": 0.8598888715108236,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 9,
+    "type": "InlineMath",
+    "latex": "c_t(x,a)",
+    "image": "eq_008.png",
+    "width_inches": 0.5206527709960938,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 10,
+    "type": "InlineMath",
+    "latex": "d(a)",
+    "image": "eq_009.png",
+    "width_inches": 0.33480556805928546,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 11,
+    "type": "InlineMath",
+    "latex": "g(x)",
+    "image": "eq_010.png",
+    "width_inches": 0.3185277779897054,
+    "scale": 1,
+    "depth_tex_pt": 2.51399
+  },
+  {
+    "occurrence": 12,
+    "type": "InlineMath",
+    "latex": "\\pi",
+    "image": "eq_011.png",
+    "width_inches": 0.11063889000150892,
+    "scale": 1,
+    "depth_tex_pt": 0.11998
+  },
+  {
+    "occurrence": 13,
+    "type": "InlineMath",
+    "latex": "b_t(x,\\theta)",
+    "image": "eq_012.png",
+    "width_inches": 0.525305536058214,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 14,
+    "type": "InlineMath",
+    "latex": "Z\\in\\{0,1,2\\}",
+    "image": "eq_013.png",
+    "width_inches": 0.8586528036329482,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 15,
+    "type": "InlineMath",
+    "latex": "\\Theta\\in\\{1,\\ldots,M\\}",
+    "image": "eq_014.png",
+    "width_inches": 1.0829722086588542,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 16,
+    "type": "InlineMath",
+    "latex": "Z",
+    "image": "eq_015.png",
+    "width_inches": 0.12658333778381348,
+    "scale": 1,
+    "depth_tex_pt": 0.0
+  },
+  {
+    "occurrence": 17,
+    "type": "InlineMath",
+    "latex": "Z",
+    "image": "eq_015.png",
+    "width_inches": 0.12658333778381348,
+    "scale": 1,
+    "depth_tex_pt": 0.0
+  },
+  {
+    "occurrence": 18,
+    "type": "InlineMath",
+    "latex": "(\\Theta,Z)",
+    "image": "eq_016.png",
+    "width_inches": 0.4513055483500163,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 19,
+    "type": "InlineMath",
+    "latex": "C",
+    "image": "eq_017.png",
+    "width_inches": 0.13205556074778238,
+    "scale": 1,
+    "depth_tex_pt": 0.222
+  },
+  {
+    "occurrence": 20,
+    "type": "InlineMath",
+    "latex": "R",
+    "image": "eq_018.png",
+    "width_inches": 0.1275000042385525,
+    "scale": 1,
+    "depth_tex_pt": 0.0
+  },
+  {
+    "occurrence": 21,
+    "type": "InlineMath",
+    "latex": "H",
+    "image": "eq_019.png",
+    "width_inches": 0.1473333305782742,
+    "scale": 1,
+    "depth_tex_pt": 0.0
+  },
+  {
+    "occurrence": 22,
+    "type": "InlineMath",
+    "latex": "S",
+    "image": "eq_020.png",
+    "width_inches": 0.10581944386164348,
+    "scale": 1,
+    "depth_tex_pt": 0.222
+  },
+  {
+    "occurrence": 23,
+    "type": "InlineMath",
+    "latex": "C",
+    "image": "eq_017.png",
+    "width_inches": 0.13205556074778238,
+    "scale": 1,
+    "depth_tex_pt": 0.222
+  },
+  {
+    "occurrence": 24,
+    "type": "InlineMath",
+    "latex": "R",
+    "image": "eq_018.png",
+    "width_inches": 0.1275000042385525,
+    "scale": 1,
+    "depth_tex_pt": 0.0
+  },
+  {
+    "occurrence": 25,
+    "type": "InlineMath",
+    "latex": "H",
+    "image": "eq_019.png",
+    "width_inches": 0.1473333305782742,
+    "scale": 1,
+    "depth_tex_pt": 0.0
+  },
+  {
+    "occurrence": 26,
+    "type": "InlineMath",
+    "latex": "S",
+    "image": "eq_020.png",
+    "width_inches": 0.10581944386164348,
+    "scale": 1,
+    "depth_tex_pt": 0.222
+  },
+  {
+    "occurrence": 27,
+    "type": "InlineMath",
+    "latex": "a\\in\\{C,R,H\\}",
+    "image": "eq_021.png",
+    "width_inches": 0.9535416497124566,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 28,
+    "type": "InlineMath",
+    "latex": "(m,z)",
+    "image": "eq_022.png",
+    "width_inches": 0.4202499919467502,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 29,
+    "type": "InlineMath",
+    "latex": "p_{mza}",
+    "image": "eq_023.png",
+    "width_inches": 0.3373333348168267,
+    "scale": 1,
+    "depth_tex_pt": 2.51399
+  },
+  {
+    "occurrence": 30,
+    "type": "InlineMath",
+    "latex": "q_{mza}",
+    "image": "eq_024.png",
+    "width_inches": 0.32770832379659015,
+    "scale": 1,
+    "depth_tex_pt": 2.51399
+  },
+  {
+    "occurrence": 31,
+    "type": "InlineMath",
+    "latex": "0\\le p_{mza}+q_{mza}\\le1",
+    "image": "eq_025.png",
+    "width_inches": 1.3923472298516169,
+    "scale": 1,
+    "depth_tex_pt": 2.51399
+  },
+  {
+    "occurrence": 32,
+    "type": "InlineMath",
+    "latex": "C,R",
+    "image": "eq_026.png",
+    "width_inches": 0.31672223409016925,
+    "scale": 1,
+    "depth_tex_pt": 1.69199
+  },
+  {
+    "occurrence": 33,
+    "type": "InlineMath",
+    "latex": "D\\in\\{0,1\\}",
+    "image": "eq_027.png",
+    "width_inches": 0.7278610865275065,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 34,
+    "type": "InlineMath",
+    "latex": "P(D=1\\mid\\text{failure},m,z,a)=d_z",
+    "image": "eq_028.png",
+    "width_inches": 2.098875045776367,
+    "scale": 1,
+    "depth_tex_pt": 2.51279
+  },
+  {
+    "occurrence": 35,
+    "type": "DisplayMath",
+    "latex": "K_{mza}=\\left(p_{mza},q_{mza},(1-p_{mza}-q_{mza})(1-d_z),(1-p_{mza}-q_{mza})d_z\\right). \\qquad\\text{(1)}",
+    "image": "eq_029.png",
+    "width_inches": 5.26004155476888,
+    "scale": 1,
+    "depth_tex_pt": 2.51399
+  },
+  {
+    "occurrence": 36,
+    "type": "InlineMath",
+    "latex": "K_{mzH}=(p_{mzH},q_{mzH},1-p_{mzH}-q_{mzH},0)",
+    "image": "eq_030.png",
+    "width_inches": 2.850208282470703,
+    "scale": 1,
+    "depth_tex_pt": 2.51399
+  },
+  {
+    "occurrence": 37,
+    "type": "InlineMath",
+    "latex": "c_a",
+    "image": "eq_031.png",
+    "width_inches": 0.1692499981986152,
+    "scale": 1,
+    "depth_tex_pt": 1.88797
+  },
+  {
+    "occurrence": 38,
+    "type": "InlineMath",
+    "latex": "\\lambda",
+    "image": "eq_032.png",
+    "width_inches": 0.10358333587646484,
+    "scale": 1,
+    "depth_tex_pt": 0.11998
+  },
+  {
+    "occurrence": 39,
+    "type": "InlineMath",
+    "latex": "\\kappa_a=c_a+\\lambda d(a)",
+    "image": "eq_033.png",
+    "width_inches": 1.1126250161064997,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 40,
+    "type": "InlineMath",
+    "latex": "L",
+    "image": "eq_034.png",
+    "width_inches": 0.12209722730848524,
+    "scale": 1,
+    "depth_tex_pt": 0.0
+  },
+  {
+    "occurrence": 41,
+    "type": "InlineMath",
+    "latex": "F",
+    "image": "eq_035.png",
+    "width_inches": 0.1309027804268731,
+    "scale": 1,
+    "depth_tex_pt": 0.0
+  },
+  {
+    "occurrence": 42,
+    "type": "InlineMath",
+    "latex": "S",
+    "image": "eq_020.png",
+    "width_inches": 0.10581944386164348,
+    "scale": 1,
+    "depth_tex_pt": 0.222
+  },
+  {
+    "occurrence": 43,
+    "type": "DisplayMath",
+    "latex": "J_P(\\pi)=\\mathbb E_P^\\pi\\left[\\sum_{t:\\,a_t\\ne S}\\kappa_{a_t}+g_{\\mathrm{terminal}}\\right],\\quad g_{\\mathrm{terminal}}\\in\\{0,L,F,S\\}. \\qquad\\text{(2)}",
+    "image": "eq_036.png",
+    "width_inches": 4.533763885498047,
+    "scale": 1,
+    "depth_tex_pt": 16.68716
+  },
+  {
+    "occurrence": 44,
+    "type": "InlineMath",
+    "latex": "\\delta/T",
+    "image": "eq_037.png",
+    "width_inches": 0.2768472300635444,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 45,
+    "type": "InlineMath",
+    "latex": "u_t\\in\\{0,1\\}",
+    "image": "eq_038.png",
+    "width_inches": 0.7273889117770724,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 46,
+    "type": "InlineMath",
+    "latex": "n=(n_{C+},n_{C0},n_{C1},n_{R+},n_{R0},n_{R1})",
+    "image": "eq_039.png",
+    "width_inches": 2.2527084350585938,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 47,
+    "type": "InlineMath",
+    "latex": "f\\in\\{0,1\\}",
+    "image": "eq_040.png",
+    "width_inches": 0.6961527930365669,
+    "scale": 1,
+    "depth_tex_pt": 2.51399
+  },
+  {
+    "occurrence": 48,
+    "type": "InlineMath",
+    "latex": "t=\\sum_i n_i",
+    "image": "eq_041.png",
+    "width_inches": 0.6005833413865831,
+    "scale": 1,
+    "depth_tex_pt": 2.75996
+  },
+  {
+    "occurrence": 49,
+    "type": "InlineMath",
+    "latex": "j=n_{C+}+n_{R+}",
+    "image": "eq_042.png",
+    "width_inches": 0.9853888617621528,
+    "scale": 1,
+    "depth_tex_pt": 2.51399
+  },
+  {
+    "occurrence": 50,
+    "type": "InlineMath",
+    "latex": "b=\\sum_{i=1}^3 n_i+2\\sum_{i=4}^6 n_i",
+    "image": "eq_043.png",
+    "width_inches": 1.539125018649631,
+    "scale": 1,
+    "depth_tex_pt": 3.83595
+  },
+  {
+    "occurrence": 51,
+    "type": "InlineMath",
+    "latex": "s=(n,f)",
+    "image": "eq_044.png",
+    "width_inches": 0.6798750029669868,
+    "scale": 1,
+    "depth_tex_pt": 2.51399
+  },
+  {
+    "occurrence": 52,
+    "type": "InlineMath",
+    "latex": "\\mu_{mz}=P(\\Theta=m,Z=z)",
+    "image": "eq_045.png",
+    "width_inches": 1.6118750042385526,
+    "scale": 1,
+    "depth_tex_pt": 2.51399
+  },
+  {
+    "occurrence": 53,
+    "type": "DisplayMath",
+    "latex": "b_{mz}(n)=\\frac{\\mu_{mz}\\prod_{a\\in\\{C,R\\}}\\prod_{o\\in\\{+,0,1\\}}K_{mza,o}^{n_{ao}}}{\\sum_{m',z'}\\mu_{m'z'}\\prod_{a,o}K_{m'z'a,o}^{n_{ao}}}. \\qquad\\text{(3)}",
+    "image": "eq_046.png",
+    "width_inches": 3.348944346110026,
+    "scale": 1,
+    "depth_tex_pt": 13.9228
+  },
+  {
+    "occurrence": 54,
+    "type": "InlineMath",
+    "latex": "\\bar K_{a,o}(s)=\\sum_{m,z}b_{mz}(s)K_{mza,o}",
+    "image": "eq_047.png",
+    "width_inches": 1.9448333316379123,
+    "scale": 1,
+    "depth_tex_pt": 3.91277
+  },
+  {
+    "occurrence": 55,
+    "type": "InlineMath",
+    "latex": "K^m_{a,o}(s)=\\sum_z b(z\\mid m,s)K_{mza,o}",
+    "image": "eq_048.png",
+    "width_inches": 2.0757499270968967,
+    "scale": 1,
+    "depth_tex_pt": 4.20477
+  },
+  {
+    "occurrence": 56,
+    "type": "InlineMath",
+    "latex": "m",
+    "image": "eq_049.png",
+    "width_inches": 0.1418611076143053,
+    "scale": 1,
+    "depth_tex_pt": 0.11998
+  },
+  {
+    "occurrence": 57,
+    "type": "InlineMath",
+    "latex": "Z",
+    "image": "eq_015.png",
+    "width_inches": 0.12658333778381348,
+    "scale": 1,
+    "depth_tex_pt": 0.0
+  },
+  {
+    "occurrence": 58,
+    "type": "InlineMath",
+    "latex": "Q_a=c_a+(1-p_a)L",
+    "image": "eq_050.png",
+    "width_inches": 1.4267777336968317,
+    "scale": 1,
+    "depth_tex_pt": 2.51399
+  },
+  {
+    "occurrence": 59,
+    "type": "InlineMath",
+    "latex": "Q_S=S",
+    "image": "eq_051.png",
+    "width_inches": 0.504249996609158,
+    "scale": 1,
+    "depth_tex_pt": 2.21999
+  },
+  {
+    "occurrence": 60,
+    "type": "InlineMath",
+    "latex": "Q_a=\\kappa_a+q_aF+(1-p_a-q_a)L",
+    "image": "eq_052.png",
+    "width_inches": 2.234722137451172,
+    "scale": 1,
+    "depth_tex_pt": 2.51399
+  },
+  {
+    "occurrence": 61,
+    "type": "InlineMath",
+    "latex": "p_H-p_A\\ge(c_H-c_A)/L",
+    "image": "eq_053.png",
+    "width_inches": 1.6492777930365667,
+    "scale": 1,
+    "depth_tex_pt": 2.51399
+  },
+  {
+    "occurrence": 62,
+    "type": "InlineMath",
+    "latex": "L>0",
+    "image": "eq_054.png",
+    "width_inches": 0.4029722213745117,
+    "scale": 1,
+    "depth_tex_pt": 0.168
+  },
+  {
+    "occurrence": 63,
+    "type": "InlineMath",
+    "latex": "p_A=.65",
+    "image": "eq_055.png",
+    "width_inches": 0.6185416645473905,
+    "scale": 1,
+    "depth_tex_pt": 2.51399
+  },
+  {
+    "occurrence": 64,
+    "type": "InlineMath",
+    "latex": "p_H=.90",
+    "image": "eq_056.png",
+    "width_inches": 0.6313194698757596,
+    "scale": 1,
+    "depth_tex_pt": 2.51399
+  },
+  {
+    "occurrence": 65,
+    "type": "InlineMath",
+    "latex": "c_A=1",
+    "image": "eq_057.png",
+    "width_inches": 0.4682638910081651,
+    "scale": 1,
+    "depth_tex_pt": 1.79999
+  },
+  {
+    "occurrence": 66,
+    "type": "InlineMath",
+    "latex": "c_H=4",
+    "image": "eq_058.png",
+    "width_inches": 0.4810555775960286,
+    "scale": 1,
+    "depth_tex_pt": 1.79999
+  },
+  {
+    "occurrence": 67,
+    "type": "InlineMath",
+    "latex": "L=20",
+    "image": "eq_059.png",
+    "width_inches": 0.4859861267937554,
+    "scale": 1,
+    "depth_tex_pt": 0.168
+  },
+  {
+    "occurrence": 68,
+    "type": "InlineMath",
+    "latex": "S=5",
+    "image": "eq_060.png",
+    "width_inches": 0.38669443130493164,
+    "scale": 1,
+    "depth_tex_pt": 0.222
+  },
+  {
+    "occurrence": 69,
+    "type": "InlineMath",
+    "latex": "L=0",
+    "image": "eq_061.png",
+    "width_inches": 0.4029722213745117,
+    "scale": 1,
+    "depth_tex_pt": 0.168
+  },
+  {
+    "occurrence": 70,
+    "type": "InlineMath",
+    "latex": "L",
+    "image": "eq_034.png",
+    "width_inches": 0.12209722730848524,
+    "scale": 1,
+    "depth_tex_pt": 0.0
+  },
+  {
+    "occurrence": 71,
+    "type": "InlineMath",
+    "latex": "C,R",
+    "image": "eq_026.png",
+    "width_inches": 0.31672223409016925,
+    "scale": 1,
+    "depth_tex_pt": 1.69199
+  },
+  {
+    "occurrence": 72,
+    "type": "InlineMath",
+    "latex": "H",
+    "image": "eq_019.png",
+    "width_inches": 0.1473333305782742,
+    "scale": 1,
+    "depth_tex_pt": 0.0
+  },
+  {
+    "occurrence": 73,
+    "type": "InlineMath",
+    "latex": "C",
+    "image": "eq_017.png",
+    "width_inches": 0.13205556074778238,
+    "scale": 1,
+    "depth_tex_pt": 0.222
+  },
+  {
+    "occurrence": 74,
+    "type": "InlineMath",
+    "latex": "R",
+    "image": "eq_018.png",
+    "width_inches": 0.1275000042385525,
+    "scale": 1,
+    "depth_tex_pt": 0.0
+  },
+  {
+    "occurrence": 75,
+    "type": "InlineMath",
+    "latex": "s^{a,o}",
+    "image": "eq_062.png",
+    "width_inches": 0.2588055663638645,
+    "scale": 1,
+    "depth_tex_pt": 0.11998
+  },
+  {
+    "occurrence": 76,
+    "type": "InlineMath",
+    "latex": "a=C,R",
+    "image": "eq_063.png",
+    "width_inches": 0.6059027777777778,
+    "scale": 1,
+    "depth_tex_pt": 1.69199
+  },
+  {
+    "occurrence": 77,
+    "type": "InlineMath",
+    "latex": "L",
+    "image": "eq_034.png",
+    "width_inches": 0.12209722730848524,
+    "scale": 1,
+    "depth_tex_pt": 0.0
+  },
+  {
+    "occurrence": 78,
+    "type": "DisplayMath",
+    "latex": "V(s)=\\min_{a\\in\\mathcal A(s)}Q(s,a), \\qquad\\text{(4)}",
+    "image": "eq_064.png",
+    "width_inches": 2.051916758219401,
+    "scale": 1,
+    "depth_tex_pt": 11.15916
+  },
+  {
+    "occurrence": 79,
+    "type": "DisplayMath",
+    "latex": "Q(s,S)=S,\\qquad Q(s,H)=\\kappa_H+\\bar K_{H,1}(s)F+[\\bar K_{H,2}(s)+\\bar K_{H,3}(s)]L, \\qquad\\text{(5)}",
+    "image": "eq_065.png",
+    "width_inches": 5.180666605631511,
+    "scale": 1,
+    "depth_tex_pt": 3.04077
+  },
+  {
+    "occurrence": 80,
+    "type": "DisplayMath",
+    "latex": "Q(s,a)=\\kappa_a+\\bar K_{a,1}(s)F+\\sum_{o\\in\\{0,2,3\\}}\\bar K_{a,o}(s)V(s^{a,o}),\\quad a\\in\\{C,R\\}. \\qquad\\text{(6)}",
+    "image": "eq_066.png",
+    "width_inches": 4.878611246744792,
+    "scale": 1,
+    "depth_tex_pt": 17.27016
+  },
+  {
+    "occurrence": 81,
+    "type": "InlineMath",
+    "latex": "+,0,1",
+    "image": "eq_067.png",
+    "width_inches": 0.42750000953674316,
+    "scale": 1,
+    "depth_tex_pt": 1.69199
+  },
+  {
+    "occurrence": 82,
+    "type": "InlineMath",
+    "latex": "(-.18,0,.18)",
+    "image": "eq_068.png",
+    "width_inches": 0.9043888515896268,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 83,
+    "type": "InlineMath",
+    "latex": "C,R",
+    "image": "eq_026.png",
+    "width_inches": 0.31672223409016925,
+    "scale": 1,
+    "depth_tex_pt": 1.69199
+  },
+  {
+    "occurrence": 84,
+    "type": "InlineMath",
+    "latex": "[.01,1-q-.01]",
+    "image": "eq_069.png",
+    "width_inches": 1.1803888744778104,
+    "scale": 1,
+    "depth_tex_pt": 2.51399
+  },
+  {
+    "occurrence": 85,
+    "type": "DisplayMath",
+    "latex": "W=\\begin{pmatrix}.20&.025&.05\\\\.025&.40&.025\\\\.05&.025&.20\\end{pmatrix}. \\qquad\\text{(7)}",
+    "image": "eq_070.png",
+    "width_inches": 2.2751666174994574,
+    "scale": 1,
+    "depth_tex_pt": 18.66597
+  },
+  {
+    "occurrence": 86,
+    "type": "InlineMath",
+    "latex": "(.275,.45,.275)",
+    "image": "eq_071.png",
+    "width_inches": 1.0948333740234375,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 87,
+    "type": "InlineMath",
+    "latex": "P",
+    "image": "eq_072.png",
+    "width_inches": 0.12441666920979817,
+    "scale": 1,
+    "depth_tex_pt": 0.0
+  },
+  {
+    "occurrence": 88,
+    "type": "InlineMath",
+    "latex": "k",
+    "image": "eq_073.png",
+    "width_inches": 0.10765277677112156,
+    "scale": 1,
+    "depth_tex_pt": 0.11998
+  },
+  {
+    "occurrence": 89,
+    "type": "InlineMath",
+    "latex": "\\mathbb E[(1-P)^k]",
+    "image": "eq_074.png",
+    "width_inches": 0.8333333333333334,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 90,
+    "type": "InlineMath",
+    "latex": "(1-\\mathbb E P)^k",
+    "image": "eq_075.png",
+    "width_inches": 0.6978472073872884,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 91,
+    "type": "InlineMath",
+    "latex": "\\mathcal U(s,a)=\\operatorname{conv}\\{K^m_a(s):m\\text{ remains possible}\\}",
+    "image": "eq_076.png",
+    "width_inches": 3.0635416242811413,
+    "scale": 1,
+    "depth_tex_pt": 3.05197
+  },
+  {
+    "occurrence": 92,
+    "type": "InlineMath",
+    "latex": "W_R",
+    "image": "eq_077.png",
+    "width_inches": 0.23809721734788683,
+    "scale": 1,
+    "depth_tex_pt": 1.79999
+  },
+  {
+    "occurrence": 93,
+    "type": "DisplayMath",
+    "latex": "W_R(s)=\\min_{a\\in\\mathcal A(s)}\\max_m\\left\\{\\kappa_a+\\mathbb E_{K^m_a(s)}[\\text{terminal loss or }W_R(s')]\\right\\}. \\qquad\\text{(8)}",
+    "image": "eq_078.png",
+    "width_inches": 4.613444434271918,
+    "scale": 1,
+    "depth_tex_pt": 11.15916
+  },
+  {
+    "occurrence": 94,
+    "type": "InlineMath",
+    "latex": "A,H",
+    "image": "eq_079.png",
+    "width_inches": 0.33441665437486434,
+    "scale": 1,
+    "depth_tex_pt": 1.69199
+  },
+  {
+    "occurrence": 95,
+    "type": "InlineMath",
+    "latex": "L>0",
+    "image": "eq_054.png",
+    "width_inches": 0.4029722213745117,
+    "scale": 1,
+    "depth_tex_pt": 0.168
+  },
+  {
+    "occurrence": 96,
+    "type": "InlineMath",
+    "latex": "c_A,c_H",
+    "image": "eq_080.png",
+    "width_inches": 0.44474999109903973,
+    "scale": 1,
+    "depth_tex_pt": 1.79999
+  },
+  {
+    "occurrence": 97,
+    "type": "InlineMath",
+    "latex": "p_A,p_H",
+    "image": "eq_081.png",
+    "width_inches": 0.4852638774447971,
+    "scale": 1,
+    "depth_tex_pt": 2.51399
+  },
+  {
+    "occurrence": 98,
+    "type": "InlineMath",
+    "latex": "p_H\\ge p_A+(c_H-c_A)/L",
+    "image": "eq_082.png",
+    "width_inches": 1.6492777930365667,
+    "scale": 1,
+    "depth_tex_pt": 2.51399
+  },
+  {
+    "occurrence": 99,
+    "type": "DisplayMath",
+    "latex": "Q_H-Q_A=(c_H-c_A)-L(p_H-p_A). \\qquad\\text{(P1.1)}",
+    "image": "eq_083.png",
+    "width_inches": 3.3043056064181857,
+    "scale": 1,
+    "depth_tex_pt": 2.51399
+  },
+  {
+    "occurrence": 100,
+    "type": "InlineMath",
+    "latex": "Q_H\\le Q_A",
+    "image": "eq_084.png",
+    "width_inches": 0.6609166463216146,
+    "scale": 1,
+    "depth_tex_pt": 2.21999
+  },
+  {
+    "occurrence": 101,
+    "type": "InlineMath",
+    "latex": "c_H",
+    "image": "eq_085.png",
+    "width_inches": 0.20018055703904894,
+    "scale": 1,
+    "depth_tex_pt": 1.79999
+  },
+  {
+    "occurrence": 102,
+    "type": "InlineMath",
+    "latex": "1/L>0",
+    "image": "eq_086.png",
+    "width_inches": 0.5623750156826444,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 103,
+    "type": "InlineMath",
+    "latex": "c_A",
+    "image": "eq_087.png",
+    "width_inches": 0.18740277820163304,
+    "scale": 1,
+    "depth_tex_pt": 1.79999
+  },
+  {
+    "occurrence": 104,
+    "type": "InlineMath",
+    "latex": "-1/L",
+    "image": "eq_088.png",
+    "width_inches": 0.3870972262488471,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 105,
+    "type": "InlineMath",
+    "latex": "c_H\\ge c_A",
+    "image": "eq_089.png",
+    "width_inches": 0.5715972052680122,
+    "scale": 1,
+    "depth_tex_pt": 1.79999
+  },
+  {
+    "occurrence": 106,
+    "type": "InlineMath",
+    "latex": "L",
+    "image": "eq_034.png",
+    "width_inches": 0.12209722730848524,
+    "scale": 1,
+    "depth_tex_pt": 0.0
+  },
+  {
+    "occurrence": 107,
+    "type": "InlineMath",
+    "latex": "c_H<c_A",
+    "image": "eq_090.png",
+    "width_inches": 0.5715972052680122,
+    "scale": 1,
+    "depth_tex_pt": 1.79999
+  },
+  {
+    "occurrence": 108,
+    "type": "InlineMath",
+    "latex": "L=0",
+    "image": "eq_061.png",
+    "width_inches": 0.4029722213745117,
+    "scale": 1,
+    "depth_tex_pt": 0.168
+  },
+  {
+    "occurrence": 109,
+    "type": "InlineMath",
+    "latex": "[0,1]",
+    "image": "eq_091.png",
+    "width_inches": 0.3863888846503364,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 110,
+    "type": "InlineMath",
+    "latex": "|Q_a-\\widehat Q_a|\\le\\epsilon_a",
+    "image": "eq_092.png",
+    "width_inches": 1.0283611085679796,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 111,
+    "type": "InlineMath",
+    "latex": "\\hat a\\in\\arg\\min\\widehat Q_a",
+    "image": "eq_093.png",
+    "width_inches": 1.0163888931274414,
+    "scale": 1,
+    "depth_tex_pt": 2.616
+  },
+  {
+    "occurrence": 112,
+    "type": "InlineMath",
+    "latex": "\\widehat Q_b-\\widehat Q_{\\hat a}>\\epsilon_b+\\epsilon_{\\hat a}",
+    "image": "eq_094.png",
+    "width_inches": 1.2615833282470703,
+    "scale": 1,
+    "depth_tex_pt": 2.21999
+  },
+  {
+    "occurrence": 113,
+    "type": "InlineMath",
+    "latex": "b\\ne\\hat a",
+    "image": "eq_095.png",
+    "width_inches": 0.39616666899787056,
+    "scale": 1,
+    "depth_tex_pt": 0.564
+  },
+  {
+    "occurrence": 114,
+    "type": "InlineMath",
+    "latex": "\\hat a",
+    "image": "eq_096.png",
+    "width_inches": 0.10516666703754002,
+    "scale": 1,
+    "depth_tex_pt": 0.11998
+  },
+  {
+    "occurrence": 115,
+    "type": "InlineMath",
+    "latex": "\\epsilon_{\\hat a}+\\epsilon_{a^*}",
+    "image": "eq_097.png",
+    "width_inches": 0.5314166810777452,
+    "scale": 1,
+    "depth_tex_pt": 1.88797
+  },
+  {
+    "occurrence": 116,
+    "type": "InlineMath",
+    "latex": "a^*",
+    "image": "eq_098.png",
+    "width_inches": 0.16943056053585476,
+    "scale": 1,
+    "depth_tex_pt": 0.11998
+  },
+  {
+    "occurrence": 117,
+    "type": "InlineMath",
+    "latex": "2\\epsilon",
+    "image": "eq_099.png",
+    "width_inches": 0.1772222254011366,
+    "scale": 1,
+    "depth_tex_pt": 0.11998
+  },
+  {
+    "occurrence": 118,
+    "type": "InlineMath",
+    "latex": "\\epsilon",
+    "image": "eq_100.png",
+    "width_inches": 0.09420833322736952,
+    "scale": 1,
+    "depth_tex_pt": 0.11998
+  },
+  {
+    "occurrence": 119,
+    "type": "DisplayMath",
+    "latex": "Q_b-Q_{\\hat a}\\ge\\widehat Q_b-\\widehat Q_{\\hat a}-\\epsilon_b-\\epsilon_{\\hat a}>0.",
+    "image": "eq_101.png",
+    "width_inches": 2.3497500949435763,
+    "scale": 1,
+    "depth_tex_pt": 2.21999
+  },
+  {
+    "occurrence": 120,
+    "type": "DisplayMath",
+    "latex": "Q_{\\hat a}-Q_{a^*}\\le\\widehat Q_{\\hat a}+\\epsilon_{\\hat a}-\\widehat Q_{a^*}+\\epsilon_{a^*}\\le\\epsilon_{\\hat a}+\\epsilon_{a^*}. \\qquad\\text{(P2.1)}",
+    "image": "eq_102.png",
+    "width_inches": 3.6726387871636286,
+    "scale": 1,
+    "depth_tex_pt": 2.21999
+  },
+  {
+    "occurrence": 121,
+    "type": "InlineMath",
+    "latex": "\\eta_a",
+    "image": "eq_103.png",
+    "width_inches": 0.17323610517713758,
+    "scale": 1,
+    "depth_tex_pt": 2.51399
+  },
+  {
+    "occurrence": 122,
+    "type": "InlineMath",
+    "latex": "\\epsilon_a=L\\eta_a",
+    "image": "eq_104.png",
+    "width_inches": 0.6234722137451172,
+    "scale": 1,
+    "depth_tex_pt": 2.51399
+  },
+  {
+    "occurrence": 123,
+    "type": "InlineMath",
+    "latex": "\\rho_a",
+    "image": "eq_105.png",
+    "width_inches": 0.1840277777777778,
+    "scale": 1,
+    "depth_tex_pt": 2.51399
+  },
+  {
+    "occurrence": 124,
+    "type": "InlineMath",
+    "latex": "\\epsilon_a=\\rho_a+L\\eta_a",
+    "image": "eq_106.png",
+    "width_inches": 0.9730694029066298,
+    "scale": 1,
+    "depth_tex_pt": 2.51399
+  },
+  {
+    "occurrence": 125,
+    "type": "InlineMath",
+    "latex": "c_a+(1-P_a)L",
+    "image": "eq_107.png",
+    "width_inches": 1.034986072116428,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 126,
+    "type": "InlineMath",
+    "latex": "P_a",
+    "image": "eq_108.png",
+    "width_inches": 0.1956527762942844,
+    "scale": 1,
+    "depth_tex_pt": 1.88797
+  },
+  {
+    "occurrence": 127,
+    "type": "InlineMath",
+    "latex": "\\mathbb E P_a",
+    "image": "eq_109.png",
+    "width_inches": 0.29711111386617023,
+    "scale": 1,
+    "depth_tex_pt": 1.88797
+  },
+  {
+    "occurrence": 128,
+    "type": "InlineMath",
+    "latex": "\\mathbb E[c_a+(1-P_a)L]=c_a+[1-\\mathbb E P_a]L",
+    "image": "eq_110.png",
+    "width_inches": 2.5940416124131946,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 129,
+    "type": "InlineMath",
+    "latex": "(P_A,P_H)",
+    "image": "eq_111.png",
+    "width_inches": 0.6313888761732314,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 130,
+    "type": "InlineMath",
+    "latex": "(.2,.2)",
+    "image": "eq_112.png",
+    "width_inches": 0.47870832019382054,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 131,
+    "type": "InlineMath",
+    "latex": "(.8,.8)",
+    "image": "eq_113.png",
+    "width_inches": 0.47870832019382054,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 132,
+    "type": "InlineMath",
+    "latex": "\\mathbb E[P_H\\mid A\\text{ fails}]=.32",
+    "image": "eq_114.png",
+    "width_inches": 1.4525000254313152,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 133,
+    "type": "InlineMath",
+    "latex": "(.2,.8)",
+    "image": "eq_115.png",
+    "width_inches": 0.47870832019382054,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 134,
+    "type": "InlineMath",
+    "latex": "(.8,.2)",
+    "image": "eq_116.png",
+    "width_inches": 0.47870832019382054,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 135,
+    "type": "InlineMath",
+    "latex": "c_H=.2,c_A=0,L=1",
+    "image": "eq_117.png",
+    "width_inches": 1.5136250389946833,
+    "scale": 1,
+    "depth_tex_pt": 1.79999
+  },
+  {
+    "occurrence": 136,
+    "type": "InlineMath",
+    "latex": "P\\in[0,1]",
+    "image": "eq_118.png",
+    "width_inches": 0.6848611301845975,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 137,
+    "type": "InlineMath",
+    "latex": "P",
+    "image": "eq_072.png",
+    "width_inches": 0.12441666920979817,
+    "scale": 1,
+    "depth_tex_pt": 0.0
+  },
+  {
+    "occurrence": 138,
+    "type": "InlineMath",
+    "latex": "P",
+    "image": "eq_072.png",
+    "width_inches": 0.12441666920979817,
+    "scale": 1,
+    "depth_tex_pt": 0.0
+  },
+  {
+    "occurrence": 139,
+    "type": "InlineMath",
+    "latex": "S_k=\\mathbb E[(1-P)^k]",
+    "image": "eq_119.png",
+    "width_inches": 1.1975555419921875,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 140,
+    "type": "InlineMath",
+    "latex": "p_k=\\mathbb E[P\\mid k\\text{ failures}]",
+    "image": "eq_120.png",
+    "width_inches": 1.5045972400241427,
+    "scale": 1,
+    "depth_tex_pt": 2.51399
+  },
+  {
+    "occurrence": 141,
+    "type": "InlineMath",
+    "latex": "S_k>0",
+    "image": "eq_121.png",
+    "width_inches": 0.4610833591885037,
+    "scale": 1,
+    "depth_tex_pt": 1.88797
+  },
+  {
+    "occurrence": 142,
+    "type": "InlineMath",
+    "latex": "k\\ge1",
+    "image": "eq_122.png",
+    "width_inches": 0.388527790705363,
+    "scale": 1,
+    "depth_tex_pt": 0.58199
+  },
+  {
+    "occurrence": 143,
+    "type": "InlineMath",
+    "latex": "S_k\\ge(1-\\mathbb EP)^k",
+    "image": "eq_123.png",
+    "width_inches": 1.062069469028049,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 144,
+    "type": "InlineMath",
+    "latex": "p_k<1",
+    "image": "eq_124.png",
+    "width_inches": 0.47220834096272785,
+    "scale": 1,
+    "depth_tex_pt": 2.51399
+  },
+  {
+    "occurrence": 145,
+    "type": "DisplayMath",
+    "latex": "p_k-p_{k+1}=\\frac{\\operatorname{Var}(P\\mid k\\text{ failures})}{1-p_k}\\ge0. \\qquad\\text{(P4.1)}",
+    "image": "eq_125.png",
+    "width_inches": 3.234611087375217,
+    "scale": 1,
+    "depth_tex_pt": 10.74599
+  },
+  {
+    "occurrence": 146,
+    "type": "InlineMath",
+    "latex": "k=1",
+    "image": "eq_126.png",
+    "width_inches": 0.388527790705363,
+    "scale": 1,
+    "depth_tex_pt": 0.11998
+  },
+  {
+    "occurrence": 147,
+    "type": "InlineMath",
+    "latex": "k\\ge2",
+    "image": "eq_127.png",
+    "width_inches": 0.388527790705363,
+    "scale": 1,
+    "depth_tex_pt": 0.58199
+  },
+  {
+    "occurrence": 148,
+    "type": "InlineMath",
+    "latex": "(1-p)^k",
+    "image": "eq_128.png",
+    "width_inches": 0.5875972112019857,
+    "scale": 1,
+    "depth_tex_pt": 2.51399
+  },
+  {
+    "occurrence": 149,
+    "type": "InlineMath",
+    "latex": "[0,1]",
+    "image": "eq_091.png",
+    "width_inches": 0.3863888846503364,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 150,
+    "type": "InlineMath",
+    "latex": "k",
+    "image": "eq_073.png",
+    "width_inches": 0.10765277677112156,
+    "scale": 1,
+    "depth_tex_pt": 0.11998
+  },
+  {
+    "occurrence": 151,
+    "type": "InlineMath",
+    "latex": "\\mathbb E_k",
+    "image": "eq_129.png",
+    "width_inches": 0.19099999798668754,
+    "scale": 1,
+    "depth_tex_pt": 1.88797
+  },
+  {
+    "occurrence": 152,
+    "type": "DisplayMath",
+    "latex": "p_{k+1}=\\frac{\\mathbb E_k[P(1-P)]}{\\mathbb E_k[1-P]}=\\frac{p_k-\\mathbb E_k[P^2]}{1-p_k}.",
+    "image": "eq_130.png",
+    "width_inches": 2.6168056064181857,
+    "scale": 1,
+    "depth_tex_pt": 10.74599
+  },
+  {
+    "occurrence": 153,
+    "type": "InlineMath",
+    "latex": "p_k",
+    "image": "eq_131.png",
+    "width_inches": 0.19133333365122476,
+    "scale": 1,
+    "depth_tex_pt": 2.51399
+  },
+  {
+    "occurrence": 154,
+    "type": "InlineMath",
+    "latex": "(\\mathbb E_k[P^2]-p_k^2)/(1-p_k)",
+    "image": "eq_132.png",
+    "width_inches": 1.6457500457763672,
+    "scale": 1,
+    "depth_tex_pt": 4.35999
+  },
+  {
+    "occurrence": 155,
+    "type": "InlineMath",
+    "latex": "p_k=1",
+    "image": "eq_133.png",
+    "width_inches": 0.47220834096272785,
+    "scale": 1,
+    "depth_tex_pt": 2.51399
+  },
+  {
+    "occurrence": 156,
+    "type": "InlineMath",
+    "latex": "P=.8",
+    "image": "eq_134.png",
+    "width_inches": 0.452277766333686,
+    "scale": 1,
+    "depth_tex_pt": 0.168
+  },
+  {
+    "occurrence": 157,
+    "type": "InlineMath",
+    "latex": ".05",
+    "image": "eq_135.png",
+    "width_inches": 0.22687498728434244,
+    "scale": 1,
+    "depth_tex_pt": 0.168
+  },
+  {
+    "occurrence": 158,
+    "type": "InlineMath",
+    "latex": "1-[.6(.2)^3+.4(.95)^3]=.65225",
+    "image": "eq_136.png",
+    "width_inches": 2.2574306064181857,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 159,
+    "type": "InlineMath",
+    "latex": "f",
+    "image": "eq_137.png",
+    "width_inches": 0.11811110708448622,
+    "scale": 1,
+    "depth_tex_pt": 2.51399
+  },
+  {
+    "occurrence": 160,
+    "type": "InlineMath",
+    "latex": "V(s')",
+    "image": "eq_138.png",
+    "width_inches": 0.3740694522857666,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 161,
+    "type": "InlineMath",
+    "latex": "m",
+    "image": "eq_049.png",
+    "width_inches": 0.1418611076143053,
+    "scale": 1,
+    "depth_tex_pt": 0.11998
+  },
+  {
+    "occurrence": 162,
+    "type": "InlineMath",
+    "latex": "K^m(s,a)",
+    "image": "eq_139.png",
+    "width_inches": 0.6097222434149848,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 163,
+    "type": "InlineMath",
+    "latex": "\\pi",
+    "image": "eq_011.png",
+    "width_inches": 0.11063889000150892,
+    "scale": 1,
+    "depth_tex_pt": 0.11998
+  },
+  {
+    "occurrence": 164,
+    "type": "DisplayMath",
+    "latex": "\\max_m J_m(\\pi)\\le J_{\\mathrm{envelope}}(\\pi). \\qquad\\text{(P6.1)}",
+    "image": "eq_140.png",
+    "width_inches": 2.4715554979112415,
+    "scale": 1,
+    "depth_tex_pt": 8.61996
+  },
+  {
+    "occurrence": 165,
+    "type": "InlineMath",
+    "latex": "\\pi_R",
+    "image": "eq_141.png",
+    "width_inches": 0.19825000233120388,
+    "scale": 1,
+    "depth_tex_pt": 1.79999
+  },
+  {
+    "occurrence": 166,
+    "type": "InlineMath",
+    "latex": "\\max_mJ_m(\\pi_R)\\le W_R(s_0)",
+    "image": "eq_142.png",
+    "width_inches": 1.6212916904025607,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 167,
+    "type": "InlineMath",
+    "latex": "W_R(s_0)=\\min_\\pi\\max_mJ_m(\\pi)",
+    "image": "eq_143.png",
+    "width_inches": 1.8976389567057292,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 168,
+    "type": "InlineMath",
+    "latex": "m",
+    "image": "eq_049.png",
+    "width_inches": 0.1418611076143053,
+    "scale": 1,
+    "depth_tex_pt": 0.11998
+  },
+  {
+    "occurrence": 169,
+    "type": "InlineMath",
+    "latex": "T",
+    "image": "eq_001.png",
+    "width_inches": 0.11629166867997912,
+    "scale": 1,
+    "depth_tex_pt": 0.0
+  },
+  {
+    "occurrence": 170,
+    "type": "InlineMath",
+    "latex": "\\delta/T",
+    "image": "eq_037.png",
+    "width_inches": 0.2768472300635444,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 171,
+    "type": "InlineMath",
+    "latex": "\\delta",
+    "image": "eq_144.png",
+    "width_inches": 0.09802777899636163,
+    "scale": 1,
+    "depth_tex_pt": 0.222
+  },
+  {
+    "occurrence": 172,
+    "type": "InlineMath",
+    "latex": "I_t",
+    "image": "eq_145.png",
+    "width_inches": 0.12577777438693577,
+    "scale": 1,
+    "depth_tex_pt": 1.88797
+  },
+  {
+    "occurrence": 173,
+    "type": "InlineMath",
+    "latex": "t",
+    "image": "eq_146.png",
+    "width_inches": 0.0689583354526096,
+    "scale": 1,
+    "depth_tex_pt": 0.11998
+  },
+  {
+    "occurrence": 174,
+    "type": "InlineMath",
+    "latex": "\\mathbb E I_t\\le\\delta/T",
+    "image": "eq_147.png",
+    "width_inches": 0.6880833307902018,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 175,
+    "type": "InlineMath",
+    "latex": "\\mathbf1\\{\\text{any catastrophe}\\}\\le\\sum_{t=1}^T I_t",
+    "image": "eq_148.png",
+    "width_inches": 1.9372083875868056,
+    "scale": 1,
+    "depth_tex_pt": 3.71275
+  },
+  {
+    "occurrence": 176,
+    "type": "InlineMath",
+    "latex": "P(\\text{any catastrophe})\\le\\sum_t\\mathbb EI_t\\le\\delta",
+    "image": "eq_149.png",
+    "width_inches": 2.1906806098090277,
+    "scale": 1,
+    "depth_tex_pt": 2.75996
+  },
+  {
+    "occurrence": 177,
+    "type": "InlineMath",
+    "latex": "T",
+    "image": "eq_001.png",
+    "width_inches": 0.11629166867997912,
+    "scale": 1,
+    "depth_tex_pt": 0.0
+  },
+  {
+    "occurrence": 178,
+    "type": "InlineMath",
+    "latex": "[0,c_{\\max}]",
+    "image": "eq_150.png",
+    "width_inches": 0.6014861000908746,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 179,
+    "type": "InlineMath",
+    "latex": "\\epsilon_c",
+    "image": "eq_151.png",
+    "width_inches": 0.14998610814412436,
+    "scale": 1,
+    "depth_tex_pt": 1.88797
+  },
+  {
+    "occurrence": 180,
+    "type": "InlineMath",
+    "latex": "[0,G]",
+    "image": "eq_152.png",
+    "width_inches": 0.43387500445048016,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 181,
+    "type": "InlineMath",
+    "latex": "\\epsilon_p",
+    "image": "eq_153.png",
+    "width_inches": 0.1656388839085897,
+    "scale": 1,
+    "depth_tex_pt": 3.64357
+  },
+  {
+    "occurrence": 182,
+    "type": "InlineMath",
+    "latex": "\\frac12\\sum_o|P(o)-P'(o)|",
+    "image": "eq_154.png",
+    "width_inches": 1.355555534362793,
+    "scale": 1,
+    "depth_tex_pt": 4.14
+  },
+  {
+    "occurrence": 183,
+    "type": "DisplayMath",
+    "latex": "|J_P(\\pi)-J_{P'}(\\pi)|\\le D_T:=T\\epsilon_c+\\epsilon_p\\left[TG+\\tfrac12T(T-1)c_{\\max}\\right]. \\qquad\\text{(P8.1)}",
+    "image": "eq_155.png",
+    "width_inches": 4.746541765001085,
+    "scale": 1,
+    "depth_tex_pt": 4.284
+  },
+  {
+    "occurrence": 184,
+    "type": "InlineMath",
+    "latex": "\\pi'",
+    "image": "eq_156.png",
+    "width_inches": 0.15372221999698216,
+    "scale": 1,
+    "depth_tex_pt": 0.11998
+  },
+  {
+    "occurrence": 185,
+    "type": "InlineMath",
+    "latex": "P'",
+    "image": "eq_157.png",
+    "width_inches": 0.16750000582800972,
+    "scale": 1,
+    "depth_tex_pt": 0.0
+  },
+  {
+    "occurrence": 186,
+    "type": "InlineMath",
+    "latex": "P",
+    "image": "eq_072.png",
+    "width_inches": 0.12441666920979817,
+    "scale": 1,
+    "depth_tex_pt": 0.0
+  },
+  {
+    "occurrence": 187,
+    "type": "InlineMath",
+    "latex": "2D_T",
+    "image": "eq_158.png",
+    "width_inches": 0.31490278244018555,
+    "scale": 1,
+    "depth_tex_pt": 1.79999
+  },
+  {
+    "occurrence": 188,
+    "type": "InlineMath",
+    "latex": "\\Delta_h",
+    "image": "eq_159.png",
+    "width_inches": 0.19522221883138022,
+    "scale": 1,
+    "depth_tex_pt": 1.88797
+  },
+  {
+    "occurrence": 189,
+    "type": "InlineMath",
+    "latex": "h",
+    "image": "eq_160.png",
+    "width_inches": 0.10615277952618069,
+    "scale": 1,
+    "depth_tex_pt": 0.11998
+  },
+  {
+    "occurrence": 190,
+    "type": "InlineMath",
+    "latex": "\\epsilon_c",
+    "image": "eq_151.png",
+    "width_inches": 0.14998610814412436,
+    "scale": 1,
+    "depth_tex_pt": 1.88797
+  },
+  {
+    "occurrence": 191,
+    "type": "InlineMath",
+    "latex": "\\Delta_{h-1}",
+    "image": "eq_161.png",
+    "width_inches": 0.33355556594000924,
+    "scale": 1,
+    "depth_tex_pt": 1.88797
+  },
+  {
+    "occurrence": 192,
+    "type": "InlineMath",
+    "latex": "(h-1)c_{\\max}+G",
+    "image": "eq_162.png",
+    "width_inches": 1.1104444927639432,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 193,
+    "type": "InlineMath",
+    "latex": "\\epsilon_p[(h-1)c_{\\max}+G]",
+    "image": "eq_163.png",
+    "width_inches": 1.3977361255221896,
+    "scale": 1,
+    "depth_tex_pt": 3.64357
+  },
+  {
+    "occurrence": 194,
+    "type": "InlineMath",
+    "latex": "\\Delta_h\\le\\epsilon_c+\\Delta_{h-1}+\\epsilon_p[(h-1)c_{\\max}+G]",
+    "image": "eq_164.png",
+    "width_inches": 2.5916389889187283,
+    "scale": 1,
+    "depth_tex_pt": 3.64357
+  },
+  {
+    "occurrence": 195,
+    "type": "InlineMath",
+    "latex": "\\Delta_0=0",
+    "image": "eq_165.png",
+    "width_inches": 0.4692777527703179,
+    "scale": 1,
+    "depth_tex_pt": 1.92319
+  },
+  {
+    "occurrence": 196,
+    "type": "InlineMath",
+    "latex": "P'",
+    "image": "eq_157.png",
+    "width_inches": 0.16750000582800972,
+    "scale": 1,
+    "depth_tex_pt": 0.0
+  },
+  {
+    "occurrence": 197,
+    "type": "InlineMath",
+    "latex": "k",
+    "image": "eq_073.png",
+    "width_inches": 0.10765277677112156,
+    "scale": 1,
+    "depth_tex_pt": 0.11998
+  },
+  {
+    "occurrence": 198,
+    "type": "InlineMath",
+    "latex": "k",
+    "image": "eq_073.png",
+    "width_inches": 0.10765277677112156,
+    "scale": 1,
+    "depth_tex_pt": 0.11998
+  },
+  {
+    "occurrence": 199,
+    "type": "InlineMath",
+    "latex": "\\mathbb E[\\min_a\\mathbb E(\\ell_a\\mid Y)]\\le\\min_a\\mathbb E\\ell_a",
+    "image": "eq_166.png",
+    "width_inches": 2.0235417683919272,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 200,
+    "type": "InlineMath",
+    "latex": "k",
+    "image": "eq_073.png",
+    "width_inches": 0.10765277677112156,
+    "scale": 1,
+    "depth_tex_pt": 0.11998
+  },
+  {
+    "occurrence": 201,
+    "type": "InlineMath",
+    "latex": "p_A=.7,c_A=0,c_H=.1,L=1",
+    "image": "eq_167.png",
+    "width_inches": 2.1063194274902344,
+    "scale": 1,
+    "depth_tex_pt": 2.51399
+  },
+  {
+    "occurrence": 202,
+    "type": "InlineMath",
+    "latex": "p_H=.95",
+    "image": "eq_168.png",
+    "width_inches": 0.6313194698757596,
+    "scale": 1,
+    "depth_tex_pt": 2.51399
+  },
+  {
+    "occurrence": 203,
+    "type": "InlineMath",
+    "latex": "p_H=.4",
+    "image": "eq_169.png",
+    "width_inches": 0.5483055644565158,
+    "scale": 1,
+    "depth_tex_pt": 2.51399
+  },
+  {
+    "occurrence": 204,
+    "type": "InlineMath",
+    "latex": "p_A=.6,c_A=.1,p_H=1,c_H=.4,L=1",
+    "image": "eq_170.png",
+    "width_inches": 2.711791568332248,
+    "scale": 1,
+    "depth_tex_pt": 2.51399
+  },
+  {
+    "occurrence": 205,
+    "type": "InlineMath",
+    "latex": ".1+.4(1)=.5",
+    "image": "eq_171.png",
+    "width_inches": 0.9979721705118815,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 206,
+    "type": "InlineMath",
+    "latex": ".1+.4(.4)=.26",
+    "image": "eq_172.png",
+    "width_inches": 1.1279860602484808,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 207,
+    "type": "InlineMath",
+    "latex": "(0,1)",
+    "image": "eq_173.png",
+    "width_inches": 0.3847222328186035,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 208,
+    "type": "InlineMath",
+    "latex": "(1,0)",
+    "image": "eq_174.png",
+    "width_inches": 0.3847222328186035,
+    "scale": 1,
+    "depth_tex_pt": 2.35799
+  },
+  {
+    "occurrence": 209,
+    "type": "InlineMath",
+    "latex": "1+1=2",
+    "image": "eq_175.png",
+    "width_inches": 0.6401527722676595,
+    "scale": 1,
+    "depth_tex_pt": 0.0
+  },
+  {
+    "occurrence": 210,
+    "type": "InlineMath",
+    "latex": "\\max_m\\sum_t\\ell_{mt}",
+    "image": "eq_176.png",
+    "width_inches": 0.8439027998182509,
+    "scale": 1,
+    "depth_tex_pt": 2.75996
+  },
+  {
+    "occurrence": 211,
+    "type": "InlineMath",
+    "latex": "\\sum_t\\max_m\\ell_{mt}",
+    "image": "eq_177.png",
+    "width_inches": 0.8439027998182509,
+    "scale": 1,
+    "depth_tex_pt": 2.75996
+  }
+]
